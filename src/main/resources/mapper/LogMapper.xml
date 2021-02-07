@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fxys.opinion_plus.mapper.LogMapper">
+  <resultMap id="BaseResultMap" type="com.fxys.opinion_plus.domain.Log">
+    <!--@mbg.generated-->
+    <!--@Table log-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="uid" jdbcType="BIGINT" property="uid" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="params" jdbcType="VARCHAR" property="params" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="message" jdbcType="LONGVARCHAR" property="message" />
+    <result column="method" jdbcType="VARCHAR" property="method" />
+    <result column="time" jdbcType="BIGINT" property="time" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `uid`, url, params, status, message, `method`, `time`, ip, createTime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from log
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from log
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.fxys.opinion_plus.domain.Log" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into log (`uid`, url, params, 
+      status, message, `method`, 
+      `time`, ip, createTime
+      )
+    values (#{uid,jdbcType=BIGINT}, #{url,jdbcType=VARCHAR}, #{params,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER}, #{message,jdbcType=LONGVARCHAR}, #{method,jdbcType=VARCHAR}, 
+      #{time,jdbcType=BIGINT}, #{ip,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.fxys.opinion_plus.domain.Log" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into log
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="uid != null">
+        `uid`,
+      </if>
+      <if test="url != null">
+        url,
+      </if>
+      <if test="params != null">
+        params,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="message != null">
+        message,
+      </if>
+      <if test="method != null">
+        `method`,
+      </if>
+      <if test="time != null">
+        `time`,
+      </if>
+      <if test="ip != null">
+        ip,
+      </if>
+      <if test="createTime != null">
+        createTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="uid != null">
+        #{uid,jdbcType=BIGINT},
+      </if>
+      <if test="url != null">
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="params != null">
+        #{params,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="message != null">
+        #{message,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="method != null">
+        #{method,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null">
+        #{time,jdbcType=BIGINT},
+      </if>
+      <if test="ip != null">
+        #{ip,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.fxys.opinion_plus.domain.Log">
+    <!--@mbg.generated-->
+    update log
+    <set>
+      <if test="uid != null">
+        `uid` = #{uid,jdbcType=BIGINT},
+      </if>
+      <if test="url != null">
+        url = #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="params != null">
+        params = #{params,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="message != null">
+        message = #{message,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="method != null">
+        `method` = #{method,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null">
+        `time` = #{time,jdbcType=BIGINT},
+      </if>
+      <if test="ip != null">
+        ip = #{ip,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        createTime = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.fxys.opinion_plus.domain.Log">
+    <!--@mbg.generated-->
+    update log
+    set `uid` = #{uid,jdbcType=BIGINT},
+      url = #{url,jdbcType=VARCHAR},
+      params = #{params,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      message = #{message,jdbcType=LONGVARCHAR},
+      `method` = #{method,jdbcType=VARCHAR},
+      `time` = #{time,jdbcType=BIGINT},
+      ip = #{ip,jdbcType=VARCHAR},
+      createTime = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
