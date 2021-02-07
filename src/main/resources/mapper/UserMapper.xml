@@ -9,9 +9,9 @@
     <result column="email" jdbcType="VARCHAR" property="email" />
     <result column="password" jdbcType="VARCHAR" property="password" />
     <result column="state" jdbcType="INTEGER" property="state" />
-    <result column="createTime" jdbcType="TIMESTAMP" property="createtime" />
-    <result column="updateTime" jdbcType="TIMESTAMP" property="updatetime" />
-    <result column="dataVersion" jdbcType="INTEGER" property="dataversion" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="dataVersion" jdbcType="INTEGER" property="dataVersion" />
   </resultMap>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
@@ -35,8 +35,8 @@
       `state`, createTime, updateTime, 
       dataVersion)
     values (#{username,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{state,jdbcType=INTEGER}, #{createtime,jdbcType=TIMESTAMP}, #{updatetime,jdbcType=TIMESTAMP}, 
-      #{dataversion,jdbcType=INTEGER})
+      #{state,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, 
+      #{dataVersion,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.fxys.opinion_plus.domain.User" useGeneratedKeys="true">
     <!--@mbg.generated-->
@@ -54,13 +54,13 @@
       <if test="state != null">
         `state`,
       </if>
-      <if test="createtime != null">
+      <if test="createTime != null">
         createTime,
       </if>
-      <if test="updatetime != null">
+      <if test="updateTime != null">
         updateTime,
       </if>
-      <if test="dataversion != null">
+      <if test="dataVersion != null">
         dataVersion,
       </if>
     </trim>
@@ -77,14 +77,14 @@
       <if test="state != null">
         #{state,jdbcType=INTEGER},
       </if>
-      <if test="createtime != null">
-        #{createtime,jdbcType=TIMESTAMP},
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="updatetime != null">
-        #{updatetime,jdbcType=TIMESTAMP},
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="dataversion != null">
-        #{dataversion,jdbcType=INTEGER},
+      <if test="dataVersion != null">
+        #{dataVersion,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -104,14 +104,14 @@
       <if test="state != null">
         `state` = #{state,jdbcType=INTEGER},
       </if>
-      <if test="createtime != null">
-        createTime = #{createtime,jdbcType=TIMESTAMP},
+      <if test="createTime != null">
+        createTime = #{createTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="updatetime != null">
-        updateTime = #{updatetime,jdbcType=TIMESTAMP},
+      <if test="updateTime != null">
+        updateTime = #{updateTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="dataversion != null">
-        dataVersion = #{dataversion,jdbcType=INTEGER},
+      <if test="dataVersion != null">
+        dataVersion = #{dataVersion,jdbcType=INTEGER},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
@@ -123,9 +123,9 @@
       email = #{email,jdbcType=VARCHAR},
       `password` = #{password,jdbcType=VARCHAR},
       `state` = #{state,jdbcType=INTEGER},
-      createTime = #{createtime,jdbcType=TIMESTAMP},
-      updateTime = #{updatetime,jdbcType=TIMESTAMP},
-      dataVersion = #{dataversion,jdbcType=INTEGER}
+      createTime = #{createTime,jdbcType=TIMESTAMP},
+      updateTime = #{updateTime,jdbcType=TIMESTAMP},
+      dataVersion = #{dataVersion,jdbcType=INTEGER}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

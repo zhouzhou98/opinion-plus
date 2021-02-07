@@ -34,15 +34,15 @@ public class User {
     /**
     * 创建时间
     */
-    private Date createtime;
+    private Date createTime;
 
     /**
     * 更新时间
     */
-    private Date updatetime;
+    private Date updateTime;
 
     /**
     * 版本号
     */
-    private Integer dataversion;
+    private Integer dataVersion;
 }
