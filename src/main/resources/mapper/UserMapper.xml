@@ -15,7 +15,7 @@
   </resultMap>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    id, username, email, `password`, `state`, createTime, updateTime, dataVersion
+    id, username, email, `state`, createTime, updateTime, dataVersion
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -128,4 +128,12 @@
       dataVersion = #{dataVersion,jdbcType=INTEGER}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  <!--根据用户名查找用户对象-->
+  <select id="selectByUsername" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from `user`
+    where username=#{username}
+  </select>
 </mapper>

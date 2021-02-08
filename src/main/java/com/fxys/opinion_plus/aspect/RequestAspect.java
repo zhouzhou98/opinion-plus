@@ -93,7 +93,7 @@ public class RequestAspect {
     @AfterThrowing(pointcut = "logPointCut()", throwing = "e")
     public void saveExceptionLog(JoinPoint joinPoint, Throwable e) {
         Log logger = ThreadLocalContext.get().getLogger();
-        logger.setStatus(ResultCodeEnums.REQUEST_ERROR.getCode());
+        logger.setStatus(ResultCodeEnums.REQUEST_ERROR.code());
         String exception = StringUtils.getPackageException(e, "com.fxys");
         logger.setMessage(exception);
         logger.setTime(0L);
@@ -134,7 +134,7 @@ public class RequestAspect {
         logger.setUrl(uri);
         logger.setUid(id);
         logger.setParams(params);
-        logger.setStatus(ResultCodeEnums.REQUEST_SUCCESS.getCode());
+        logger.setStatus(ResultCodeEnums.REQUEST_SUCCESS.code());
         logger.setMethod(request.getMethod());
         logger.setIp(ip);
     }

@@ -9,7 +9,7 @@ package com.fxys.opinion_plus.constants;
 public class ResponseCodeConstants {
 
   public static final int NO_ERR = 0;
-
+  public static final Integer HAS_ERR = 1;
   /*业务异常*/
   public static final int BUSINESS=4000;
   public static final Integer LOGIN_FAIL =4001 ;
@@ -18,6 +18,7 @@ public class ResponseCodeConstants {
   public static final Integer INSERT_FAIL = 4004;
   public static final Integer DELETE_FAIL = 4005;
   public static final Integer PAGE_FAIL = 4006;
+  public static final Integer REGISTER_FAIL =4007 ;
   /*系统错误*/
   public static final int SYSTEM_ERROR=10000;
 
@@ -29,8 +30,8 @@ public class ResponseCodeConstants {
   public static final int USER_HAS_EXISTED=20001;
   public static final int USER_NOT_FIND=20002;
   public static final Integer USER_ERROR = 20003;
-  public static final int UNAUTHORIZED=10401;
-
+  public static final int UNAUTHORIZED=20004;
+  public static final Integer EMAIL_HAS_EXISTED = 20005;
 
 
   /*组别错误：30001-39999*/
@@ -49,7 +50,6 @@ public class ResponseCodeConstants {
   public static final Integer DEALWITH_FAIL = 60001;
   public static final Integer MARK_FAIL = 60002;
   public static final Integer PUSH_FAIL = 60003;
-
 
 
 }

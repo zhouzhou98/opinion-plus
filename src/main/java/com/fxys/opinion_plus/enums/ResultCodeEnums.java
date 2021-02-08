@@ -20,6 +20,7 @@ public enum ResultCodeEnums {
 	MARK_SUCCESS (ResponseCodeConstants.NO_ERR, "标记成功"),
 	UNMARK_SUCCESS (ResponseCodeConstants.NO_ERR, "撤销标记成功"),
 	TRANSFER_SUCCESS (ResponseCodeConstants.NO_ERR, "转发成功"),
+	REGISTER_SUCCESS(ResponseCodeConstants.NO_ERR, "注册成功"),
 	/* 系统500错误*/
 	SYSTEM_ERROR(ResponseCodeConstants.SYSTEM_ERROR, "系统异常，请稍后重试"),
 	UNAUTHORIZED(ResponseCodeConstants.UNAUTHORIZED, "暂无权限，请向业务管理员或超级管理员申请权限"),
@@ -28,15 +29,16 @@ public enum ResultCodeEnums {
 	PARAM_IS_INVALID(ResponseCodeConstants.PARAM_IS_INVALID, "参数无效"),
 
 	/* 用户错误：20001-29999*/
-	USER_HAS_EXISTED(ResponseCodeConstants.USER_HAS_EXISTED, "用户已存在"),
+	USER_HAS_EXISTED(ResponseCodeConstants.USER_HAS_EXISTED, "用户名已存在"),
 	USER_NOT_FIND(ResponseCodeConstants.USER_NOT_FIND, "用户名不存在"),
+	EMAIL_EXISTED(ResponseCodeConstants.EMAIL_HAS_EXISTED, "邮箱已存在"),
 	USER_ERROR(ResponseCodeConstants.USER_ERROR, "用户名或密码错误"),
 
 	/**
 	 * 请求访问状态枚举
 	 */
-	REQUEST_SUCCESS(1, "请求正常"),
-	REQUEST_ERROR(0, "请求异常"),
+	REQUEST_SUCCESS(ResponseCodeConstants.NO_ERR, "请求正常"),
+	REQUEST_ERROR(ResponseCodeConstants.HAS_ERR, "请求异常"),
 
 	/*邮箱错误：40001-49999*/
 	CONNECTION_FAIL(ResponseCodeConstants.CON_FAIL,"连接失败,请检查邮箱账号和密码是否出错"),
@@ -55,7 +57,9 @@ public enum ResultCodeEnums {
 	UNMARK_FAIL(ResponseCodeConstants.MARK_FAIL,"撤销标记失败"),
 	PUSH_FAIL(ResponseCodeConstants.PUSH_FAIL,"消息推送失败"),
 	MAILBOX_FAIL(ResponseCodeConstants.MAIL_FAIL,"邮箱为空"),
-	PAGE_FAIL(ResponseCodeConstants.PAGE_FAIL, "分页异常");
+
+	PAGE_FAIL(ResponseCodeConstants.PAGE_FAIL, "分页异常"),
+	REGISTER_FAIL(ResponseCodeConstants.REGISTER_FAIL,"注册失败");
 
 
 
@@ -68,6 +72,8 @@ public enum ResultCodeEnums {
 		this.message = message;
 	}
 
+
+
 	public Integer code() {
 		return this.code;
 	}
@@ -76,19 +82,5 @@ public enum ResultCodeEnums {
 		return this.message;
 	}
 
-	public Integer getCode() {
-		return code;
-	}
 
-	public void setCode(Integer code) {
-		this.code = code;
-	}
-
-	public String getMessage() {
-		return message;
-	}
-
-	public void setMessage(String message) {
-		this.message = message;
-	}
 }
