@@ -15,7 +15,7 @@
   </resultMap>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    id, username, email, `state`, createTime, updateTime, dataVersion
+    id, username, email, `state`, createTime, updateTime, dataVersion,password
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -142,4 +142,19 @@
     from `user`
     where email=#{email}
   </select>
+  <select id="selectByUsernameAndPad" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from `user`
+    where username=#{param1} and password=#{param2}
+  </select>
+  <update id="updateUser">
+    update `user`
+    set username = #{username,jdbcType=VARCHAR},
+    email = #{email,jdbcType=VARCHAR},
+    `password` = #{password,jdbcType=VARCHAR},
+    updateTime = #{updateTime,jdbcType=TIMESTAMP},
+    dataVersion = dataVersion+1
+    where id = #{id,jdbcType=BIGINT} and dataVersion=#{dataVersion}
+  </update>
 </mapper>

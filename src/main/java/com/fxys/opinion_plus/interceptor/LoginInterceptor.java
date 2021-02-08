@@ -40,6 +40,7 @@ public class LoginInterceptor implements HandlerInterceptor {
         
         // 获取token
         String token = request.getHeader("Authentication");
+
         if (StringUtils.isNotBlank(token)) {
             // token不为空，获取当前登录用户
             Long id;

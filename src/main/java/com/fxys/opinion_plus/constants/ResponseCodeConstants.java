@@ -32,7 +32,7 @@ public class ResponseCodeConstants {
   public static final Integer USER_ERROR = 20003;
   public static final int UNAUTHORIZED=20004;
   public static final Integer EMAIL_HAS_EXISTED = 20005;
-
+  public static final Integer PASSWORD_ERROR = 20004;
 
   /*组别错误：30001-39999*/
   public static final Integer GROUP_EXISTED = 30001;
@@ -50,6 +50,7 @@ public class ResponseCodeConstants {
   public static final Integer DEALWITH_FAIL = 60001;
   public static final Integer MARK_FAIL = 60002;
   public static final Integer PUSH_FAIL = 60003;
+
 
 
 }

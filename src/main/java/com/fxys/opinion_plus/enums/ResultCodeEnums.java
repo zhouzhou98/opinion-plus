@@ -33,7 +33,7 @@ public enum ResultCodeEnums {
 	USER_NOT_FIND(ResponseCodeConstants.USER_NOT_FIND, "用户名不存在"),
 	EMAIL_EXISTED(ResponseCodeConstants.EMAIL_HAS_EXISTED, "邮箱已存在"),
 	USER_ERROR(ResponseCodeConstants.USER_ERROR, "用户名或密码错误"),
-
+	PASSWORD_ERROR(ResponseCodeConstants.PASSWORD_ERROR,"密码错误，请重新填写"),
 	/**
 	 * 请求访问状态枚举
 	 */
@@ -63,7 +63,7 @@ public enum ResultCodeEnums {
 
 
 
-	private Integer code;
+    private Integer code;
 
 	private String message;
 

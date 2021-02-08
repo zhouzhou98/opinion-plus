@@ -1,6 +1,7 @@
 package com.fxys.opinion_plus.mapper;
 
 import com.fxys.opinion_plus.domain.User;
+import org.springframework.data.repository.query.Param;
 
 public interface UserMapper {
     int deleteByPrimaryKey(Long id);
@@ -22,4 +23,10 @@ public interface UserMapper {
 
 
     User selectByEmail(String email);
+
+
+    User selectByUsernameAndPad(@Param("username") String username,@Param("password") String password);
+
+
+    void updateUser(User user);
 }

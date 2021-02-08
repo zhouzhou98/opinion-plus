@@ -5,11 +5,14 @@ import com.fxys.opinion_plus.enums.ResultCodeEnums;
 import com.fxys.opinion_plus.exception.OpinionException;
 import com.fxys.opinion_plus.mapper.UserMapper;
 import com.fxys.opinion_plus.service.IUserService;
-import com.fxys.opinion_plus.vo.user.UserRegister;
+import com.fxys.opinion_plus.util.JwtUtil;
+import com.fxys.opinion_plus.vo.user.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 public class UserServiceImpl implements IUserService {
@@ -49,6 +52,81 @@ public class UserServiceImpl implements IUserService {
         }catch (Exception e){
             e.printStackTrace();
             throw new OpinionException(ResultCodeEnums.REGISTER_FAIL);
+        }
+
+    }
+
+
+    @Override
+    public Map<String, Object> getLogin(UserLogin req) {
+        User u=userMapper.selectByUsernameAndPad(req.getUsername(),req.getPassword());
+
+        if(u==null){
+            throw new OpinionException(ResultCodeEnums.USER_ERROR);
+        }else {
+            u.setPassword("");
+            Map<String, Object> returnMap = new HashMap<>(2);
+            //获取token
+            String token = JwtUtil.createJWT(6000000, u);
+            returnMap.put("token", token);
+            returnMap.put("user", u);
+            return returnMap;
+        }
+
+    }
+
+    @Override
+    public String updateUsername(UserUsernameReq req) {
+        User u=userMapper.selectByUsername(req.getUsername());
+
+        if(u!=null){
+            throw new OpinionException(ResultCodeEnums.USER_HAS_EXISTED);
+        }else{
+            try {
+                User user=selectById(req.getId());
+                user.setUpdateTime(new Date());
+                user.setUsername(req.getUsername());
+                userMapper.updateUser(user);
+                return ResultCodeEnums.UPDATE_SUCCESS.message();
+            }catch (Exception e){
+                e.printStackTrace();
+                throw new OpinionException(ResultCodeEnums.UPDATE_FAIL);
+            }
+
+        }
+
+    }
+
+    @Override
+    public String updatePad(UserPasswordReq req) {
+        try {
+            User user=selectById(req.getId());
+            if(!user.getPassword().equals(req.getOldPad())){
+                throw new OpinionException(ResultCodeEnums.PASSWORD_ERROR);
+            }
+            user.setUpdateTime(new Date());
+            user.setPassword(req.getNewPad());
+            userMapper.updateUser(user);
+            return ResultCodeEnums.UPDATE_SUCCESS.message();
+        }catch (Exception e){
+            throw new OpinionException(ResultCodeEnums.UPDATE_FAIL);
+        }
+    }
+
+    @Override
+    public String updateEmail(UserEmailReq req) {
+        if(userMapper.selectByEmail(req.getEmail())!=null){
+            throw new OpinionException(ResultCodeEnums.EMAIL_EXISTED);
+        }else{
+            try {
+                User user=selectById(req.getId());
+                user.setUpdateTime(new Date());
+                user.setEmail(req.getEmail());
+                userMapper.updateUser(user);
+                return ResultCodeEnums.UPDATE_SUCCESS.message();
+            }catch (Exception e){
+                throw new OpinionException(ResultCodeEnums.UPDATE_FAIL);
+            }
         }
 
     }
