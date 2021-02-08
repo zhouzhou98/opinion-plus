@@ -36,11 +36,11 @@
     <!--@mbg.generated-->
     insert into log (`uid`, url, params, 
       status, message, `method`, 
-      `time`, ip, createTime
+      `time`, ip, createTime,result
       )
     values (#{uid,jdbcType=BIGINT}, #{url,jdbcType=VARCHAR}, #{params,jdbcType=VARCHAR}, 
       #{status,jdbcType=INTEGER}, #{message,jdbcType=LONGVARCHAR}, #{method,jdbcType=VARCHAR}, 
-      #{time,jdbcType=BIGINT}, #{ip,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}
+      #{time,jdbcType=BIGINT}, #{ip,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP},#{result}
       )
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.fxys.opinion_plus.domain.Log" useGeneratedKeys="true">
@@ -74,6 +74,9 @@
       <if test="createTime != null">
         createTime,
       </if>
+      <if test="result != null">
+        result,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="uid != null">
@@ -102,6 +105,9 @@
       </if>
       <if test="createTime != null">
         #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="result != null">
+        #{result},
       </if>
     </trim>
   </insert>

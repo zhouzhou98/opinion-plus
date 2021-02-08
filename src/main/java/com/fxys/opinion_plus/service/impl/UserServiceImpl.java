@@ -27,6 +27,7 @@ public class UserServiceImpl implements IUserService {
      */
     @Override
     public String addUser(UserRegister userRegister) {
+
         if(userMapper.selectByUsername(userRegister.getUsername())!=null){
             throw new OpinionException(ResultCodeEnums.USER_HAS_EXISTED);
         }
@@ -41,9 +42,12 @@ public class UserServiceImpl implements IUserService {
             u.setPassword(userRegister.getPassword());
             u.setUsername(userRegister.getUsername());
             u.setEmail(userRegister.getEmail());
+            u.setDataVersion(0);
+            u.setState(0);
             userMapper.insert(u);
             return ResultCodeEnums.REGISTER_SUCCESS.message();
         }catch (Exception e){
+            e.printStackTrace();
             throw new OpinionException(ResultCodeEnums.REGISTER_FAIL);
         }
 

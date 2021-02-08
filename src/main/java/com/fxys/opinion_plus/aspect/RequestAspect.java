@@ -21,6 +21,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
+import java.util.Date;
 
 /**
  * 切面输出基本信息
@@ -67,6 +68,8 @@ public class RequestAspect {
         log.info("耗时 : {}", time);
         Log logger = ThreadLocalContext.get().getLogger();
         logger.setTime(time);
+        logger.setMessage("操作成功");
+        logService.save(logger);
         return ob;
     }
 
@@ -81,7 +84,9 @@ public class RequestAspect {
         log.info("返回值：{}", JSON.toJSONString(ret));
         Log logger = ThreadLocalContext.get().getLogger();
         logger.setResult(result);
-        logService.save(logger);
+        logger.setCreateTime(new Date());
+
+
     }
 
     /**
@@ -97,7 +102,12 @@ public class RequestAspect {
         String exception = StringUtils.getPackageException(e, "com.fxys");
         logger.setMessage(exception);
         logger.setTime(0L);
+        logger.setCreateTime(new Date());
+        String result = StringUtils.getPackageException(e, "OpinionException");
+        logger.setResult(result);
         logService.save(logger);
+
+
     }
 
     /**
@@ -121,22 +131,29 @@ public class RequestAspect {
         log.info("请求参数：{}", params);
         // 获取token
         String token = request.getHeader("Authentication");
-        Long id;
-        try{
 
-            id= JWT.decode(token).getClaim("id").asLong();
-
-        }catch (Exception e){
-            throw new OpinionException(ResultCodeEnums.SYSTEM_ERROR);
-        }
         // 获取日志实体
         Log logger = ThreadLocalContext.get().getLogger();
         logger.setUrl(uri);
-        logger.setUid(id);
+
         logger.setParams(params);
         logger.setStatus(ResultCodeEnums.REQUEST_SUCCESS.code());
         logger.setMethod(request.getMethod());
         logger.setIp(ip);
+        Long id;
+        try{
+            if(token!=null&&token!=""){
+                id= JWT.decode(token).getClaim("id").asLong();
+                logger.setUid(id);
+            }
+
+
+        }catch (Exception e){
+
+            throw new OpinionException(ResultCodeEnums.SYSTEM_ERROR);
+        }
+
+
     }
 
 }
