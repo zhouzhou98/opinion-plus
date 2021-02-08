@@ -2,11 +2,14 @@ package com.fxys.opinion_plus.aspect;
 
 
 import com.alibaba.fastjson.JSON;
-import com.fxys.blog.domain.Log;
-import com.fxys.blog.enums.StateEnums;
-import com.fxys.blog.service.LogService;
-import com.fxys.blog.utils.StringUtils;
-import com.fxys.blog.utils.ThreadLocalContext;
+
+import com.auth0.jwt.JWT;
+import com.fxys.opinion_plus.domain.Log;
+import com.fxys.opinion_plus.enums.ResultCodeEnums;
+import com.fxys.opinion_plus.exception.OpinionException;
+import com.fxys.opinion_plus.service.ILogService;
+import com.fxys.opinion_plus.util.StringUtils;
+import com.fxys.opinion_plus.util.ThreadLocalContext;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -33,7 +36,7 @@ import java.util.Arrays;
 public class RequestAspect {
 
     @Autowired
-    private LogService logService;
+    private ILogService logService;
 
     /**
      * 两个..代表所有子目录，最后括号里的两个..代表所有参数
@@ -63,7 +66,7 @@ public class RequestAspect {
         long time = System.currentTimeMillis() - startTime;
         log.info("耗时 : {}", time);
         Log logger = ThreadLocalContext.get().getLogger();
-        logger.setLogTime(time);
+        logger.setTime(time);
         return ob;
     }
 
@@ -77,7 +80,7 @@ public class RequestAspect {
         String result = JSON.toJSONString(ret);
         log.info("返回值：{}", JSON.toJSONString(ret));
         Log logger = ThreadLocalContext.get().getLogger();
-        logger.setLogResult(result);
+        logger.setResult(result);
         logService.save(logger);
     }
 
@@ -90,10 +93,10 @@ public class RequestAspect {
     @AfterThrowing(pointcut = "logPointCut()", throwing = "e")
     public void saveExceptionLog(JoinPoint joinPoint, Throwable e) {
         Log logger = ThreadLocalContext.get().getLogger();
-        logger.setLogStatus(StateEnums.REQUEST_ERROR.getCode());
+        logger.setStatus(ResultCodeEnums.REQUEST_ERROR.getCode());
         String exception = StringUtils.getPackageException(e, "com.fxys");
-        logger.setLogMessage(exception);
-        logger.setLogTime(0L);
+        logger.setMessage(exception);
+        logger.setTime(0L);
         logService.save(logger);
     }
 
@@ -116,13 +119,24 @@ public class RequestAspect {
         log.info("方法 : {}.{}", controllerName, joinPoint.getSignature().getName());
         String params = Arrays.toString(joinPoint.getArgs());
         log.info("请求参数：{}", params);
+        // 获取token
+        String token = request.getHeader("Authentication");
+        Long id;
+        try{
+
+            id= JWT.decode(token).getClaim("id").asLong();
+
+        }catch (Exception e){
+            throw new OpinionException(ResultCodeEnums.SYSTEM_ERROR);
+        }
         // 获取日志实体
         Log logger = ThreadLocalContext.get().getLogger();
-        logger.setLogUrl(uri);
-        logger.setLogParams(params);
-        logger.setLogStatus(StateEnums.REQUEST_SUCCESS.getCode());
-        logger.setLogMethod(request.getMethod());
-        logger.setLogIp(ip);
+        logger.setUrl(uri);
+        logger.setUid(id);
+        logger.setParams(params);
+        logger.setStatus(ResultCodeEnums.REQUEST_SUCCESS.getCode());
+        logger.setMethod(request.getMethod());
+        logger.setIp(ip);
     }
 
 }

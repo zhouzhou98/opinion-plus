@@ -32,9 +32,11 @@ public enum ResultCodeEnums {
 	USER_NOT_FIND(ResponseCodeConstants.USER_NOT_FIND, "用户名不存在"),
 	USER_ERROR(ResponseCodeConstants.USER_ERROR, "用户名或密码错误"),
 
-	/*组别错误：30001-39999*/
-	GROUP_EXISTED(ResponseCodeConstants.GROUP_EXISTED,"组名已存在，请勿重复添加"),
-	INIT_FAIL(ResponseCodeConstants.INIT_FAIL,"初始化失败"),
+	/**
+	 * 请求访问状态枚举
+	 */
+	REQUEST_SUCCESS(1, "请求正常"),
+	REQUEST_ERROR(0, "请求异常"),
 
 	/*邮箱错误：40001-49999*/
 	CONNECTION_FAIL(ResponseCodeConstants.CON_FAIL,"连接失败,请检查邮箱账号和密码是否出错"),
@@ -74,6 +76,19 @@ public enum ResultCodeEnums {
 		return this.message;
 	}
 
+	public Integer getCode() {
+		return code;
+	}
 
+	public void setCode(Integer code) {
+		this.code = code;
+	}
 
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
 }

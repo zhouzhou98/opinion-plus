@@ -14,10 +14,11 @@
     <result column="time" jdbcType="BIGINT" property="time" />
     <result column="ip" jdbcType="VARCHAR" property="ip" />
     <result column="createTime" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="result" jdbcType="VARCHAR" property="result" />
   </resultMap>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    id, `uid`, url, params, status, message, `method`, `time`, ip, createTime
+    id, `uid`, url, params, status, message, `method`, `time`, ip, createTime,result
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     <!--@mbg.generated-->

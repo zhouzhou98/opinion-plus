@@ -55,4 +55,6 @@ public class Log {
     * 创建时间
     */
     private Date createTime;
+
+    private String result;
 }
