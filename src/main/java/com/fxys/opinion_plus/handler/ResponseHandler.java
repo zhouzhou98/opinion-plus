@@ -18,7 +18,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
  * @description 参数返回处理器
  * @email :jack.su@jodoinc.com
  */
-@ControllerAdvice(basePackages = "com.fxys")
+@ControllerAdvice(basePackages = "com.fxys.opinion_plus.controller")
 public class ResponseHandler implements ResponseBodyAdvice<Object> {
 
     /**

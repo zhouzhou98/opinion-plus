@@ -81,9 +81,15 @@ public class RequestAspect {
     @AfterReturning(returning = "ret", pointcut = "logPointCut()")
     public void doAfterReturning(Object ret) {
         String result = JSON.toJSONString(ret);
-        log.info("返回值：{}", JSON.toJSONString(ret));
+        log.info("返回值：{}", result);
         Log logger = ThreadLocalContext.get().getLogger();
-        logger.setResult(result);
+        log.info("length:"+result.length());
+        if(result.length()<1000){
+            logger.setResult(result);
+        }else {
+            logger.setResult(ret.getClass().toString());
+        }
+
         logger.setCreateTime(new Date());
 
 
@@ -128,6 +134,7 @@ public class RequestAspect {
         String controllerName = joinPoint.getSignature().getDeclaringTypeName();
         log.info("方法 : {}.{}", controllerName, joinPoint.getSignature().getName());
         String params = Arrays.toString(joinPoint.getArgs());
+
         log.info("请求参数：{}", params);
         // 获取token
         String token = request.getHeader("Authentication");
@@ -135,8 +142,12 @@ public class RequestAspect {
         // 获取日志实体
         Log logger = ThreadLocalContext.get().getLogger();
         logger.setUrl(uri);
+        if(params.length()<500){
+            logger.setParams(params);
+        }else {
+            logger.setParams(joinPoint.getArgs().getClass().toString());
+        }
 
-        logger.setParams(params);
         logger.setStatus(ResultCodeEnums.REQUEST_SUCCESS.code());
         logger.setMethod(request.getMethod());
         logger.setIp(ip);

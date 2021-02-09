@@ -50,15 +50,7 @@ public enum ResultCodeEnums {
 	INSERT_FAIL(ResponseCodeConstants.INSERT_FAIL,"插入异常"),
 	DELETE_FAIL(ResponseCodeConstants.DELETE_FAIL,"删除异常"),
 	BUSINESS(ResponseCodeConstants.BUSINESS,"业务校验异常"),
-	RULE_IS_EXISTED(ResponseCodeConstants.RULE_IS_EXISTED,"规则已经存在，请不要重复添加"),
-	TRANSFER_FAIL(ResponseCodeConstants.TRANSFER_FAIL,"转发失败"),
-	DEALWITH_FAIL(ResponseCodeConstants.DEALWITH_FAIL,"处理失败"),
-	MARK_FAIL(ResponseCodeConstants.MARK_FAIL,"标记失败"),
-	UNMARK_FAIL(ResponseCodeConstants.MARK_FAIL,"撤销标记失败"),
-	PUSH_FAIL(ResponseCodeConstants.PUSH_FAIL,"消息推送失败"),
-	MAILBOX_FAIL(ResponseCodeConstants.MAIL_FAIL,"邮箱为空"),
-
-	PAGE_FAIL(ResponseCodeConstants.PAGE_FAIL, "分页异常"),
+	KEYWORD_HAS_EXISTED(ResponseCodeConstants.KEYWORD_HAS_EXISTED,"关键字已经存在，请不要重复添加"),
 	REGISTER_FAIL(ResponseCodeConstants.REGISTER_FAIL,"注册失败");
 
 
@@ -81,6 +73,7 @@ public enum ResultCodeEnums {
 	public String message() {
 		return this.message;
 	}
+
 
 
 }

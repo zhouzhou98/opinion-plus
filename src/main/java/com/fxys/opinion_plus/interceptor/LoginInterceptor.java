@@ -29,7 +29,7 @@ public class LoginInterceptor implements HandlerInterceptor {
      * 放行的白名单
      */
     private static String[] whiteList = {
-            PathConstants.USER_SING_IN,PathConstants.USER_REGISTER
+            PathConstants.USER_SING_IN,PathConstants.USER_REGISTER,PathConstants.KEYWORD_EXPORT
     };
 
     @Override

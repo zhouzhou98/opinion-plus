@@ -34,8 +34,8 @@ public class ResponseCodeConstants {
   public static final Integer EMAIL_HAS_EXISTED = 20005;
   public static final Integer PASSWORD_ERROR = 20004;
 
-  /*组别错误：30001-39999*/
-  public static final Integer GROUP_EXISTED = 30001;
+  /*关键字错误：30001-39999*/
+  public static final Integer KEYWORD_HAS_EXISTED = 30001;
 
   /*邮箱错误：40001-49999*/
   public static final Integer CON_FAIL = 40001;

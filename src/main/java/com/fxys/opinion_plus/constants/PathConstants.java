@@ -20,4 +20,14 @@ public class PathConstants {
      * 日志相关操作
      */
     public static final String LOG_SEARCH="/api/log/getByPage";
+
+    /**
+     * 关键字相关操作
+     */
+    public static final String KEYWORD_SEARCH="/api/keyword/getByPage";
+    public static final String KEYWORD_ADD="/api/keyword/add";
+    public static final String KEYWORD_GET="/api/keyword/get";
+    public static final String KEYWORD_UPDATE="/api/keyword/update";
+    public static final String KEYWORD_DELETE="/api/keyword/delete";
+    public static final String KEYWORD_EXPORT="/api/keyword/exportMeg";
 }
