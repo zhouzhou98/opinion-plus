@@ -1,12 +1,11 @@
 package com.fxys.opinion_plus.controller;
 
 import com.fxys.opinion_plus.constants.PathConstants;
+import com.fxys.opinion_plus.domain.User;
 import com.fxys.opinion_plus.service.IUserService;
 import com.fxys.opinion_plus.vo.user.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
@@ -40,5 +39,10 @@ public class UserController {
     @PostMapping(value = PathConstants.USER_UPDATE_EMAIL)
     public String updateEmail(@RequestBody UserEmailReq req){
         return userService.updateEmail(req);
+    }
+
+    @GetMapping(value = PathConstants.USER_GET+"/{id}")
+    public User get(@PathVariable Long id){
+      return userService.selectById(id);
     }
 }

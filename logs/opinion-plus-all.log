@@ -195,3 +195,811 @@
 2021-02-09 01:47:57.331 INFO  [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
 2021-02-09 01:47:57.332 INFO  [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 1 ms
 2021-02-09 01:47:57.350 WARN  [http-nio-8081-exec-1]com.fxys.opinion_plus.handler.GlobalExceptionHandler.handleBusinessException:47 -URL:/api/user/updateUsername ,业务异常:ErrorResult(status=20002, message=用户名不存在, exception=com.fxys.opinion_plus.exception.OpinionException)
+2021-02-09 01:49:40.062 INFO  [background-preinit]org.hibernate.validator.internal.util.Version.<clinit>:30 -HV000001: Hibernate Validator 5.4.1.Final
+2021-02-09 01:49:40.062 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarting:55 -Starting OpinionPlusApplication using Java 1.8.0_151 on LAPTOP-F69Q7ABG with PID 5368 (D:\springboot\opinion-plus\target\classes started by 14040 in D:\springboot\opinion-plus)
+2021-02-09 01:49:40.066 DEBUG [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarting:56 -Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-09 01:49:40.067 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStartupProfileInfo:660 -No active profile set, falling back to default profiles: default
+2021-02-09 01:49:40.135 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\carrot2\morfologik-speller\1.9.0\morfologik-speller-1.9.0.jar referenced one or more files that do not exist: file:/D:/repository/org/carrot2/morfologik-speller/1.9.0/morfologik-stemming-1.9.0.jar,file:/D:/repository/org/carrot2/morfologik-speller/1.9.0/morfologik-fsa-1.9.0.jar
+2021-02-09 01:49:40.136 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\carrot2\morfologik-stemming\1.9.0\morfologik-stemming-1.9.0.jar referenced one or more files that do not exist: file:/D:/repository/org/carrot2/morfologik-stemming/1.9.0/morfologik-fsa-1.9.0.jar
+2021-02-09 01:49:40.136 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\apache\opennlp\opennlp-tools\1.5.3\opennlp-tools-1.5.3.jar referenced one or more files that do not exist: file:/D:/repository/org/apache/opennlp/opennlp-tools/1.5.3/opennlp-maxent-3.0.3.jar,file:/D:/repository/org/apache/opennlp/opennlp-tools/1.5.3/jwnl-1.3.3.jar
+2021-02-09 01:49:40.137 INFO  [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:255 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-09 01:49:40.138 INFO  [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:255 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-09 01:49:40.912 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:250 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-09 01:49:40.913 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-02-09 01:49:40.935 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 17 ms. Found 0 JDBC repository interfaces.
+2021-02-09 01:49:40.948 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:250 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-09 01:49:40.949 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-09 01:49:40.960 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-02-09 01:49:41.694 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8081 (http)
+2021-02-09 01:49:41.756 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8081"]
+2021-02-09 01:49:41.756 INFO  [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-02-09 01:49:41.756 INFO  [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-09 01:49:41.864 INFO  [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-02-09 01:49:41.864 INFO  [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 1725 ms
+2021-02-09 01:49:41.930 INFO  [restartedMain]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2021-02-09 01:49:42.175 INFO  [restartedMain]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2021-02-09 01:49:42.314 INFO  [restartedMain]org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 -HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-09 01:49:42.354 INFO  [restartedMain]org.hibernate.Version.logVersion:44 -HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-09 01:49:42.460 INFO  [restartedMain]org.hibernate.annotations.common.Version.<clinit>:56 -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-09 01:49:42.692 INFO  [restartedMain]org.hibernate.dialect.Dialect.<init>:175 -HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-02-09 01:49:42.889 INFO  [restartedMain]o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-09 01:49:42.900 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:437 -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-09 01:49:42.933 INFO  [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-02-09 01:49:43.402 WARN  [restartedMain]o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:221 -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-09 01:49:43.911 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8081"]
+2021-02-09 01:49:43.927 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8081 (http) with context path ''
+2021-02-09 01:49:43.936 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarted:61 -Started OpinionPlusApplication in 4.404 seconds (JVM running for 5.793)
+2021-02-09 01:50:05.334 INFO  [http-nio-8081-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-09 01:50:05.334 INFO  [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2021-02-09 01:50:05.336 INFO  [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 2 ms
+2021-02-09 01:50:05.353 WARN  [http-nio-8081-exec-1]com.fxys.opinion_plus.handler.GlobalExceptionHandler.handleBusinessException:47 -URL:/api/user/updateUsername ,业务异常:ErrorResult(status=20002, message=用户名不存在, exception=com.fxys.opinion_plus.exception.OpinionException)
+2021-02-09 01:50:27.590 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/login
+2021-02-09 01:50:27.591 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 01:50:27.593 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 01:50:27.594 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.login
+2021-02-09 01:50:27.595 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserLogin(username=123456, password=e10adc3949ba59abbe56e057f20f883e)]
+2021-02-09 01:50:27.653 DEBUG [http-nio-8081-exec-2]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where username=? and password=?
+2021-02-09 01:50:27.742 DEBUG [http-nio-8081-exec-2]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==> Parameters: 123456(String), e10adc3949ba59abbe56e057f20f883e(String)
+2021-02-09 01:50:27.791 DEBUG [http-nio-8081-exec-2]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -<==      Total: 1
+2021-02-09 01:50:28.585 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"user":{"createTime":1612756370000,"dataVersion":0,"email":"1404031711@qq.com","id":10,"password":"","state":0,"updateTime":1612756370000,"username":"123456"},"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTYiLCJpZCI6MTAsImV4cCI6MTYxMjgxMjYyNywiaWF0IjoxNjEyODA2NjI3LCJqdGkiOiI1NWE5NzAzMC0yY2I1LTRiOTYtOTE1Yy00NWI2ZmYzZDkwYTQiLCJ1c2VybmFtZSI6IjEyMzQ1NiJ9.psNlFtoSOGIQNT_M9k66-LuEbLiIaLJFK5mUb0ZolqU"}
+2021-02-09 01:50:28.586 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 996
+2021-02-09 01:50:28.606 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 01:50:28.625 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: /api/user/login(String), [UserLogin(username=123456, password=e10adc3949ba59abbe56e057f20f883e)](String), 0(Integer), 操作成功(String), POST(String), 996(Long), 127.0.0.1(String), 2021-02-09 01:50:28.586(Timestamp), {"user":{"createTime":1612756370000,"dataVersion":0,"email":"1404031711@qq.com","id":10,"password":"","state":0,"updateTime":1612756370000,"username":"123456"},"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTYiLCJpZCI6MTAsImV4cCI6MTYxMjgxMjYyNywiaWF0IjoxNjEyODA2NjI3LCJqdGkiOiI1NWE5NzAzMC0yY2I1LTRiOTYtOTE1Yy00NWI2ZmYzZDkwYTQiLCJ1c2VybmFtZSI6IjEyMzQ1NiJ9.psNlFtoSOGIQNT_M9k66-LuEbLiIaLJFK5mUb0ZolqU"}(String)
+2021-02-09 01:50:28.635 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 01:50:42.033 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 01:50:42.033 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 01:50:42.035 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 01:50:42.040 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/updateUsername
+2021-02-09 01:50:42.040 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 01:50:42.041 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 01:50:42.041 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.updateUsername
+2021-02-09 01:50:42.042 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserUsernameReq(username=123456789)]
+2021-02-09 01:50:42.043 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where username=?
+2021-02-09 01:50:42.044 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -==> Parameters: 123456789(String)
+2021-02-09 01:50:42.044 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -<==      Total: 0
+2021-02-09 01:50:42.045 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 01:50:42.046 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 01:50:42.047 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 01:50:42.048 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==>  Preparing: update `user` set username = ?, email = ?, `password` = ?, updateTime = ?, dataVersion = dataVersion+1 where id = ? and dataVersion=?
+2021-02-09 01:50:42.049 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==> Parameters: 123456789(String), 1404031711@qq.com(String), e10adc3949ba59abbe56e057f20f883e(String), 2021-02-09 01:50:42.048(Timestamp), 10(Long), 0(Integer)
+2021-02-09 01:50:42.054 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -<==    Updates: 1
+2021-02-09 01:50:42.055 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值："更新成功"
+2021-02-09 01:50:42.055 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 15
+2021-02-09 01:50:42.056 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 01:50:42.059 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/updateUsername(String), [UserUsernameReq(username=123456789)](String), 0(Integer), 操作成功(String), POST(String), 15(Long), 127.0.0.1(String), 2021-02-09 01:50:42.055(Timestamp), "更新成功"(String)
+2021-02-09 01:50:42.061 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 01:57:50.732 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 01:57:50.732 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 01:57:50.734 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 01:57:50.735 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/updateUsername
+2021-02-09 01:57:50.735 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 01:57:50.736 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 01:57:50.736 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.updateUsername
+2021-02-09 01:57:50.736 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserUsernameReq(username=12345678)]
+2021-02-09 01:57:50.738 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where username=?
+2021-02-09 01:57:50.738 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -==> Parameters: 12345678(String)
+2021-02-09 01:57:50.740 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -<==      Total: 0
+2021-02-09 01:57:50.740 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 01:57:50.741 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 01:57:50.742 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 01:57:50.742 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==>  Preparing: update `user` set username = ?, email = ?, `password` = ?, updateTime = ?, dataVersion = dataVersion+1 where id = ? and dataVersion=?
+2021-02-09 01:57:50.743 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==> Parameters: 12345678(String), 1404031711@qq.com(String), e10adc3949ba59abbe56e057f20f883e(String), 2021-02-09 01:57:50.742(Timestamp), 10(Long), 1(Integer)
+2021-02-09 01:57:50.748 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -<==    Updates: 1
+2021-02-09 01:57:50.748 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值："更新成功"
+2021-02-09 01:57:50.749 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 14
+2021-02-09 01:57:50.750 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 01:57:50.753 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/updateUsername(String), [UserUsernameReq(username=12345678)](String), 0(Integer), 操作成功(String), POST(String), 14(Long), 127.0.0.1(String), 2021-02-09 01:57:50.749(Timestamp), "更新成功"(String)
+2021-02-09 01:57:50.756 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 02:04:59.214 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/login
+2021-02-09 02:04:59.214 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 02:04:59.215 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 02:04:59.215 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.login
+2021-02-09 02:04:59.215 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserLogin(username=123456, password=e10adc3949ba59abbe56e057f20f883e)]
+2021-02-09 02:04:59.221 DEBUG [http-nio-8081-exec-5]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where username=? and password=?
+2021-02-09 02:04:59.222 DEBUG [http-nio-8081-exec-5]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==> Parameters: 123456(String), e10adc3949ba59abbe56e057f20f883e(String)
+2021-02-09 02:04:59.224 DEBUG [http-nio-8081-exec-5]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -<==      Total: 0
+2021-02-09 02:04:59.332 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 02:04:59.333 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/login(String), [UserLogin(username=123456, password=e10adc3949ba59abbe56e057f20f883e)](String), 1(Integer), 	at com.fxys.opinion_plus.service.impl.UserServiceImpl.getLogin(UserServiceImpl.java:65)
+	at com.fxys.opinion_plus.controller.UserController.login(UserController.java:20)
+	at com.fxys.opinion_plus.controller.UserController$$FastClassBySpringCGLIB$$28b36b57.invoke(<generated>)
+	at com.fxys.opinion_plus.aspect.RequestAspect.doAround(RequestAspect.java:66)
+	at com.fxys.opinion_plus.controller.UserController$$EnhancerBySpringCGLIB$$b094c7a2.login(<generated>)
+(String), POST(String), 0(Long), 127.0.0.1(String), 2021-02-09 02:04:59.33(Timestamp), OpinionException(code=20003, message=用户名或密码错误)
+(String)
+2021-02-09 02:04:59.335 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 02:04:59.336 WARN  [http-nio-8081-exec-5]com.fxys.opinion_plus.handler.GlobalExceptionHandler.handleBusinessException:47 -URL:/api/user/login ,业务异常:ErrorResult(status=20003, message=用户名或密码错误, exception=com.fxys.opinion_plus.exception.OpinionException)
+2021-02-09 02:05:05.845 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/login
+2021-02-09 02:05:05.847 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 02:05:05.847 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 02:05:05.848 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.login
+2021-02-09 02:05:05.848 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserLogin(username=12345678, password=e10adc3949ba59abbe56e057f20f883e)]
+2021-02-09 02:05:05.849 DEBUG [http-nio-8081-exec-4]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where username=? and password=?
+2021-02-09 02:05:05.850 DEBUG [http-nio-8081-exec-4]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==> Parameters: 12345678(String), e10adc3949ba59abbe56e057f20f883e(String)
+2021-02-09 02:05:05.853 DEBUG [http-nio-8081-exec-4]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -<==      Total: 1
+2021-02-09 02:05:05.855 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"user":{"createTime":1612756370000,"dataVersion":2,"email":"1404031711@qq.com","id":10,"password":"","state":0,"updateTime":1612807070000,"username":"12345678"},"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3OCIsImlkIjoxMCwiZXhwIjoxNjEyODEzNTA1LCJpYXQiOjE2MTI4MDc1MDUsImp0aSI6ImU2NTQwMTA4LTE0OGMtNGEwNS1iMDEwLWZjZTdjODk2YzBlYSIsInVzZXJuYW1lIjoiMTIzNDU2NzgifQ.QpCksliFZxE8eGTGLiKNiUBWkvs_ubsznJl7ytOy2bM"}
+2021-02-09 02:05:05.856 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 11
+2021-02-09 02:05:05.858 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 02:05:05.860 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/login(String), [UserLogin(username=12345678, password=e10adc3949ba59abbe56e057f20f883e)](String), 0(Integer), 操作成功(String), POST(String), 11(Long), 127.0.0.1(String), 2021-02-09 02:05:05.856(Timestamp), {"user":{"createTime":1612756370000,"dataVersion":2,"email":"1404031711@qq.com","id":10,"password":"","state":0,"updateTime":1612807070000,"username":"12345678"},"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3OCIsImlkIjoxMCwiZXhwIjoxNjEyODEzNTA1LCJpYXQiOjE2MTI4MDc1MDUsImp0aSI6ImU2NTQwMTA4LTE0OGMtNGEwNS1iMDEwLWZjZTdjODk2YzBlYSIsInVzZXJuYW1lIjoiMTIzNDU2NzgifQ.QpCksliFZxE8eGTGLiKNiUBWkvs_ubsznJl7ytOy2bM"}(String)
+2021-02-09 02:05:05.865 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 02:05:11.759 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 02:05:11.760 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 02:05:11.762 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 02:05:11.764 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/updateUsername
+2021-02-09 02:05:11.764 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 02:05:11.765 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 02:05:11.765 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.updateUsername
+2021-02-09 02:05:11.765 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserUsernameReq(username=123456)]
+2021-02-09 02:05:11.766 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where username=?
+2021-02-09 02:05:11.767 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -==> Parameters: 123456(String)
+2021-02-09 02:05:11.768 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -<==      Total: 0
+2021-02-09 02:05:11.769 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 02:05:11.769 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 02:05:11.770 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 02:05:11.771 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==>  Preparing: update `user` set username = ?, email = ?, `password` = ?, updateTime = ?, dataVersion = dataVersion+1 where id = ? and dataVersion=?
+2021-02-09 02:05:11.772 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==> Parameters: 123456(String), 1404031711@qq.com(String), e10adc3949ba59abbe56e057f20f883e(String), 2021-02-09 02:05:11.771(Timestamp), 10(Long), 2(Integer)
+2021-02-09 02:05:11.773 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -<==    Updates: 1
+2021-02-09 02:05:11.774 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值："更新成功"
+2021-02-09 02:05:11.774 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 10
+2021-02-09 02:05:11.776 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 02:05:11.777 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/updateUsername(String), [UserUsernameReq(username=123456)](String), 0(Integer), 操作成功(String), POST(String), 10(Long), 127.0.0.1(String), 2021-02-09 02:05:11.774(Timestamp), "更新成功"(String)
+2021-02-09 02:05:11.779 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:25:39.902 INFO  [background-preinit]org.hibernate.validator.internal.util.Version.<clinit>:30 -HV000001: Hibernate Validator 5.4.1.Final
+2021-02-09 10:25:39.902 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarting:55 -Starting OpinionPlusApplication using Java 1.8.0_151 on LAPTOP-F69Q7ABG with PID 8 (D:\springboot\opinion-plus\target\classes started by 14040 in D:\springboot\opinion-plus)
+2021-02-09 10:25:39.925 DEBUG [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarting:56 -Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-09 10:25:39.936 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStartupProfileInfo:660 -No active profile set, falling back to default profiles: default
+2021-02-09 10:25:40.036 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\carrot2\morfologik-speller\1.9.0\morfologik-speller-1.9.0.jar referenced one or more files that do not exist: file:/D:/repository/org/carrot2/morfologik-speller/1.9.0/morfologik-stemming-1.9.0.jar,file:/D:/repository/org/carrot2/morfologik-speller/1.9.0/morfologik-fsa-1.9.0.jar
+2021-02-09 10:25:40.036 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\carrot2\morfologik-stemming\1.9.0\morfologik-stemming-1.9.0.jar referenced one or more files that do not exist: file:/D:/repository/org/carrot2/morfologik-stemming/1.9.0/morfologik-fsa-1.9.0.jar
+2021-02-09 10:25:40.037 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\apache\opennlp\opennlp-tools\1.5.3\opennlp-tools-1.5.3.jar referenced one or more files that do not exist: file:/D:/repository/org/apache/opennlp/opennlp-tools/1.5.3/opennlp-maxent-3.0.3.jar,file:/D:/repository/org/apache/opennlp/opennlp-tools/1.5.3/jwnl-1.3.3.jar
+2021-02-09 10:25:40.037 INFO  [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:255 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-09 10:25:40.038 INFO  [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:255 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-09 10:25:41.599 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:250 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-09 10:25:41.600 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-02-09 10:25:41.619 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2021-02-09 10:25:41.630 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:250 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-09 10:25:41.630 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-09 10:25:41.642 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-02-09 10:25:42.660 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8081 (http)
+2021-02-09 10:25:42.719 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8081"]
+2021-02-09 10:25:42.720 INFO  [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-02-09 10:25:42.721 INFO  [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-09 10:25:42.839 INFO  [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-02-09 10:25:42.839 INFO  [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 2800 ms
+2021-02-09 10:25:42.936 INFO  [restartedMain]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2021-02-09 10:25:43.261 INFO  [restartedMain]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2021-02-09 10:25:43.449 INFO  [restartedMain]org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 -HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-09 10:25:43.522 INFO  [restartedMain]org.hibernate.Version.logVersion:44 -HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-09 10:25:43.789 INFO  [restartedMain]org.hibernate.annotations.common.Version.<clinit>:56 -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-09 10:25:44.223 INFO  [restartedMain]org.hibernate.dialect.Dialect.<init>:175 -HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-02-09 10:25:44.607 INFO  [restartedMain]o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-09 10:25:44.617 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:437 -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-09 10:25:44.649 INFO  [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-02-09 10:25:45.334 WARN  [restartedMain]o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:221 -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-09 10:25:45.927 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8081"]
+2021-02-09 10:25:45.944 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8081 (http) with context path ''
+2021-02-09 10:25:45.952 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarted:61 -Started OpinionPlusApplication in 6.703 seconds (JVM running for 9.137)
+2021-02-09 10:26:40.611 INFO  [http-nio-8081-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-09 10:26:40.612 INFO  [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2021-02-09 10:26:40.616 INFO  [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 4 ms
+2021-02-09 10:26:41.057 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/login
+2021-02-09 10:26:41.057 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 10:26:41.099 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:26:41.102 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.login
+2021-02-09 10:26:41.102 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserLogin(username=123456, password=e10adc3949ba59abbe56e057f20f883e)]
+2021-02-09 10:26:41.250 DEBUG [http-nio-8081-exec-1]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where username=? and password=?
+2021-02-09 10:26:41.337 DEBUG [http-nio-8081-exec-1]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==> Parameters: 123456(String), e10adc3949ba59abbe56e057f20f883e(String)
+2021-02-09 10:26:41.363 DEBUG [http-nio-8081-exec-1]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -<==      Total: 1
+2021-02-09 10:26:42.766 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"user":{"createTime":1612756370000,"dataVersion":3,"email":"1404031711@qq.com","id":10,"password":"","state":0,"updateTime":1612807511000,"username":"123456"},"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTYiLCJpZCI6MTAsImV4cCI6MTYxMjg0MzYwMSwiaWF0IjoxNjEyODM3NjAxLCJqdGkiOiI0YWQwNzVjNi1kMzdkLTQ5ZGYtODM5ZC1jZTg1MmU5MjQ0M2QiLCJ1c2VybmFtZSI6IjEyMzQ1NiJ9.fUgSN7GD-5r26fpNStyQEPJHESkXSmgAbg_2IlG4TGQ"}
+2021-02-09 10:26:42.767 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 1710
+2021-02-09 10:26:42.783 DEBUG [http-nio-8081-exec-1]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:26:42.795 DEBUG [http-nio-8081-exec-1]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: /api/user/login(String), [UserLogin(username=123456, password=e10adc3949ba59abbe56e057f20f883e)](String), 0(Integer), 操作成功(String), POST(String), 1710(Long), 127.0.0.1(String), 2021-02-09 10:26:42.767(Timestamp), {"user":{"createTime":1612756370000,"dataVersion":3,"email":"1404031711@qq.com","id":10,"password":"","state":0,"updateTime":1612807511000,"username":"123456"},"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTYiLCJpZCI6MTAsImV4cCI6MTYxMjg0MzYwMSwiaWF0IjoxNjEyODM3NjAxLCJqdGkiOiI0YWQwNzVjNi1kMzdkLTQ5ZGYtODM5ZC1jZTg1MmU5MjQ0M2QiLCJ1c2VybmFtZSI6IjEyMzQ1NiJ9.fUgSN7GD-5r26fpNStyQEPJHESkXSmgAbg_2IlG4TGQ"}(String)
+2021-02-09 10:26:42.803 DEBUG [http-nio-8081-exec-1]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:26:46.877 ERROR [http-nio-8081-exec-2]com.fxys.opinion_plus.handler.GlobalExceptionHandler.handleThrowable:34 -URL:/api/user/get/10 ,系统异常: 
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:417)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:364)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:123)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:66)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:491)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1254)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1036)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-09 10:26:49.338 ERROR [http-nio-8081-exec-3]com.fxys.opinion_plus.handler.GlobalExceptionHandler.handleThrowable:34 -URL:/api/user/get/10 ,系统异常: 
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:417)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:364)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:123)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:66)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:491)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1254)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1036)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-09 10:27:20.249 ERROR [http-nio-8081-exec-4]com.fxys.opinion_plus.handler.GlobalExceptionHandler.handleThrowable:34 -URL:/api/user/get/10 ,系统异常: 
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:417)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:364)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:123)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:66)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:491)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1254)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1036)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-09 10:27:55.554 ERROR [http-nio-8081-exec-9]com.fxys.opinion_plus.handler.GlobalExceptionHandler.handleThrowable:34 -URL:/api/user/get/10 ,系统异常: 
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:417)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:364)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:123)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:66)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:491)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1254)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1036)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-09 10:28:38.349 ERROR [http-nio-8081-exec-6]com.fxys.opinion_plus.handler.GlobalExceptionHandler.handleThrowable:34 -URL:/api/user/get/10 ,系统异常: 
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:417)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:364)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:123)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:66)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:491)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1254)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1036)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-09 10:29:09.288 INFO  [background-preinit]org.hibernate.validator.internal.util.Version.<clinit>:30 -HV000001: Hibernate Validator 5.4.1.Final
+2021-02-09 10:29:09.288 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarting:55 -Starting OpinionPlusApplication using Java 1.8.0_151 on LAPTOP-F69Q7ABG with PID 15328 (D:\springboot\opinion-plus\target\classes started by 14040 in D:\springboot\opinion-plus)
+2021-02-09 10:29:09.291 DEBUG [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarting:56 -Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-09 10:29:09.292 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStartupProfileInfo:660 -No active profile set, falling back to default profiles: default
+2021-02-09 10:29:09.361 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\carrot2\morfologik-speller\1.9.0\morfologik-speller-1.9.0.jar referenced one or more files that do not exist: file:/D:/repository/org/carrot2/morfologik-speller/1.9.0/morfologik-stemming-1.9.0.jar,file:/D:/repository/org/carrot2/morfologik-speller/1.9.0/morfologik-fsa-1.9.0.jar
+2021-02-09 10:29:09.362 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\carrot2\morfologik-stemming\1.9.0\morfologik-stemming-1.9.0.jar referenced one or more files that do not exist: file:/D:/repository/org/carrot2/morfologik-stemming/1.9.0/morfologik-fsa-1.9.0.jar
+2021-02-09 10:29:09.362 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\apache\opennlp\opennlp-tools\1.5.3\opennlp-tools-1.5.3.jar referenced one or more files that do not exist: file:/D:/repository/org/apache/opennlp/opennlp-tools/1.5.3/opennlp-maxent-3.0.3.jar,file:/D:/repository/org/apache/opennlp/opennlp-tools/1.5.3/jwnl-1.3.3.jar
+2021-02-09 10:29:09.362 INFO  [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:255 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-09 10:29:09.362 INFO  [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:255 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-09 10:29:10.329 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:250 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-09 10:29:10.330 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-02-09 10:29:10.356 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2021-02-09 10:29:10.366 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:250 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-09 10:29:10.366 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-09 10:29:10.379 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-02-09 10:29:11.148 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8081 (http)
+2021-02-09 10:29:11.224 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8081"]
+2021-02-09 10:29:11.224 INFO  [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-02-09 10:29:11.225 INFO  [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-09 10:29:11.369 INFO  [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-02-09 10:29:11.369 INFO  [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 2006 ms
+2021-02-09 10:29:11.441 INFO  [restartedMain]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2021-02-09 10:29:11.736 INFO  [restartedMain]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2021-02-09 10:29:11.918 INFO  [restartedMain]org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 -HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-09 10:29:12.003 INFO  [restartedMain]org.hibernate.Version.logVersion:44 -HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-09 10:29:12.296 INFO  [restartedMain]org.hibernate.annotations.common.Version.<clinit>:56 -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-09 10:29:12.664 INFO  [restartedMain]org.hibernate.dialect.Dialect.<init>:175 -HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-02-09 10:29:12.994 INFO  [restartedMain]o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-09 10:29:13.004 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:437 -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-09 10:29:13.033 INFO  [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-02-09 10:29:13.557 WARN  [restartedMain]o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:221 -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-09 10:29:14.014 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8081"]
+2021-02-09 10:29:14.029 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8081 (http) with context path ''
+2021-02-09 10:29:14.037 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarted:61 -Started OpinionPlusApplication in 5.348 seconds (JVM running for 7.13)
+2021-02-09 10:30:19.310 INFO  [http-nio-8081-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-09 10:30:19.311 INFO  [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2021-02-09 10:30:19.314 INFO  [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 3 ms
+2021-02-09 10:30:19.356 WARN  [http-nio-8081-exec-1]com.fxys.opinion_plus.handler.GlobalExceptionHandler.handleBusinessException:47 -URL:/api/user/get/10 ,业务异常:ErrorResult(status=20002, message=用户名不存在, exception=com.fxys.opinion_plus.exception.OpinionException)
+2021-02-09 10:30:27.243 WARN  [http-nio-8081-exec-2]com.fxys.opinion_plus.handler.GlobalExceptionHandler.handleBusinessException:47 -URL:/api/user/get/10 ,业务异常:ErrorResult(status=20002, message=用户名不存在, exception=com.fxys.opinion_plus.exception.OpinionException)
+2021-02-09 10:31:08.702 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/login
+2021-02-09 10:31:08.703 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 10:31:08.704 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:31:08.705 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.login
+2021-02-09 10:31:08.705 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserLogin(username=123456, password=e10adc3949ba59abbe56e057f20f883e)]
+2021-02-09 10:31:08.731 DEBUG [http-nio-8081-exec-5]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where username=? and password=?
+2021-02-09 10:31:08.758 DEBUG [http-nio-8081-exec-5]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==> Parameters: 123456(String), e10adc3949ba59abbe56e057f20f883e(String)
+2021-02-09 10:31:08.773 DEBUG [http-nio-8081-exec-5]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -<==      Total: 1
+2021-02-09 10:31:09.523 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"user":{"createTime":1612756370000,"dataVersion":3,"email":"1404031711@qq.com","id":10,"password":"","state":0,"updateTime":1612807511000,"username":"123456"},"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTYiLCJpZCI6MTAsImV4cCI6MTYxMjg0Mzg2OCwiaWF0IjoxNjEyODM3ODY4LCJqdGkiOiJjMzQ0ZGM2OS1iZmVmLTQxMzEtOTI3Mi0zYjljMTZiYTkyNDIiLCJ1c2VybmFtZSI6IjEyMzQ1NiJ9.M8ExxQO9yKJX6UkKpHcm87P5v4UWOii6To5NmkI0W8k"}
+2021-02-09 10:31:09.523 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 821
+2021-02-09 10:31:09.538 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:31:09.541 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: /api/user/login(String), [UserLogin(username=123456, password=e10adc3949ba59abbe56e057f20f883e)](String), 0(Integer), 操作成功(String), POST(String), 821(Long), 127.0.0.1(String), 2021-02-09 10:31:09.523(Timestamp), {"user":{"createTime":1612756370000,"dataVersion":3,"email":"1404031711@qq.com","id":10,"password":"","state":0,"updateTime":1612807511000,"username":"123456"},"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTYiLCJpZCI6MTAsImV4cCI6MTYxMjg0Mzg2OCwiaWF0IjoxNjEyODM3ODY4LCJqdGkiOiJjMzQ0ZGM2OS1iZmVmLTQxMzEtOTI3Mi0zYjljMTZiYTkyNDIiLCJ1c2VybmFtZSI6IjEyMzQ1NiJ9.M8ExxQO9yKJX6UkKpHcm87P5v4UWOii6To5NmkI0W8k"}(String)
+2021-02-09 10:31:09.551 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:31:20.269 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:31:20.270 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:31:20.272 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:31:20.276 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/get/10
+2021-02-09 10:31:20.277 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : GET
+2021-02-09 10:31:20.277 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:31:20.277 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.get
+2021-02-09 10:31:20.277 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[10]
+2021-02-09 10:31:20.278 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:31:20.279 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:31:20.280 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:31:20.281 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"createTime":1612756370000,"dataVersion":3,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612807511000,"username":"123456"}
+2021-02-09 10:31:20.281 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 5
+2021-02-09 10:31:20.282 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:31:20.284 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 5(Long), 127.0.0.1(String), 2021-02-09 10:31:20.281(Timestamp), {"createTime":1612756370000,"dataVersion":3,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612807511000,"username":"123456"}(String)
+2021-02-09 10:31:20.286 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:32:32.243 INFO  [background-preinit]org.hibernate.validator.internal.util.Version.<clinit>:30 -HV000001: Hibernate Validator 5.4.1.Final
+2021-02-09 10:32:32.249 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarting:55 -Starting OpinionPlusApplication using Java 1.8.0_151 on LAPTOP-F69Q7ABG with PID 22560 (D:\springboot\opinion-plus\target\classes started by 14040 in D:\springboot\opinion-plus)
+2021-02-09 10:32:32.251 DEBUG [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarting:56 -Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-09 10:32:32.251 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStartupProfileInfo:660 -No active profile set, falling back to default profiles: default
+2021-02-09 10:32:32.319 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\carrot2\morfologik-speller\1.9.0\morfologik-speller-1.9.0.jar referenced one or more files that do not exist: file:/D:/repository/org/carrot2/morfologik-speller/1.9.0/morfologik-stemming-1.9.0.jar,file:/D:/repository/org/carrot2/morfologik-speller/1.9.0/morfologik-fsa-1.9.0.jar
+2021-02-09 10:32:32.320 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\carrot2\morfologik-stemming\1.9.0\morfologik-stemming-1.9.0.jar referenced one or more files that do not exist: file:/D:/repository/org/carrot2/morfologik-stemming/1.9.0/morfologik-fsa-1.9.0.jar
+2021-02-09 10:32:32.320 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\apache\opennlp\opennlp-tools\1.5.3\opennlp-tools-1.5.3.jar referenced one or more files that do not exist: file:/D:/repository/org/apache/opennlp/opennlp-tools/1.5.3/opennlp-maxent-3.0.3.jar,file:/D:/repository/org/apache/opennlp/opennlp-tools/1.5.3/jwnl-1.3.3.jar
+2021-02-09 10:32:32.320 INFO  [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:255 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-09 10:32:32.320 INFO  [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:255 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-09 10:32:33.048 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:250 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-09 10:32:33.049 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-02-09 10:32:33.066 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2021-02-09 10:32:33.076 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:250 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-09 10:32:33.076 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-09 10:32:33.086 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-02-09 10:32:33.806 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8081 (http)
+2021-02-09 10:32:33.813 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8081"]
+2021-02-09 10:32:33.813 INFO  [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-02-09 10:32:33.813 INFO  [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-09 10:32:33.921 INFO  [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-02-09 10:32:33.921 INFO  [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 1600 ms
+2021-02-09 10:32:34.028 INFO  [restartedMain]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2021-02-09 10:32:34.255 INFO  [restartedMain]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2021-02-09 10:32:34.373 INFO  [restartedMain]org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 -HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-09 10:32:34.414 INFO  [restartedMain]org.hibernate.Version.logVersion:44 -HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-09 10:32:34.516 INFO  [restartedMain]org.hibernate.annotations.common.Version.<clinit>:56 -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-09 10:32:34.716 INFO  [restartedMain]org.hibernate.dialect.Dialect.<init>:175 -HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-02-09 10:32:34.925 INFO  [restartedMain]o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-09 10:32:34.934 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:437 -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-09 10:32:34.967 INFO  [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-02-09 10:32:35.388 WARN  [restartedMain]o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:221 -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-09 10:32:35.846 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8081"]
+2021-02-09 10:32:35.862 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8081 (http) with context path ''
+2021-02-09 10:32:35.872 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarted:61 -Started OpinionPlusApplication in 4.534 seconds (JVM running for 6.169)
+2021-02-09 10:32:49.211 INFO  [http-nio-8081-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-09 10:32:49.212 INFO  [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2021-02-09 10:32:49.215 INFO  [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 2 ms
+2021-02-09 10:32:49.352 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:32:49.379 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:32:49.397 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:32:49.418 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/get/10
+2021-02-09 10:32:49.418 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : GET
+2021-02-09 10:32:49.420 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:32:49.426 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.get
+2021-02-09 10:32:49.427 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[10]
+2021-02-09 10:32:49.436 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:32:49.437 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:32:49.439 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:32:49.539 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"createTime":1612756370000,"dataVersion":3,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612807511000,"username":"123456"}
+2021-02-09 10:32:49.540 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 123
+2021-02-09 10:32:49.556 DEBUG [http-nio-8081-exec-1]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:32:49.560 DEBUG [http-nio-8081-exec-1]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 123(Long), 127.0.0.1(String), 2021-02-09 10:32:49.54(Timestamp), {"createTime":1612756370000,"dataVersion":3,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612807511000,"username":"123456"}(String)
+2021-02-09 10:32:49.562 DEBUG [http-nio-8081-exec-1]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:33:28.288 DEBUG [http-nio-8081-exec-2]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:33:28.288 DEBUG [http-nio-8081-exec-2]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:33:28.290 DEBUG [http-nio-8081-exec-2]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:33:28.291 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/get/10
+2021-02-09 10:33:28.291 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : GET
+2021-02-09 10:33:28.291 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:33:28.292 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.get
+2021-02-09 10:33:28.292 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[10]
+2021-02-09 10:33:28.294 DEBUG [http-nio-8081-exec-2]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:33:28.294 DEBUG [http-nio-8081-exec-2]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:33:28.296 DEBUG [http-nio-8081-exec-2]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:33:28.298 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"createTime":1612756370000,"dataVersion":3,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612807511000,"username":"123456"}
+2021-02-09 10:33:28.298 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 7
+2021-02-09 10:33:28.299 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:33:28.301 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 7(Long), 127.0.0.1(String), 2021-02-09 10:33:28.298(Timestamp), {"createTime":1612756370000,"dataVersion":3,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612807511000,"username":"123456"}(String)
+2021-02-09 10:33:28.304 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:33:28.523 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:33:28.523 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:33:28.524 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:33:28.525 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/get/10
+2021-02-09 10:33:28.525 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : GET
+2021-02-09 10:33:28.526 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:33:28.526 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.get
+2021-02-09 10:33:28.526 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[10]
+2021-02-09 10:33:28.527 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:33:28.527 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:33:28.529 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:33:28.530 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"createTime":1612756370000,"dataVersion":3,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612807511000,"username":"123456"}
+2021-02-09 10:33:28.530 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 5
+2021-02-09 10:33:28.531 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:33:28.532 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 5(Long), 127.0.0.1(String), 2021-02-09 10:33:28.53(Timestamp), {"createTime":1612756370000,"dataVersion":3,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612807511000,"username":"123456"}(String)
+2021-02-09 10:33:28.534 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:33:45.238 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:33:45.239 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:33:45.240 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:33:45.269 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/updateUsername
+2021-02-09 10:33:45.270 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 10:33:45.270 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:33:45.270 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.updateUsername
+2021-02-09 10:33:45.271 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserUsernameReq(username=123456789)]
+2021-02-09 10:33:45.272 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where username=?
+2021-02-09 10:33:45.272 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -==> Parameters: 123456789(String)
+2021-02-09 10:33:45.273 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -<==      Total: 0
+2021-02-09 10:33:45.274 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:33:45.274 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:33:45.276 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:33:45.277 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==>  Preparing: update `user` set username = ?, email = ?, `password` = ?, updateTime = ?, dataVersion = dataVersion+1 where id = ? and dataVersion=?
+2021-02-09 10:33:45.278 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==> Parameters: 123456789(String), 1404031711@qq.com(String), e10adc3949ba59abbe56e057f20f883e(String), 2021-02-09 10:33:45.277(Timestamp), 10(Long), 3(Integer)
+2021-02-09 10:33:45.282 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -<==    Updates: 1
+2021-02-09 10:33:45.282 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值："更新成功"
+2021-02-09 10:33:45.283 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 14
+2021-02-09 10:33:45.284 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:33:45.286 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/updateUsername(String), [UserUsernameReq(username=123456789)](String), 0(Integer), 操作成功(String), POST(String), 14(Long), 127.0.0.1(String), 2021-02-09 10:33:45.283(Timestamp), "更新成功"(String)
+2021-02-09 10:33:45.287 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:33:45.308 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:33:45.308 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:33:45.309 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:33:45.310 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/get/10
+2021-02-09 10:33:45.310 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : GET
+2021-02-09 10:33:45.310 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:33:45.311 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.get
+2021-02-09 10:33:45.311 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[10]
+2021-02-09 10:33:45.312 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:33:45.312 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:33:45.314 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:33:45.315 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"createTime":1612756370000,"dataVersion":4,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838025000,"username":"123456789"}
+2021-02-09 10:33:45.315 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 5
+2021-02-09 10:33:45.316 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:33:45.317 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 5(Long), 127.0.0.1(String), 2021-02-09 10:33:45.315(Timestamp), {"createTime":1612756370000,"dataVersion":4,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838025000,"username":"123456789"}(String)
+2021-02-09 10:33:45.318 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:34:19.643 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:34:19.644 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:34:19.645 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:34:19.646 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/updateUsername
+2021-02-09 10:34:19.646 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 10:34:19.647 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:34:19.647 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.updateUsername
+2021-02-09 10:34:19.647 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserUsernameReq(username=123456)]
+2021-02-09 10:34:19.648 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where username=?
+2021-02-09 10:34:19.648 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -==> Parameters: 123456(String)
+2021-02-09 10:34:19.649 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.UserMapper.selectByUsername.debug:137 -<==      Total: 0
+2021-02-09 10:34:19.650 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:34:19.650 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:34:19.651 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:34:19.651 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==>  Preparing: update `user` set username = ?, email = ?, `password` = ?, updateTime = ?, dataVersion = dataVersion+1 where id = ? and dataVersion=?
+2021-02-09 10:34:19.652 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==> Parameters: 123456(String), 1404031711@qq.com(String), e10adc3949ba59abbe56e057f20f883e(String), 2021-02-09 10:34:19.651(Timestamp), 10(Long), 4(Integer)
+2021-02-09 10:34:19.654 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -<==    Updates: 1
+2021-02-09 10:34:19.655 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值："更新成功"
+2021-02-09 10:34:19.655 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 9
+2021-02-09 10:34:19.657 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:34:19.658 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/updateUsername(String), [UserUsernameReq(username=123456)](String), 0(Integer), 操作成功(String), POST(String), 9(Long), 127.0.0.1(String), 2021-02-09 10:34:19.655(Timestamp), "更新成功"(String)
+2021-02-09 10:34:19.660 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:34:19.897 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:34:19.898 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:34:19.898 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:34:19.899 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/get/10
+2021-02-09 10:34:19.899 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : GET
+2021-02-09 10:34:19.899 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:34:19.900 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.get
+2021-02-09 10:34:19.900 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[10]
+2021-02-09 10:34:19.902 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:34:19.902 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:34:19.903 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:34:19.904 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"createTime":1612756370000,"dataVersion":5,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838059000,"username":"123456"}
+2021-02-09 10:34:19.905 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 6
+2021-02-09 10:34:19.905 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:34:19.907 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 6(Long), 127.0.0.1(String), 2021-02-09 10:34:19.905(Timestamp), {"createTime":1612756370000,"dataVersion":5,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838059000,"username":"123456"}(String)
+2021-02-09 10:34:19.908 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:48:14.244 DEBUG [http-nio-8081-exec-10]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:48:14.245 DEBUG [http-nio-8081-exec-10]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:48:14.247 DEBUG [http-nio-8081-exec-10]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:48:14.248 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/get/10
+2021-02-09 10:48:14.248 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : GET
+2021-02-09 10:48:14.249 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:48:14.249 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.get
+2021-02-09 10:48:14.249 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[10]
+2021-02-09 10:48:14.250 DEBUG [http-nio-8081-exec-10]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:48:14.250 DEBUG [http-nio-8081-exec-10]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:48:14.254 DEBUG [http-nio-8081-exec-10]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:48:14.255 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"createTime":1612756370000,"dataVersion":5,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838059000,"username":"123456"}
+2021-02-09 10:48:14.255 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 7
+2021-02-09 10:48:14.256 DEBUG [http-nio-8081-exec-10]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:48:14.257 DEBUG [http-nio-8081-exec-10]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 7(Long), 127.0.0.1(String), 2021-02-09 10:48:14.255(Timestamp), {"createTime":1612756370000,"dataVersion":5,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838059000,"username":"123456"}(String)
+2021-02-09 10:48:14.260 DEBUG [http-nio-8081-exec-10]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:48:20.621 DEBUG [http-nio-8081-exec-9]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:48:20.622 DEBUG [http-nio-8081-exec-9]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:48:20.624 DEBUG [http-nio-8081-exec-9]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:48:20.625 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/get/10
+2021-02-09 10:48:20.625 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : GET
+2021-02-09 10:48:20.625 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:48:20.626 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.get
+2021-02-09 10:48:20.626 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[10]
+2021-02-09 10:48:20.626 DEBUG [http-nio-8081-exec-9]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:48:20.627 DEBUG [http-nio-8081-exec-9]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:48:20.628 DEBUG [http-nio-8081-exec-9]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:48:20.629 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"createTime":1612756370000,"dataVersion":5,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838059000,"username":"123456"}
+2021-02-09 10:48:20.629 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 4
+2021-02-09 10:48:20.629 DEBUG [http-nio-8081-exec-9]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:48:20.631 DEBUG [http-nio-8081-exec-9]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 4(Long), 127.0.0.1(String), 2021-02-09 10:48:20.629(Timestamp), {"createTime":1612756370000,"dataVersion":5,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838059000,"username":"123456"}(String)
+2021-02-09 10:48:20.633 DEBUG [http-nio-8081-exec-9]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:48:22.802 DEBUG [http-nio-8081-exec-8]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:48:22.803 DEBUG [http-nio-8081-exec-8]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:48:22.804 DEBUG [http-nio-8081-exec-8]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:48:22.805 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/get/10
+2021-02-09 10:48:22.805 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : GET
+2021-02-09 10:48:22.806 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:48:22.806 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.get
+2021-02-09 10:48:22.806 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[10]
+2021-02-09 10:48:22.807 DEBUG [http-nio-8081-exec-8]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:48:22.807 DEBUG [http-nio-8081-exec-8]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:48:22.808 DEBUG [http-nio-8081-exec-8]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:48:22.809 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"createTime":1612756370000,"dataVersion":5,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838059000,"username":"123456"}
+2021-02-09 10:48:22.809 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 4
+2021-02-09 10:48:22.810 DEBUG [http-nio-8081-exec-8]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:48:22.810 DEBUG [http-nio-8081-exec-8]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 4(Long), 127.0.0.1(String), 2021-02-09 10:48:22.809(Timestamp), {"createTime":1612756370000,"dataVersion":5,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838059000,"username":"123456"}(String)
+2021-02-09 10:48:22.812 DEBUG [http-nio-8081-exec-8]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:49:01.219 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:49:01.220 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:49:01.222 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:49:01.223 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/get/10
+2021-02-09 10:49:01.223 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : GET
+2021-02-09 10:49:01.224 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:49:01.224 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.get
+2021-02-09 10:49:01.225 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[10]
+2021-02-09 10:49:01.227 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:49:01.228 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:49:01.230 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:49:01.231 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"createTime":1612756370000,"dataVersion":5,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838059000,"username":"123456"}
+2021-02-09 10:49:01.232 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 9
+2021-02-09 10:49:01.233 DEBUG [http-nio-8081-exec-1]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:49:01.234 DEBUG [http-nio-8081-exec-1]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 9(Long), 127.0.0.1(String), 2021-02-09 10:49:01.232(Timestamp), {"createTime":1612756370000,"dataVersion":5,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838059000,"username":"123456"}(String)
+2021-02-09 10:49:01.235 DEBUG [http-nio-8081-exec-1]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:49:16.930 DEBUG [http-nio-8081-exec-2]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:49:16.931 DEBUG [http-nio-8081-exec-2]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:49:16.932 DEBUG [http-nio-8081-exec-2]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:49:16.934 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/updateEmail
+2021-02-09 10:49:16.934 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 10:49:16.934 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:49:16.934 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.updateEmail
+2021-02-09 10:49:16.935 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserEmailReq(email=14113356@qq.com)]
+2021-02-09 10:49:16.935 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.UserMapper.selectByEmail.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where email=?
+2021-02-09 10:49:16.936 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.UserMapper.selectByEmail.debug:137 -==> Parameters: 14113356@qq.com(String)
+2021-02-09 10:49:16.936 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.UserMapper.selectByEmail.debug:137 -<==      Total: 0
+2021-02-09 10:49:16.937 DEBUG [http-nio-8081-exec-2]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:49:16.937 DEBUG [http-nio-8081-exec-2]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:49:16.939 DEBUG [http-nio-8081-exec-2]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:49:16.939 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==>  Preparing: update `user` set username = ?, email = ?, `password` = ?, updateTime = ?, dataVersion = dataVersion+1 where id = ? and dataVersion=?
+2021-02-09 10:49:16.940 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==> Parameters: 123456(String), 14113356@qq.com(String), e10adc3949ba59abbe56e057f20f883e(String), 2021-02-09 10:49:16.939(Timestamp), 10(Long), 5(Integer)
+2021-02-09 10:49:16.941 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -<==    Updates: 1
+2021-02-09 10:49:16.941 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值："更新成功"
+2021-02-09 10:49:16.942 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 8
+2021-02-09 10:49:16.942 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:49:16.943 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/updateEmail(String), [UserEmailReq(email=14113356@qq.com)](String), 0(Integer), 操作成功(String), POST(String), 8(Long), 127.0.0.1(String), 2021-02-09 10:49:16.942(Timestamp), "更新成功"(String)
+2021-02-09 10:49:16.945 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:49:17.182 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:49:17.183 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:49:17.184 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:49:17.184 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/get/10
+2021-02-09 10:49:17.185 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : GET
+2021-02-09 10:49:17.185 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:49:17.185 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.get
+2021-02-09 10:49:17.185 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[10]
+2021-02-09 10:49:17.186 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:49:17.186 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:49:17.187 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:49:17.188 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"createTime":1612756370000,"dataVersion":6,"email":"14113356@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838956000,"username":"123456"}
+2021-02-09 10:49:17.188 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 4
+2021-02-09 10:49:17.189 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:49:17.190 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 4(Long), 127.0.0.1(String), 2021-02-09 10:49:17.188(Timestamp), {"createTime":1612756370000,"dataVersion":6,"email":"14113356@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838956000,"username":"123456"}(String)
+2021-02-09 10:49:17.193 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:49:27.001 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:49:27.001 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:49:27.002 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:49:27.004 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/updateEmail
+2021-02-09 10:49:27.004 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 10:49:27.004 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:49:27.004 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.updateEmail
+2021-02-09 10:49:27.005 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserEmailReq(email=1404031711@qq.com)]
+2021-02-09 10:49:27.005 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.selectByEmail.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where email=?
+2021-02-09 10:49:27.006 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.selectByEmail.debug:137 -==> Parameters: 1404031711@qq.com(String)
+2021-02-09 10:49:27.007 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.selectByEmail.debug:137 -<==      Total: 0
+2021-02-09 10:49:27.007 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:49:27.008 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:49:27.009 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:49:27.010 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==>  Preparing: update `user` set username = ?, email = ?, `password` = ?, updateTime = ?, dataVersion = dataVersion+1 where id = ? and dataVersion=?
+2021-02-09 10:49:27.010 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==> Parameters: 123456(String), 1404031711@qq.com(String), e10adc3949ba59abbe56e057f20f883e(String), 2021-02-09 10:49:27.009(Timestamp), 10(Long), 6(Integer)
+2021-02-09 10:49:27.012 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -<==    Updates: 1
+2021-02-09 10:49:27.013 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值："更新成功"
+2021-02-09 10:49:27.013 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 9
+2021-02-09 10:49:27.013 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:49:27.014 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/updateEmail(String), [UserEmailReq(email=1404031711@qq.com)](String), 0(Integer), 操作成功(String), POST(String), 9(Long), 127.0.0.1(String), 2021-02-09 10:49:27.013(Timestamp), "更新成功"(String)
+2021-02-09 10:49:27.015 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:49:27.329 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:49:27.329 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:49:27.330 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:49:27.331 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/get/10
+2021-02-09 10:49:27.331 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : GET
+2021-02-09 10:49:27.331 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:49:27.331 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.get
+2021-02-09 10:49:27.332 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[10]
+2021-02-09 10:49:27.332 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:49:27.333 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:49:27.333 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:49:27.334 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"createTime":1612756370000,"dataVersion":7,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838967000,"username":"123456"}
+2021-02-09 10:49:27.334 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 3
+2021-02-09 10:49:27.334 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:49:27.335 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 3(Long), 127.0.0.1(String), 2021-02-09 10:49:27.334(Timestamp), {"createTime":1612756370000,"dataVersion":7,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612838967000,"username":"123456"}(String)
+2021-02-09 10:49:27.336 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:51:31.801 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:51:31.801 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:51:31.803 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:51:31.806 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:123 -请求地址 : /api/user/updatePassword
+2021-02-09 10:51:31.806 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:124 -请求方式 : POST
+2021-02-09 10:51:31.806 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:127 -IP : 127.0.0.1
+2021-02-09 10:51:31.807 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -方法 : com.fxys.opinion_plus.controller.UserController.updatePad
+2021-02-09 10:51:31.807 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:131 -请求参数：[UserPasswordReq(oldPad=123456, newPad=202cb962ac59075b964b07152d234b70)]
+2021-02-09 10:51:31.807 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:51:31.808 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:51:31.809 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:51:31.814 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:51:31.815 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/updatePassword(String), [UserPasswordReq(oldPad=123456, newPad=202cb962ac59075b964b07152d234b70)](String), 1(Integer), 	at com.fxys.opinion_plus.service.impl.UserServiceImpl.updatePad(UserServiceImpl.java:112)
+	at com.fxys.opinion_plus.controller.UserController.updatePad(UserController.java:36)
+	at com.fxys.opinion_plus.controller.UserController$$FastClassBySpringCGLIB$$28b36b57.invoke(<generated>)
+	at com.fxys.opinion_plus.aspect.RequestAspect.doAround(RequestAspect.java:66)
+	at com.fxys.opinion_plus.controller.UserController$$EnhancerBySpringCGLIB$$7bc76ed5.updatePad(<generated>)
+(String), POST(String), 0(Long), 127.0.0.1(String), 2021-02-09 10:51:31.812(Timestamp), OpinionException(code=4003, message=更新异常)
+(String)
+2021-02-09 10:51:31.817 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:51:31.821 WARN  [http-nio-8081-exec-7]com.fxys.opinion_plus.handler.GlobalExceptionHandler.handleBusinessException:47 -URL:/api/user/updatePassword ,业务异常:ErrorResult(status=4003, message=更新异常, exception=com.fxys.opinion_plus.exception.OpinionException)

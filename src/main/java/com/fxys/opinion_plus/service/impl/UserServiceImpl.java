@@ -109,6 +109,7 @@ public class UserServiceImpl implements IUserService {
             userMapper.updateUser(user);
             return ResultCodeEnums.UPDATE_SUCCESS.message();
         }catch (Exception e){
+            e.printStackTrace();
             throw new OpinionException(ResultCodeEnums.UPDATE_FAIL);
         }
     }

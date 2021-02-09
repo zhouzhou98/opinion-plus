@@ -14,4 +14,5 @@ public class PathConstants {
     public static final String USER_UPDATE_USERNAME="/api/user/updateUsername";
     public static final String USER_UPDATE_EMAIL="/api/user/updateEmail";
     public static final String USER_UPDATE_PASSWORD="/api/user/updatePassword";
+    public static final String USER_GET="/api/user/get";
 }
