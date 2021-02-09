@@ -271,3 +271,97 @@
 (String), POST(String), 0(Long), 127.0.0.1(String), 2021-02-09 10:51:31.812(Timestamp), OpinionException(code=4003, message=更新异常)
 (String)
 2021-02-09 10:51:31.817 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:52:17.254 DEBUG [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarting:56 -Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-09 10:52:47.410 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:52:47.429 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:52:47.444 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:52:47.510 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:52:47.510 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:52:47.512 DEBUG [http-nio-8081-exec-1]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:52:47.533 DEBUG [http-nio-8081-exec-1]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:52:47.537 DEBUG [http-nio-8081-exec-1]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/updatePassword(String), [UserPasswordReq(oldPad=123456, newPad=202cb962ac59075b964b07152d234b70)](String), 1(Integer), 	at com.fxys.opinion_plus.service.impl.UserServiceImpl.updatePad(UserServiceImpl.java:113)
+	at com.fxys.opinion_plus.controller.UserController.updatePad(UserController.java:36)
+	at com.fxys.opinion_plus.controller.UserController$$FastClassBySpringCGLIB$$28b36b57.invoke(<generated>)
+	at com.fxys.opinion_plus.aspect.RequestAspect.doAround(RequestAspect.java:66)
+	at com.fxys.opinion_plus.controller.UserController$$EnhancerBySpringCGLIB$$58fd4930.updatePad(<generated>)
+(String), POST(String), 0(Long), 127.0.0.1(String), 2021-02-09 10:52:47.52(Timestamp), OpinionException(code=4003, message=更新异常)
+(String)
+2021-02-09 10:52:47.539 DEBUG [http-nio-8081-exec-1]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:53:55.560 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:53:55.560 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:53:55.562 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:53:55.564 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:53:55.565 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:53:55.566 DEBUG [http-nio-8081-exec-4]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:53:55.566 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==>  Preparing: update `user` set username = ?, email = ?, `password` = ?, updateTime = ?, dataVersion = dataVersion+1 where id = ? and dataVersion=?
+2021-02-09 10:53:55.567 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==> Parameters: 123456(String), 1404031711@qq.com(String), 202cb962ac59075b964b07152d234b70(String), 2021-02-09 10:53:55.566(Timestamp), 10(Long), 7(Integer)
+2021-02-09 10:53:55.569 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -<==    Updates: 1
+2021-02-09 10:53:55.604 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:53:55.605 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/updatePassword(String), [UserPasswordReq(oldPad=e10adc3949ba59abbe56e057f20f883e, newPad=202cb962ac59075b964b07152d234b70)](String), 0(Integer), 操作成功(String), POST(String), 41(Long), 127.0.0.1(String), 2021-02-09 10:53:55.604(Timestamp), "更新成功"(String)
+2021-02-09 10:53:55.607 DEBUG [http-nio-8081-exec-4]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:54:32.530 DEBUG [http-nio-8081-exec-8]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where username=? and password=?
+2021-02-09 10:54:32.531 DEBUG [http-nio-8081-exec-8]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==> Parameters: 123456(String), e10adc3949ba59abbe56e057f20f883e(String)
+2021-02-09 10:54:32.532 DEBUG [http-nio-8081-exec-8]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -<==      Total: 0
+2021-02-09 10:54:32.536 DEBUG [http-nio-8081-exec-8]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:54:32.538 DEBUG [http-nio-8081-exec-8]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/login(String), [UserLogin(username=123456, password=e10adc3949ba59abbe56e057f20f883e)](String), 1(Integer), 	at com.fxys.opinion_plus.service.impl.UserServiceImpl.getLogin(UserServiceImpl.java:65)
+	at com.fxys.opinion_plus.controller.UserController.login(UserController.java:19)
+	at com.fxys.opinion_plus.controller.UserController$$FastClassBySpringCGLIB$$28b36b57.invoke(<generated>)
+	at com.fxys.opinion_plus.aspect.RequestAspect.doAround(RequestAspect.java:66)
+	at com.fxys.opinion_plus.controller.UserController$$EnhancerBySpringCGLIB$$58fd4930.login(<generated>)
+(String), POST(String), 0(Long), 127.0.0.1(String), 2021-02-09 10:54:32.534(Timestamp), OpinionException(code=20003, message=用户名或密码错误)
+(String)
+2021-02-09 10:54:32.540 DEBUG [http-nio-8081-exec-8]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:54:36.153 DEBUG [http-nio-8081-exec-2]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where username=? and password=?
+2021-02-09 10:54:36.153 DEBUG [http-nio-8081-exec-2]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -==> Parameters: 123456(String), 202cb962ac59075b964b07152d234b70(String)
+2021-02-09 10:54:36.155 DEBUG [http-nio-8081-exec-2]c.f.o.mapper.UserMapper.selectByUsernameAndPad.debug:137 -<==      Total: 1
+2021-02-09 10:54:36.922 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:54:36.923 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/login(String), [UserLogin(username=123456, password=202cb962ac59075b964b07152d234b70)](String), 0(Integer), 操作成功(String), POST(String), 771(Long), 127.0.0.1(String), 2021-02-09 10:54:36.921(Timestamp), {"user":{"createTime":1612756370000,"dataVersion":8,"email":"1404031711@qq.com","id":10,"password":"","state":0,"updateTime":1612839235000,"username":"123456"},"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTYiLCJpZCI6MTAsImV4cCI6MTYxMjg0NTI3NiwiaWF0IjoxNjEyODM5Mjc2LCJqdGkiOiI1ZGIyZjgzMS0wZGM1LTQwOGMtYjk1Yy0wNmEzNjQ1NjBjNzciLCJ1c2VybmFtZSI6IjEyMzQ1NiJ9.3OluQgsZev0Dikuc4RQfXXD85fLDn0C-aNZ24lNdaRw"}(String)
+2021-02-09 10:54:36.925 DEBUG [http-nio-8081-exec-2]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:54:38.695 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:54:38.696 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:54:38.699 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:54:38.706 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:54:38.707 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:54:38.708 DEBUG [http-nio-8081-exec-5]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:54:38.710 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:54:38.712 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 5(Long), 127.0.0.1(String), 2021-02-09 10:54:38.709(Timestamp), {"createTime":1612756370000,"dataVersion":8,"email":"1404031711@qq.com","id":10,"password":"202cb962ac59075b964b07152d234b70","state":0,"updateTime":1612839235000,"username":"123456"}(String)
+2021-02-09 10:54:38.806 DEBUG [http-nio-8081-exec-5]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:54:40.894 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:54:40.895 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:54:40.896 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:54:40.899 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:54:40.900 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:54:40.903 DEBUG [http-nio-8081-exec-6]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:54:40.906 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:54:40.907 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 7(Long), 127.0.0.1(String), 2021-02-09 10:54:40.904(Timestamp), {"createTime":1612756370000,"dataVersion":8,"email":"1404031711@qq.com","id":10,"password":"202cb962ac59075b964b07152d234b70","state":0,"updateTime":1612839235000,"username":"123456"}(String)
+2021-02-09 10:54:40.909 DEBUG [http-nio-8081-exec-6]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 10:54:52.417 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:54:52.418 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:54:52.419 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:54:52.422 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 10:54:52.422 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 10:54:52.423 DEBUG [http-nio-8081-exec-3]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 10:54:52.423 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==>  Preparing: update `user` set username = ?, email = ?, `password` = ?, updateTime = ?, dataVersion = dataVersion+1 where id = ? and dataVersion=?
+2021-02-09 10:54:52.424 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -==> Parameters: 123456(String), 1404031711@qq.com(String), e10adc3949ba59abbe56e057f20f883e(String), 2021-02-09 10:54:52.423(Timestamp), 10(Long), 8(Integer)
+2021-02-09 10:54:52.426 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.UserMapper.updateUser.debug:137 -<==    Updates: 1
+2021-02-09 10:54:52.427 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 10:54:52.428 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/updatePassword(String), [UserPasswordReq(oldPad=202cb962ac59075b964b07152d234b70, newPad=e10adc3949ba59abbe56e057f20f883e)](String), 0(Integer), 操作成功(String), POST(String), 7(Long), 127.0.0.1(String), 2021-02-09 10:54:52.427(Timestamp), "更新成功"(String)
+2021-02-09 10:54:52.429 DEBUG [http-nio-8081-exec-3]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 12:56:34.182 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 12:56:34.808 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 12:56:34.839 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 12:56:35.058 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 12:56:35.158 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 12:56:35.159 DEBUG [http-nio-8081-exec-7]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 12:56:35.183 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 12:56:35.199 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 254(Long), 127.0.0.1(String), 2021-02-09 12:56:35.165(Timestamp), {"createTime":1612756370000,"dataVersion":9,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612839292000,"username":"123456"}(String)
+2021-02-09 12:56:35.208 DEBUG [http-nio-8081-exec-7]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1
+2021-02-09 12:57:25.192 DEBUG [http-nio-8081-exec-9]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 12:57:25.195 DEBUG [http-nio-8081-exec-9]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 12:57:25.223 DEBUG [http-nio-8081-exec-9]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 12:57:25.231 DEBUG [http-nio-8081-exec-9]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==>  Preparing: select id, username, email, `state`, createTime, updateTime, dataVersion,password from `user` where id = ?
+2021-02-09 12:57:25.233 DEBUG [http-nio-8081-exec-9]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -==> Parameters: 10(Long)
+2021-02-09 12:57:25.242 DEBUG [http-nio-8081-exec-9]c.fxys.opinion_plus.mapper.UserMapper.selectByPrimaryKey.debug:137 -<==      Total: 1
+2021-02-09 12:57:25.251 DEBUG [http-nio-8081-exec-9]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==>  Preparing: insert into log ( `uid`, url, params, status, message, `method`, `time`, ip, createTime, result ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-02-09 12:57:25.253 DEBUG [http-nio-8081-exec-9]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -==> Parameters: 10(Long), /api/user/get/10(String), [10](String), 0(Integer), 操作成功(String), GET(String), 25(Long), 127.0.0.1(String), 2021-02-09 12:57:25.249(Timestamp), {"createTime":1612756370000,"dataVersion":9,"email":"1404031711@qq.com","id":10,"password":"e10adc3949ba59abbe56e057f20f883e","state":0,"updateTime":1612839292000,"username":"123456"}(String)
+2021-02-09 12:57:25.259 DEBUG [http-nio-8081-exec-9]com.fxys.opinion_plus.mapper.LogMapper.insertSelective.debug:137 -<==    Updates: 1

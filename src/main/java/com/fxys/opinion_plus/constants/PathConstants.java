@@ -15,4 +15,9 @@ public class PathConstants {
     public static final String USER_UPDATE_EMAIL="/api/user/updateEmail";
     public static final String USER_UPDATE_PASSWORD="/api/user/updatePassword";
     public static final String USER_GET="/api/user/get";
+
+    /**
+     * 日志相关操作
+     */
+    public static final String LOG_SEARCH="/api/log/getByPage";
 }

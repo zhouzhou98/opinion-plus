@@ -27,7 +27,7 @@ public class UserController {
 
     @PostMapping(value = PathConstants.USER_UPDATE_USERNAME)
     public String updateUsername(@RequestBody UserUsernameReq req){
-        System.err.println(req.getUsername()+"  "+req.getId());
+
         return userService.updateUsername(req);
     }
 

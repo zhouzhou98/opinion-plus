@@ -159,4 +159,40 @@
       createTime = #{createTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  <select id="getByPage" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from log
+    <where>
+      <if test="params.uid!=null and params.uid!=''">
+        and uid =#{params.uid}
+      </if>
+      <if test="params.startTime!=null and params.startTime!=''">
+        and  #{params.startTime}&lt;=createTime
+      </if>
+      <if test="params.endTime!=null and params.endTime!=''">
+        and  #{params.endTime}&gt;=createTime
+      </if>
+    </where>
+    <if test="sortColumn!=null and sortColumn!=''">
+      order by ${sortColumn} ${sortMethod}
+    </if>
+    limit #{index}, #{pageSize}
+  </select>
+  <select id="getCountByPage" resultType="int">
+    select
+    count(*)
+    from log
+    <where>
+      <if test="params.uid!=null and params.uid!=''">
+        and uid =#{params.uid}
+      </if>
+      <if test="params.startTime!=null and params.startTime!=''">
+        and  #{params.startTime}&lt;=createTime
+      </if>
+      <if test="params.endTime!=null and params.endTime!=''">
+        and  #{params.endTime}&gt;=createTime
+      </if>
+    </where>
+  </select>
 </mapper>
