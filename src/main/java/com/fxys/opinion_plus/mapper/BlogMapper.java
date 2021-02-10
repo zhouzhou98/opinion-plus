@@ -34,4 +34,8 @@ public interface BlogMapper {
 
 
     List<Blog> selectByAll(@Param("kid")Long kid,@Param("start") Date start,@Param("end") Date end);
+
+    int selectByCountAll(@Param("kid")Long kid,@Param("start") Date start,@Param("end") Date end);
+
+    int selectByArea(@Param("kid")Long kid,@Param("start") Date start,@Param("end") Date end,@Param("province") String province);
 }

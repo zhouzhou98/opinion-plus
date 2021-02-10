@@ -198,4 +198,19 @@
     and createTime &gt;#{param2}
     and createTime &lt;#{param3}
   </select>
+  <select id="selectByCountAll" resultType="int">
+    select
+    count(*)
+    from blog where kid=#{param1}
+    and createTime &gt;#{param2}
+    and createTime &lt;#{param3}
+  </select>
+  <select id="selectByArea" resultType="int">
+    select
+    count(*)
+    from blog where kid=#{param1}
+    and createTime &gt;#{param2}
+    and createTime &lt;#{param3}
+    and area=#{param4}
+  </select>
 </mapper>

@@ -39,4 +39,6 @@ public class PathConstants {
     public static final String BLOG_SENSITIVE="/api/blog/getSensitive";
     public static final String BLOG_POSITIVE="/api/blog/getPositive";
     public static final String BLOG_ORIGIN="/api/blog/getOrigin";
+    public static final String BLOG_TENDENCY="/api/blog/getTendency";
+    public static final String BLOG_MAP="/api/blog/getMap";
 }

@@ -2,6 +2,7 @@ package com.fxys.opinion_plus.controller;
 
 import com.fxys.opinion_plus.constants.PathConstants;
 import com.fxys.opinion_plus.domain.Ring;
+import com.fxys.opinion_plus.domain.Tendency;
 import com.fxys.opinion_plus.service.IBlogService;
 import com.fxys.opinion_plus.vo.blog.BlogBaseReq;
 import com.fxys.opinion_plus.vo.user.UserLogin;
@@ -19,7 +20,6 @@ public class BlogController {
     private IBlogService blogService;
     @PostMapping(value = PathConstants.BLOG_EVENT)
     public Map<String, Object> login(@RequestBody BlogBaseReq req){
-
         return blogService.getEvent(req);
     }
 
@@ -36,5 +36,15 @@ public class BlogController {
     @PostMapping(value = PathConstants.BLOG_ORIGIN)
     public List<Ring>getOrigin(@RequestBody BlogBaseReq req){
         return blogService.getOrigin(req);
+    }
+
+    @PostMapping(value = PathConstants.BLOG_TENDENCY)
+    public List<Tendency>getTendency(@RequestBody BlogBaseReq req){
+        return blogService.getTendency(req);
+    }
+
+    @PostMapping(value = PathConstants.BLOG_MAP)
+    public List<Ring>getMap(@RequestBody BlogBaseReq req){
+        return blogService.getMap(req);
     }
 }

@@ -725,3 +725,21 @@ Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL synta
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
 	... 83 common frames omitted
+2021-02-10 21:12:11.725 ERROR [restartedMain]o.s.boot.diagnostics.LoggingFailureAnalysisReporter.report:40 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field blogService in com.fxys.opinion_plus.controller.BlogController required a bean of type 'com.fxys.opinion_plus.service.IBlogService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fxys.opinion_plus.service.IBlogService' in your configuration.
+

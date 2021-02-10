@@ -203,7 +203,7 @@ public class TimeStampUtil {
 
     public static void main(String[] args) {
         for(int i=0;i<=30;i++){
-            System.out.println(i+"  "+TimeStampUtil.get(i).toLocaleString());
+            System.out.println(i+"  "+(TimeStampUtil.get(i).getMonth()+1)+"月"+TimeStampUtil.get(i).getDate()+"日");
         }
     }
 }
