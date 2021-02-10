@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fxys.opinion_plus.mapper.BlogMapper">
+  <resultMap id="BaseResultMap" type="com.fxys.opinion_plus.domain.Blog">
+    <!--@mbg.generated-->
+    <!--@Table blog-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="kid" jdbcType="BIGINT" property="kid" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="posOrNeg" jdbcType="INTEGER" property="posOrNeg" />
+    <result column="reason" jdbcType="VARCHAR" property="reason" />
+    <result column="href" jdbcType="LONGVARCHAR" property="href" />
+    <result column="grade" jdbcType="INTEGER" property="grade" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, kid, content, posOrNeg, reason, href, grade, createTime, area, author
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from blog
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from blog
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.fxys.opinion_plus.domain.Blog" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into blog (kid, content, posOrNeg, 
+      reason, href, grade, 
+      createTime, area, author
+      )
+    values (#{kid,jdbcType=BIGINT}, #{content,jdbcType=LONGVARCHAR}, #{posOrNeg,jdbcType=INTEGER}, 
+      #{reason,jdbcType=VARCHAR}, #{href,jdbcType=LONGVARCHAR}, #{grade,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{area,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.fxys.opinion_plus.domain.Blog" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into blog
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="kid != null">
+        kid,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="posOrNeg != null">
+        posOrNeg,
+      </if>
+      <if test="reason != null">
+        reason,
+      </if>
+      <if test="href != null">
+        href,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="createTime != null">
+        createTime,
+      </if>
+      <if test="area != null">
+        area,
+      </if>
+      <if test="author != null">
+        author,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="kid != null">
+        #{kid,jdbcType=BIGINT},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="posOrNeg != null">
+        #{posOrNeg,jdbcType=INTEGER},
+      </if>
+      <if test="reason != null">
+        #{reason,jdbcType=VARCHAR},
+      </if>
+      <if test="href != null">
+        #{href,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="area != null">
+        #{area,jdbcType=VARCHAR},
+      </if>
+      <if test="author != null">
+        #{author,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.fxys.opinion_plus.domain.Blog">
+    <!--@mbg.generated-->
+    update blog
+    <set>
+      <if test="kid != null">
+        kid = #{kid,jdbcType=BIGINT},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="posOrNeg != null">
+        posOrNeg = #{posOrNeg,jdbcType=INTEGER},
+      </if>
+      <if test="reason != null">
+        reason = #{reason,jdbcType=VARCHAR},
+      </if>
+      <if test="href != null">
+        href = #{href,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        createTime = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="area != null">
+        area = #{area,jdbcType=VARCHAR},
+      </if>
+      <if test="author != null">
+        author = #{author,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.fxys.opinion_plus.domain.Blog">
+    <!--@mbg.generated-->
+    update blog
+    set kid = #{kid,jdbcType=BIGINT},
+      content = #{content,jdbcType=LONGVARCHAR},
+      posOrNeg = #{posOrNeg,jdbcType=INTEGER},
+      reason = #{reason,jdbcType=VARCHAR},
+      href = #{href,jdbcType=LONGVARCHAR},
+      grade = #{grade,jdbcType=INTEGER},
+      createTime = #{createTime,jdbcType=TIMESTAMP},
+      area = #{area,jdbcType=VARCHAR},
+      author = #{author,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByTime" resultType="int">
+    select
+    count(*)
+    from blog where kid=#{param1}
+    and createTime &gt;#{param2}
+    and createTime &lt;#{param3}
+  </select>
+  <select id="selectBySensitive" resultType="int">
+    select
+    count(*)
+    from blog where kid=#{param1}
+    and createTime &gt;#{param2}
+    and createTime &lt;#{param3}
+    and (reason != null ||reason!= '')
+  </select>
+  <select id="selectByNontive" resultType="int">
+    select
+    count(*)
+    from blog where kid=#{param1}
+    and createTime &gt;#{param2}
+    and createTime &lt;#{param3}
+    and (reason = null ||reason= '')
+  </select>
+  <select id="selectByPositive" resultType="int">
+    select
+    count(*)
+    from blog where kid=#{param1}
+    and createTime &gt;#{param2}
+    and createTime &lt;#{param3}
+    and posOrNeg &gt; 0
+  </select>
+  <select id="selectByNegative" resultType="int">
+    select
+    count(*)
+    from blog where kid=#{param1}
+    and createTime &gt;#{param2}
+    and createTime &lt;#{param3}
+    and posOrNeg &lt; 0
+  </select>
+  <select id="selectByAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from blog where kid=#{param1}
+    and createTime &gt;#{param2}
+    and createTime &lt;#{param3}
+  </select>
+</mapper>

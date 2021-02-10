@@ -30,4 +30,13 @@ public class PathConstants {
     public static final String KEYWORD_UPDATE="/api/keyword/update";
     public static final String KEYWORD_DELETE="/api/keyword/delete";
     public static final String KEYWORD_EXPORT="/api/keyword/exportMeg";
+
+
+    /**
+     * 微博相关操作
+     */
+    public static final String BLOG_EVENT="/api/blog/getEvent";
+    public static final String BLOG_SENSITIVE="/api/blog/getSensitive";
+    public static final String BLOG_POSITIVE="/api/blog/getPositive";
+    public static final String BLOG_ORIGIN="/api/blog/getOrigin";
 }
