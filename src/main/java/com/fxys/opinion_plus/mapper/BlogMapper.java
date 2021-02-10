@@ -1,6 +1,7 @@
 package com.fxys.opinion_plus.mapper;
 
 import com.fxys.opinion_plus.domain.Blog;
+import com.fxys.opinion_plus.resp.Page;
 import org.springframework.data.repository.query.Param;
 
 import java.util.Date;
@@ -38,4 +39,11 @@ public interface BlogMapper {
     int selectByCountAll(@Param("kid")Long kid,@Param("start") Date start,@Param("end") Date end);
 
     int selectByArea(@Param("kid")Long kid,@Param("start") Date start,@Param("end") Date end,@Param("province") String province);
+
+    List<Blog> getByPage(Page<Blog> page);
+
+
+    int getCountByPage(Page<Blog> page);
+
+    List<String> selectContent(@Param("kid")Long kid,@Param("start") Date start,@Param("end") Date end);
 }

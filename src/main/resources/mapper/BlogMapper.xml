@@ -165,7 +165,7 @@
     from blog where kid=#{param1}
     and createTime &gt;#{param2}
     and createTime &lt;#{param3}
-    and (reason != null ||reason!= '')
+    and reason is not null
   </select>
   <select id="selectByNontive" resultType="int">
     select
@@ -173,7 +173,7 @@
     from blog where kid=#{param1}
     and createTime &gt;#{param2}
     and createTime &lt;#{param3}
-    and (reason = null ||reason= '')
+    and reason is null
   </select>
   <select id="selectByPositive" resultType="int">
     select
@@ -212,5 +212,55 @@
     and createTime &gt;#{param2}
     and createTime &lt;#{param3}
     and area=#{param4}
+  </select>
+  <select id="getByPage" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from blog
+    <where>
+      <if test="params.kid!=null and params.kid!=''">
+        and kid =#{params.kid}
+      </if>
+      <if test="params.content!=null and params.content!=''">
+        and content like CONCAT('%', #{params.content}, '%')
+      </if>
+      <if test="params.startTime!=null and params.startTime!=''">
+        and  #{params.startTime}&lt;=createTime
+      </if>
+      <if test="params.endTime!=null and params.endTime!=''">
+        and  #{params.endTime}&gt;=createTime
+      </if>
+    </where>
+    <if test="sortColumn!=null and sortColumn!=''">
+      order by ${sortColumn} ${sortMethod}
+    </if>
+    limit #{index}, #{pageSize}
+  </select>
+  <select id="getCountByPage" resultType="int">
+    select
+    count(*)
+    from blog
+    <where>
+      <if test="params.kid!=null and params.kid!=''">
+        and kid =#{params.kid}
+      </if>
+      <if test="params.content!=null and params.content!=''">
+        and content like CONCAT('%', #{params.content}, '%')
+      </if>
+      <if test="params.startTime!=null and params.startTime!=''">
+        and  #{params.startTime}&lt;=createTime
+      </if>
+      <if test="params.endTime!=null and params.endTime!=''">
+        and  #{params.endTime}&gt;=createTime
+      </if>
+    </where>
+
+  </select>
+  <select id="selectContent" resultType="java.lang.String">
+    select
+    content
+    from blog where kid=#{param1}
+    and createTime &gt;#{param2}
+    and createTime &lt;#{param3}
   </select>
 </mapper>

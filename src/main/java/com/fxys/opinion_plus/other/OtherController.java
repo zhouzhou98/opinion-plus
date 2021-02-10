@@ -2,6 +2,7 @@ package com.fxys.opinion_plus.other;
 
 import com.fxys.opinion_plus.constants.PathConstants;
 import com.fxys.opinion_plus.domain.Keyword;
+import com.fxys.opinion_plus.service.IBlogService;
 import com.fxys.opinion_plus.service.IKeywordService;
 import com.fxys.opinion_plus.util.ExportDataUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.ByteArrayOutputStream;
 import java.net.URLEncoder;
 
@@ -20,6 +23,8 @@ import java.net.URLEncoder;
 public class OtherController {
     @Autowired
     private IKeywordService keywordService;
+    @Autowired
+    private IBlogService blogService;
     @RequestMapping(value = PathConstants.KEYWORD_EXPORT+"/{id}")
     public ResponseEntity<Object> exportKeywordsData(@PathVariable Long id){
 
@@ -48,5 +53,10 @@ public class OtherController {
         }
         return  null;
 
+    }
+
+    @RequestMapping(value = PathConstants.BLOG_CLOUD)
+    public void wordCloud(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+        blogService.wordCloud(req,resp);
     }
 }

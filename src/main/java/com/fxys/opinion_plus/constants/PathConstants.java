@@ -41,4 +41,8 @@ public class PathConstants {
     public static final String BLOG_ORIGIN="/api/blog/getOrigin";
     public static final String BLOG_TENDENCY="/api/blog/getTendency";
     public static final String BLOG_MAP="/api/blog/getMap";
+    public static final String BLOG_SEARCH="/api/blog/getByPage";
+    public static final String BLOG_SINGEL="/api/blog/singleTendency";
+    public static final String BLOG_CLOUD="/api/blog/wordCloud";
+    public static final String BLOG_FREQUENCY="/api/blog/frequency";
 }

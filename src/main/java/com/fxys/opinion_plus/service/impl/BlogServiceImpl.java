@@ -2,15 +2,31 @@ package com.fxys.opinion_plus.service.impl;
 
 import com.fxys.opinion_plus.domain.Blog;
 import com.fxys.opinion_plus.domain.Ring;
+import com.fxys.opinion_plus.domain.SingleTendency;
 import com.fxys.opinion_plus.domain.Tendency;
 import com.fxys.opinion_plus.mapper.BlogMapper;
+import com.fxys.opinion_plus.resp.Page;
 import com.fxys.opinion_plus.service.IBlogService;
 import com.fxys.opinion_plus.util.TimeStampUtil;
 import com.fxys.opinion_plus.vo.blog.BlogBaseReq;
+import com.kennycason.kumo.CollisionMode;
+import com.kennycason.kumo.WordCloud;
+import com.kennycason.kumo.WordFrequency;
+import com.kennycason.kumo.bg.CircleBackground;
+import com.kennycason.kumo.font.KumoFont;
+import com.kennycason.kumo.font.scale.SqrtFontScalar;
+import com.kennycason.kumo.nlp.FrequencyAnalyzer;
+import com.kennycason.kumo.nlp.tokenizers.ChineseWordTokenizer;
+import com.kennycason.kumo.palette.LinearGradientColorPalette;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.imageio.ImageIO;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.awt.*;
 import java.util.*;
+import java.util.List;
 
 @Service
 public class BlogServiceImpl implements IBlogService {
@@ -125,18 +141,93 @@ public class BlogServiceImpl implements IBlogService {
         Long kid=req.getKid();
         List<Tendency>tendencyList=new ArrayList<>();
         if(day.equals("today")){
-//            list=blogMapper.selectByAll(kid, TimeStampUtil.get(24),TimeStampUtil.get(0));
             getToday(kid,tendencyList);
         }else if(day.equals("three")){
-//            list=blogMapper.selectByAll(kid, TimeStampUtil.get(27),TimeStampUtil.get(0));
             getThree(kid,tendencyList);
         }else {
-//            list=blogMapper.selectByAll(kid, TimeStampUtil.get(30),TimeStampUtil.get(0));
             getSeven(kid,tendencyList);
         }
 
         return tendencyList;
     }
+
+    @Override
+    public List<SingleTendency> getSingleTendency(BlogBaseReq req) {
+        String day=req.getDay();
+        Long kid=req.getKid();
+
+        List<SingleTendency>tendencyList=new ArrayList<>();
+        if(day.equals("today")){
+            getTodaySingleTendency(kid,tendencyList);
+        }else if(day.equals("three")){
+            getThreeSingleTendency(kid,tendencyList);
+        }else {
+            getSevenSingleTendency(kid,tendencyList);
+        }
+
+        return tendencyList;
+    }
+
+    @Override
+    public void wordCloud(HttpServletRequest req, HttpServletResponse resp) throws  Exception{
+        String day=req.getParameter("day");
+        Long kid=Long.valueOf(req.getParameter("kid"));
+        List<String>list;
+        List<SingleTendency>tendencyList=new ArrayList<>();
+        if(day.equals("today")){
+            list=blogMapper.selectContent(kid, TimeStampUtil.get(24),TimeStampUtil.get(0));
+        }else if(day.equals("three")){
+            list=blogMapper.selectContent(kid, TimeStampUtil.get(27),TimeStampUtil.get(0));
+        }else {
+            list=blogMapper.selectContent(kid, TimeStampUtil.get(30),TimeStampUtil.get(0));
+        }
+        //建立词频分析器，设置词频，以及词语最短长度，此处的参数配置视情况而定即可
+        FrequencyAnalyzer frequencyAnalyzer = new FrequencyAnalyzer();
+        frequencyAnalyzer.setWordFrequenciesToReturn(600);
+        frequencyAnalyzer.setMinWordLength(2);
+
+        //引入中文解析器
+        frequencyAnalyzer.setWordTokenizer(new ChineseWordTokenizer());
+
+
+        List<WordFrequency> wordFrequencyList = frequencyAnalyzer.load(list);
+
+
+//        List<WordFrequency> wordFrequencyList = frequencyAnalyzer.load("D:\\project/1.txt");
+        //设置图片分辨率
+        for(int i=0;i<wordFrequencyList.size();i++) {
+//            System.out.println("单词"+wordFrequencyList.get(i).getWord()+"  "+"数量:"+wordFrequencyList.get(i).getFrequency());
+
+            if(wordFrequencyList.get(i).getWord()==")"||wordFrequencyList.get(i).getWord()=="("||wordFrequencyList.get(i).getWord()=="（"||wordFrequencyList.get(i).getWord()=="）"){
+                wordFrequencyList.remove(i);
+            }
+
+        }
+        Dimension dimension = new Dimension(600,600);
+        //此处的设置采用内置常量即可，生成词云对象
+        WordCloud wordCloud = new WordCloud(dimension, CollisionMode.PIXEL_PERFECT);
+        //设置边界及字体
+        wordCloud.setPadding(2);
+        Font font = new java.awt.Font("STSong-Light", 2, 20);
+        //设置词云显示的三种颜色，越靠前设置表示词频越高的词语的颜色
+        wordCloud.setColorPalette(new LinearGradientColorPalette(Color.RED, Color.BLUE, Color.GREEN, 30, 30));
+        wordCloud.setKumoFont(new KumoFont(font));
+
+        //设置背景色
+        wordCloud.setBackgroundColor(new Color(255,255,255));
+        //设置背景图片
+        //wordCloud.setBackground(new PixelBoundryBackground("E:\\爬虫/google.jpg"));
+        //设置背景图层为圆形
+        wordCloud.setBackground(new CircleBackground(255));
+        wordCloud.setFontScalar(new SqrtFontScalar(12, 45));
+
+        //生成词云
+        wordCloud.build(wordFrequencyList);
+
+        //把图片对象以流的方式保存出去
+        ImageIO.write(wordCloud.getBufferedImage(), "png", resp.getOutputStream());
+    }
+
 
     @Override
     public List<Ring> getMap(BlogBaseReq req) {
@@ -152,6 +243,19 @@ public class BlogServiceImpl implements IBlogService {
         }
         return list;
     }
+
+    @Override
+    public Page<Blog> getByPage(Page<Blog> page) {
+        // 查询数据
+        List<Blog> aboutList = blogMapper.getByPage(page);
+        page.setList(aboutList);
+        // 查询总数
+        int totalCount = blogMapper.getCountByPage(page);
+        page.setTotalCount(totalCount);
+        return page;
+    }
+
+
 
     private void getSevenMap(Long kid, List<Ring> list) {
         dealWithMap(kid,list,TimeStampUtil.get(30),TimeStampUtil.get(0));
@@ -274,5 +378,54 @@ public class BlogServiceImpl implements IBlogService {
         tendencyList.add(t);
         max=Math.max(total,max);
         return max;
+    }
+
+    private void getSevenSingleTendency(Long kid, List<SingleTendency> tendencyList) {
+
+        SingleTendency t=new SingleTendency();
+        for(int i=30;i>=25;i--){
+            int total=blogMapper.selectByCountAll(kid, TimeStampUtil.get(i),TimeStampUtil.get(i-1));
+
+            t=new SingleTendency((TimeStampUtil.get(i).getMonth()+1)+"月"+TimeStampUtil.get(i).getDate()+"日",total);
+            tendencyList.add(t);
+
+        }
+        int total=blogMapper.selectByCountAll(kid, TimeStampUtil.get(24),TimeStampUtil.get(0));
+
+        t=new SingleTendency((TimeStampUtil.get(24).getMonth()+1)+"月"+TimeStampUtil.get(24).getDate()+"日",total);
+        tendencyList.add(t);
+
+    }
+
+
+    private void getThreeSingleTendency(Long kid, List<SingleTendency> tendencyList) {
+        SingleTendency t=new SingleTendency();
+        for(int i=26;i>=25;i--){
+            int total=blogMapper.selectByCountAll(kid, TimeStampUtil.get(i),TimeStampUtil.get(i-1));
+
+            t=new SingleTendency((TimeStampUtil.get(i).getMonth()+1)+"月"+TimeStampUtil.get(i).getDate()+"日",total);
+            tendencyList.add(t);
+
+        }
+        int total=blogMapper.selectByCountAll(kid, TimeStampUtil.get(24),TimeStampUtil.get(0));
+
+        t=new SingleTendency((TimeStampUtil.get(24).getMonth()+1)+"月"+TimeStampUtil.get(24).getDate()+"日",total);
+        tendencyList.add(t);
+    }
+
+
+    private void getTodaySingleTendency(Long kid, List<SingleTendency> tendencyList) {
+        SingleTendency t=new SingleTendency("0点",0);
+        tendencyList.add(t);
+        for(int i=24;i>2;i-=2){
+            int total=blogMapper.selectByCountAll(kid, TimeStampUtil.get(i),TimeStampUtil.get(i-2));
+
+            t=new SingleTendency(TimeStampUtil.get(i-2).getHours()+"点",total);
+            tendencyList.add(t);
+
+        }
+        int total=blogMapper.selectByCountAll(kid, TimeStampUtil.get(2),TimeStampUtil.get(0));
+        t=new SingleTendency("24点",total);
+        tendencyList.add(t);
     }
 }
