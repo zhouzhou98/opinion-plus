@@ -279,6 +279,11 @@ public class BlogServiceImpl implements IBlogService {
         return list;
     }
 
+    @Override
+    public Blog selectById(Long id) {
+        return blogMapper.selectByPrimaryKey(id);
+    }
+
     private void getSevenWarning(Long kid, Warning w) {
         dealWithWarn(kid,w,TimeStampUtil.get(30),TimeStampUtil.get(0));
     }

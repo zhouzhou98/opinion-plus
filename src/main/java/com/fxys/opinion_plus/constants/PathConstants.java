@@ -46,4 +46,5 @@ public class PathConstants {
     public static final String BLOG_CLOUD="/api/blog/wordCloud";
     public static final String BLOG_FREQUENCY="/api/blog/frequency";
     public static final String BLOG_WARNING="/api/blog/warning";
+    public static final String BLOG_EXPORT="/api/blog/exportMeg";
 }

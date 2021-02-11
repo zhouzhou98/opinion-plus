@@ -33,4 +33,6 @@ public interface IBlogService {
     List<Ring> getFrequency(BlogBaseReq req);
 
     List<Warning> getWarning(BlogBaseReq req);
+
+    Blog selectById(Long id);
 }

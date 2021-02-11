@@ -4247,3 +4247,891 @@
 2021-02-11 19:17:18.749 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:250 -Multiple Spring Data modules found, entering strict repository configuration mode!
 2021-02-11 19:17:18.750 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2021-02-11 19:17:18.767 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2021-02-11 19:17:30.689 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarting:55 -Starting OpinionPlusApplication using Java 1.8.0_151 on LAPTOP-F69Q7ABG with PID 6864 (D:\springboot\opinion-plus\target\classes started by 14040 in D:\springboot\opinion-plus)
+2021-02-11 19:17:30.689 INFO  [background-preinit]org.hibernate.validator.internal.util.Version.<clinit>:30 -HV000001: Hibernate Validator 5.4.1.Final
+2021-02-11 19:17:30.694 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStartupProfileInfo:660 -No active profile set, falling back to default profiles: default
+2021-02-11 19:17:30.779 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\carrot2\morfologik-speller\1.9.0\morfologik-speller-1.9.0.jar referenced one or more files that do not exist: file:/D:/repository/org/carrot2/morfologik-speller/1.9.0/morfologik-stemming-1.9.0.jar,file:/D:/repository/org/carrot2/morfologik-speller/1.9.0/morfologik-fsa-1.9.0.jar
+2021-02-11 19:17:30.780 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\carrot2\morfologik-stemming\1.9.0\morfologik-stemming-1.9.0.jar referenced one or more files that do not exist: file:/D:/repository/org/carrot2/morfologik-stemming/1.9.0/morfologik-fsa-1.9.0.jar
+2021-02-11 19:17:30.781 INFO  [restartedMain]org.springframework.boot.devtools.restart.ChangeableUrls.logTo:255 -The Class-Path manifest attribute in D:\repository\org\apache\opennlp\opennlp-tools\1.5.3\opennlp-tools-1.5.3.jar referenced one or more files that do not exist: file:/D:/repository/org/apache/opennlp/opennlp-tools/1.5.3/opennlp-maxent-3.0.3.jar,file:/D:/repository/org/apache/opennlp/opennlp-tools/1.5.3/jwnl-1.3.3.jar
+2021-02-11 19:17:30.781 INFO  [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:255 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-11 19:17:30.782 INFO  [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:255 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-11 19:17:31.741 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:250 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-11 19:17:31.743 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-02-11 19:17:31.772 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2021-02-11 19:17:31.796 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:250 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-11 19:17:31.797 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-11 19:17:31.811 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-02-11 19:17:32.786 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8081 (http)
+2021-02-11 19:17:32.797 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8081"]
+2021-02-11 19:17:32.798 INFO  [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-02-11 19:17:32.798 INFO  [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-11 19:17:32.980 INFO  [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-02-11 19:17:32.980 INFO  [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 2196 ms
+2021-02-11 19:17:33.215 INFO  [restartedMain]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2021-02-11 19:17:33.610 INFO  [restartedMain]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2021-02-11 19:17:33.875 INFO  [restartedMain]org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 -HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-11 19:17:33.980 INFO  [restartedMain]org.hibernate.Version.logVersion:44 -HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-11 19:17:34.252 INFO  [restartedMain]org.hibernate.annotations.common.Version.<clinit>:56 -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-11 19:17:34.823 INFO  [restartedMain]org.hibernate.dialect.Dialect.<init>:175 -HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-02-11 19:17:35.241 INFO  [restartedMain]o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-11 19:17:35.252 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:437 -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-11 19:17:35.302 INFO  [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-02-11 19:17:36.612 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8081"]
+2021-02-11 19:17:36.665 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8081 (http) with context path ''
+2021-02-11 19:17:36.675 INFO  [restartedMain]com.fxys.opinion_plus.OpinionPlusApplication.logStarted:61 -Started OpinionPlusApplication in 7.046 seconds (JVM running for 10.002)
+2021-02-11 19:17:38.643 INFO  [http-nio-8081-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-11 19:17:38.644 INFO  [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2021-02-11 19:17:38.645 INFO  [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 1 ms
+2021-02-11 19:17:38.763 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/user/login
+2021-02-11 19:17:38.764 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:17:38.768 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:17:38.770 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.UserController.login
+2021-02-11 19:17:38.770 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[UserLogin(username=123456, password=e10adc3949ba59abbe56e057f20f883e)]
+2021-02-11 19:17:39.717 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"user":{"createTime":1612756370000,"dataVersion":9,"email":"1404031711@qq.com","id":10,"password":"","state":0,"updateTime":1612839292000,"username":"123456"},"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTYiLCJpZCI6MTAsImV4cCI6MTYxMzA0ODI1OCwiaWF0IjoxNjEzMDQyMjU4LCJqdGkiOiIyMDg4MzZiMi1iY2VjLTQ5ZDUtYjdlNy04ZjYzOWI3NzdiYWYiLCJ1c2VybmFtZSI6IjEyMzQ1NiJ9.E2ha39f-6LMe2SlF-P6ZAIJrbnXfPg97uDLI8ykTqng"}
+2021-02-11 19:17:39.718 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:400
+2021-02-11 19:17:39.718 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 955
+2021-02-11 19:17:39.927 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/keyword/getByPage
+2021-02-11 19:17:39.928 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:17:39.929 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:17:39.929 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.KeywordController.getByPage
+2021-02-11 19:17:39.930 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[Page{currentPage=1, pageSize=10, totalPage=0, totalCount=0, list=[], params={uid=10}, sortColumn='createTime', sortMethod='desc'}]
+2021-02-11 19:17:40.021 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"currentPage":1,"index":0,"list":[{"createTime":1612883325000,"dataVersion":1,"description":"22","id":6,"isLoading":false,"isOpen":1,"kname":"2","uid":10,"updateTime":1612889330000},{"createTime":1612861806000,"dataVersion":3,"description":"有点可怕","id":5,"isLoading":false,"isOpen":0,"kname":"肺炎","uid":10,"updateTime":1612879857000},{"createTime":1612860712000,"dataVersion":0,"description":"危险","id":2,"isLoading":false,"isOpen":1,"kname":"疫情","uid":10,"updateTime":1612860712000},{"createTime":1612860525000,"dataVersion":1,"description":"变态","id":1,"isLoading":false,"isOpen":1,"kname":"郑爽","uid":10,"updateTime":1612880625000}],"pageSize":10,"params":{"uid":10},"sortColumn":"createTime","sortMethod":"desc","totalCount":4,"totalPage":1}
+2021-02-11 19:17:40.022 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:742
+2021-02-11 19:17:40.023 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 96
+2021-02-11 19:17:42.150 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getEvent
+2021-02-11 19:17:42.151 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:17:42.152 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:17:42.152 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.login
+2021-02-11 19:17:42.153 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:17:42.155 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getTendency
+2021-02-11 19:17:42.155 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:17:42.155 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:17:42.156 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getTendency
+2021-02-11 19:17:42.157 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:17:42.157 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getOrigin
+2021-02-11 19:17:42.158 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:17:42.159 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:17:42.161 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getOrigin
+2021-02-11 19:17:42.162 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 19:17:42.163 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:17:42.163 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:17:42.164 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:17:42.164 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getMap
+2021-02-11 19:17:42.165 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 19:17:42.165 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:17:42.165 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:17:42.165 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:17:42.165 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getMap
+2021-02-11 19:17:42.166 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:17:42.167 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getSensitive
+2021-02-11 19:17:42.167 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:17:42.168 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:17:42.169 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSensitive
+2021-02-11 19:17:42.170 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:17:42.192 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"正面舆情事件"},{"count":0,"data":"负面舆情事件"}]
+2021-02-11 19:17:42.192 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 19:17:42.192 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 30
+2021-02-11 19:17:42.193 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"3"}]
+2021-02-11 19:17:42.194 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:24
+2021-02-11 19:17:42.194 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 37
+2021-02-11 19:17:42.198 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"敏感事件"},{"count":1,"data":"非敏感事件"}]
+2021-02-11 19:17:42.199 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:54
+2021-02-11 19:17:42.199 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 32
+2021-02-11 19:17:42.316 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"黑龙江"},{"count":0,"data":"吉林"},{"count":0,"data":"辽宁"},{"count":0,"data":"内蒙古"},{"count":0,"data":"河北"},{"count":0,"data":"天津"},{"count":0,"data":"山东"},{"count":0,"data":"北京"},{"count":0,"data":"山西"},{"count":0,"data":"河南"},{"count":0,"data":"安徽"},{"count":0,"data":"江苏"},{"count":0,"data":"上海"},{"count":0,"data":"浙江"},{"count":0,"data":"宁夏"},{"count":0,"data":"陕西"},{"count":0,"data":"湖北"},{"count":0,"data":"江西"},{"count":0,"data":"福建"},{"count":0,"data":"台湾"},{"count":0,"data":"甘肃"},{"count":0,"data":"四川"},{"count":0,"data":"重庆"},{"count":0,"data":"湖南"},{"count":0,"data":"广东"},{"count":0,"data":"澳门"},{"count":0,"data":"香港"},{"count":0,"data":"贵州"},{"count":0,"data":"广西"},{"count":0,"data":"海南"},{"count":0,"data":"青海"},{"count":0,"data":"西藏"},{"count":1,"data":"新疆"},{"count":0,"data":"云南"}]
+2021-02-11 19:17:42.316 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:819
+2021-02-11 19:17:42.316 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 152
+2021-02-11 19:17:42.544 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"top":1,"total":2,"avl":0.08333333333333333}
+2021-02-11 19:17:42.544 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:45
+2021-02-11 19:17:42.545 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 395
+2021-02-11 19:17:42.546 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"0点","total":0},{"negative":0,"nonsensitive":1,"positive":1,"sensitive":0,"time":"2点","total":1},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"4点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"6点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"8点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"10点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"12点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"14点","total":0},{"negative":0,"nonsensitive":0,"positive":1,"sensitive":1,"time":"16点","total":1},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"18点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"20点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"22点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"24点","total":0}]
+2021-02-11 19:17:42.547 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1062
+2021-02-11 19:17:42.547 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 393
+2021-02-11 19:17:45.714 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getByPage
+2021-02-11 19:17:45.715 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:17:45.715 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:17:45.716 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getByPage
+2021-02-11 19:17:45.716 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[Page{currentPage=1, pageSize=10, totalPage=0, totalCount=0, list=[], params={kid=1}, sortColumn='createTime', sortMethod='desc'}]
+2021-02-11 19:17:45.733 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"currentPage":1,"index":0,"list":[{"area":"黑龙江","author":"3","content":"总结以上 作为广大吃瓜中的一员 对于到底谁接孩子回家的问题纯属好奇 请张恒方正视吃瓜网友提出的问题并帮忙解答 ","createTime":1613026071000,"grade":3,"href":"https://s.weibo.com/weibo/%25E9%2583%2591%25E7%2588%25BD?topnav=1&wvr=6&b=1","id":3,"kid":1,"posOrNeg":1,"reason":""},{"area":"新疆","author":"3","content":"郑爽代孕害人精","createTime":1612973986000,"grade":5,"href":"www.baidu.com","id":7,"kid":1,"posOrNeg":1},{"area":"吉林","author":"1","content":"郑爽太可恶了","createTime":1612964195000,"grade":5,"href":"www.baidu.com","id":6,"kid":1,"posOrNeg":1},{"area":"广东","author":"1","content":"郑爽有问题","createTime":1612939262000,"grade":1,"href":"www.baidu.com","id":1,"kid":1,"posOrNeg":1,"reason":"郑爽有病"},{"area":"广西","author":"4","content":"根据张恒朋友知乎爆料张恒一个人去接的第二个孩子回家","createTime":1612853732000,"grade":4,"href":"www.baidu.com","id":4,"kid":1,"posOrNeg":1,"reason":"张恒"},{"area":"江苏","author":"2","content":"郑爽脑子有问题","createTime":1612766598000,"grade":2,"href":"https://www.csdn.net/","id":2,"kid":1,"posOrNeg":-1,"reason":"真爽"},{"area":"广东","author":"5","content":"郑爽太有问题","createTime":1612700231000,"grade":5,"href":"www.baidu.com","id":5,"kid":1,"posOrNeg":-1}],"pageSize":10,"params":{"kid":"1"},"sortColumn":"createTime","sortMethod":"desc","totalCount":7,"totalPage":1}
+2021-02-11 19:17:45.734 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1282
+2021-02-11 19:17:45.734 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 20
+2021-02-11 19:17:46.014 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/singleTendency
+2021-02-11 19:17:46.015 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:17:46.015 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:17:46.016 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSingleTendency
+2021-02-11 19:17:46.016 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:17:46.063 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"time":"0点","total":0},{"time":"2点","total":1},{"time":"4点","total":0},{"time":"6点","total":0},{"time":"8点","total":0},{"time":"10点","total":0},{"time":"12点","total":0},{"time":"14点","total":0},{"time":"16点","total":1},{"time":"18点","total":0},{"time":"20点","total":0},{"time":"22点","total":0},{"time":"24点","total":0}]
+2021-02-11 19:17:46.064 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:321
+2021-02-11 19:17:46.064 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 50
+2021-02-11 19:17:52.141 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/frequency
+2021-02-11 19:17:52.141 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:17:52.142 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:17:52.142 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getFrequency
+2021-02-11 19:17:52.142 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:17:54.426 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"问题"},{"count":1,"data":"纯属"},{"count":1,"data":"帮忙"},{"count":1,"data":"解答"},{"count":1,"data":"好奇"},{"count":1,"data":"广大"}]
+2021-02-11 19:17:54.426 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:145
+2021-02-11 19:17:54.426 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 2285
+2021-02-11 19:17:55.446 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 问题 (1/17)
+2021-02-11 19:17:55.446 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 纯属 (2/17)
+2021-02-11 19:17:55.450 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 帮忙 (3/17)
+2021-02-11 19:17:55.450 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 解答 (4/17)
+2021-02-11 19:17:55.451 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 好奇 (5/17)
+2021-02-11 19:17:55.453 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 广大 (6/17)
+2021-02-11 19:17:55.454 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 提出 (7/17)
+2021-02-11 19:17:55.454 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 以上 (8/17)
+2021-02-11 19:17:55.456 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 孩子 (9/17)
+2021-02-11 19:17:55.460 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 害人 (10/17)
+2021-02-11 19:17:55.460 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 正视 (11/17)
+2021-02-11 19:17:55.461 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 到底 (12/17)
+2021-02-11 19:17:55.462 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 回家 (13/17)
+2021-02-11 19:17:55.462 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 总结 (14/17)
+2021-02-11 19:17:55.463 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 网友 (15/17)
+2021-02-11 19:17:55.467 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 作为 (16/17)
+2021-02-11 19:17:55.469 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 对于 (17/17)
+2021-02-11 19:18:08.307 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/frequency
+2021-02-11 19:18:08.307 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:18:08.308 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:18:08.308 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getFrequency
+2021-02-11 19:18:08.309 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 19:18:08.338 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":4,"data":"问题"},{"count":2,"data":"孩子"},{"count":2,"data":"回家"},{"count":1,"data":"纯属"},{"count":1,"data":"解答"},{"count":1,"data":"广大"}]
+2021-02-11 19:18:08.338 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:145
+2021-02-11 19:18:08.339 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 32
+2021-02-11 19:18:08.375 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 问题 (1/25)
+2021-02-11 19:18:08.376 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 孩子 (2/25)
+2021-02-11 19:18:08.376 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 回家 (3/25)
+2021-02-11 19:18:08.376 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 纯属 (4/25)
+2021-02-11 19:18:08.376 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 解答 (5/25)
+2021-02-11 19:18:08.377 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 广大 (6/25)
+2021-02-11 19:18:08.377 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 以上 (7/25)
+2021-02-11 19:18:08.378 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 正视 (8/25)
+2021-02-11 19:18:08.378 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 脑子 (9/25)
+2021-02-11 19:18:08.378 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 网友 (10/25)
+2021-02-11 19:18:08.379 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 作为 (11/25)
+2021-02-11 19:18:08.379 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 根据 (12/25)
+2021-02-11 19:18:08.380 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 郑爽 (13/25)
+2021-02-11 19:18:08.380 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 帮忙 (14/25)
+2021-02-11 19:18:08.386 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 好奇 (15/25)
+2021-02-11 19:18:08.387 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 一个 (16/25)
+2021-02-11 19:18:08.388 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 提出 (17/25)
+2021-02-11 19:18:08.388 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 朋友 (18/25)
+2021-02-11 19:18:08.390 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 害人 (19/25)
+2021-02-11 19:18:08.391 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 可恶 (20/25)
+2021-02-11 19:18:08.394 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 到底 (21/25)
+2021-02-11 19:18:08.394 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 第二 (22/25)
+2021-02-11 19:18:08.395 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 总结 (23/25)
+2021-02-11 19:18:08.395 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 张恒 (24/25)
+2021-02-11 19:18:08.397 INFO  [http-nio-8081-exec-6]com.kennycason.kumo.WordCloud.build:85 -placed: 对于 (25/25)
+2021-02-11 19:18:09.257 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 问题 (1/26)
+2021-02-11 19:18:09.257 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 孩子 (2/26)
+2021-02-11 19:18:09.257 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 回家 (3/26)
+2021-02-11 19:18:09.258 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 纯属 (4/26)
+2021-02-11 19:18:09.258 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 解答 (5/26)
+2021-02-11 19:18:09.258 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 广大 (6/26)
+2021-02-11 19:18:09.259 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 以上 (7/26)
+2021-02-11 19:18:09.259 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 正视 (8/26)
+2021-02-11 19:18:09.259 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 脑子 (9/26)
+2021-02-11 19:18:09.259 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 网友 (10/26)
+2021-02-11 19:18:09.260 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 作为 (11/26)
+2021-02-11 19:18:09.260 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 根据 (12/26)
+2021-02-11 19:18:09.261 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 郑爽 (13/26)
+2021-02-11 19:18:09.261 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 帮忙 (14/26)
+2021-02-11 19:18:09.261 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 好奇 (15/26)
+2021-02-11 19:18:09.262 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 一个 (16/26)
+2021-02-11 19:18:09.262 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 提出 (17/26)
+2021-02-11 19:18:09.263 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 朋友 (18/26)
+2021-02-11 19:18:09.263 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 害人 (19/26)
+2021-02-11 19:18:09.266 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 可恶 (20/26)
+2021-02-11 19:18:09.267 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 到底 (21/26)
+2021-02-11 19:18:09.267 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 第二 (22/26)
+2021-02-11 19:18:09.267 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 郑爽太 (23/26)
+2021-02-11 19:18:09.267 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 总结 (24/26)
+2021-02-11 19:18:09.268 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 张恒 (25/26)
+2021-02-11 19:18:09.269 INFO  [http-nio-8081-exec-7]com.kennycason.kumo.WordCloud.build:85 -placed: 对于 (26/26)
+2021-02-11 19:18:09.507 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/frequency
+2021-02-11 19:18:09.507 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:18:09.507 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:18:09.508 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getFrequency
+2021-02-11 19:18:09.508 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 19:18:09.522 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":5,"data":"问题"},{"count":2,"data":"孩子"},{"count":2,"data":"回家"},{"count":1,"data":"纯属"},{"count":1,"data":"解答"},{"count":1,"data":"广大"}]
+2021-02-11 19:18:09.523 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:145
+2021-02-11 19:18:09.523 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 16
+2021-02-11 19:19:07.363 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getByPage
+2021-02-11 19:19:07.364 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/singleTendency
+2021-02-11 19:19:07.364 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:19:07.364 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:19:07.364 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:19:07.364 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:19:07.364 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getByPage
+2021-02-11 19:19:07.364 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSingleTendency
+2021-02-11 19:19:07.365 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:19:07.365 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[Page{currentPage=1, pageSize=10, totalPage=0, totalCount=0, list=[], params={kid=1}, sortColumn='createTime', sortMethod='desc'}]
+2021-02-11 19:19:07.376 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"currentPage":1,"index":0,"list":[{"area":"黑龙江","author":"3","content":"总结以上 作为广大吃瓜中的一员 对于到底谁接孩子回家的问题纯属好奇 请张恒方正视吃瓜网友提出的问题并帮忙解答 ","createTime":1613026071000,"grade":3,"href":"https://s.weibo.com/weibo/%25E9%2583%2591%25E7%2588%25BD?topnav=1&wvr=6&b=1","id":3,"kid":1,"posOrNeg":1,"reason":""},{"area":"新疆","author":"3","content":"郑爽代孕害人精","createTime":1612973986000,"grade":5,"href":"www.baidu.com","id":7,"kid":1,"posOrNeg":1},{"area":"吉林","author":"1","content":"郑爽太可恶了","createTime":1612964195000,"grade":5,"href":"www.baidu.com","id":6,"kid":1,"posOrNeg":1},{"area":"广东","author":"1","content":"郑爽有问题","createTime":1612939262000,"grade":1,"href":"www.baidu.com","id":1,"kid":1,"posOrNeg":1,"reason":"郑爽有病"},{"area":"广西","author":"4","content":"根据张恒朋友知乎爆料张恒一个人去接的第二个孩子回家","createTime":1612853732000,"grade":4,"href":"www.baidu.com","id":4,"kid":1,"posOrNeg":1,"reason":"张恒"},{"area":"江苏","author":"2","content":"郑爽脑子有问题","createTime":1612766598000,"grade":2,"href":"https://www.csdn.net/","id":2,"kid":1,"posOrNeg":-1,"reason":"真爽"},{"area":"广东","author":"5","content":"郑爽太有问题","createTime":1612700231000,"grade":5,"href":"www.baidu.com","id":5,"kid":1,"posOrNeg":-1}],"pageSize":10,"params":{"kid":"1"},"sortColumn":"createTime","sortMethod":"desc","totalCount":7,"totalPage":1}
+2021-02-11 19:19:07.377 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1282
+2021-02-11 19:19:07.377 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 14
+2021-02-11 19:19:07.395 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"time":"0点","total":0},{"time":"2点","total":1},{"time":"4点","total":0},{"time":"6点","total":0},{"time":"8点","total":0},{"time":"10点","total":0},{"time":"12点","total":0},{"time":"14点","total":0},{"time":"16点","total":1},{"time":"18点","total":0},{"time":"20点","total":0},{"time":"22点","total":0},{"time":"24点","total":0}]
+2021-02-11 19:19:07.395 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:321
+2021-02-11 19:19:07.396 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 32
+2021-02-11 19:35:31.436 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/singleTendency
+2021-02-11 19:35:31.437 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:35:31.438 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:35:31.438 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSingleTendency
+2021-02-11 19:35:31.438 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 19:35:31.451 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"time":"2月9日","total":1},{"time":"2月10日","total":2},{"time":"2月11日","total":2}]
+2021-02-11 19:35:31.452 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:81
+2021-02-11 19:35:31.452 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 17
+2021-02-11 19:40:13.683 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getByPage
+2021-02-11 19:40:13.683 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:40:13.683 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:40:13.684 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getByPage
+2021-02-11 19:40:13.684 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[Page{currentPage=1, pageSize=10, totalPage=0, totalCount=0, list=[], params={kid=1}, sortColumn='createTime', sortMethod='desc'}]
+2021-02-11 19:40:13.686 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/singleTendency
+2021-02-11 19:40:13.686 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:40:13.687 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:40:13.687 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSingleTendency
+2021-02-11 19:40:13.688 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:40:13.698 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"currentPage":1,"index":0,"list":[{"area":"黑龙江","author":"3","content":"总结以上 作为广大吃瓜中的一员 对于到底谁接孩子回家的问题纯属好奇 请张恒方正视吃瓜网友提出的问题并帮忙解答 ","createTime":1613026071000,"grade":3,"href":"https://s.weibo.com/weibo/%25E9%2583%2591%25E7%2588%25BD?topnav=1&wvr=6&b=1","id":3,"kid":1,"posOrNeg":1,"reason":""},{"area":"新疆","author":"3","content":"郑爽代孕害人精","createTime":1612973986000,"grade":5,"href":"www.baidu.com","id":7,"kid":1,"posOrNeg":1},{"area":"吉林","author":"1","content":"郑爽太可恶了","createTime":1612964195000,"grade":5,"href":"www.baidu.com","id":6,"kid":1,"posOrNeg":1},{"area":"广东","author":"1","content":"郑爽有问题","createTime":1612939262000,"grade":1,"href":"www.baidu.com","id":1,"kid":1,"posOrNeg":1,"reason":"郑爽有病"},{"area":"广西","author":"4","content":"根据张恒朋友知乎爆料张恒一个人去接的第二个孩子回家","createTime":1612853732000,"grade":4,"href":"www.baidu.com","id":4,"kid":1,"posOrNeg":1,"reason":"张恒"},{"area":"江苏","author":"2","content":"郑爽脑子有问题","createTime":1612766598000,"grade":2,"href":"https://www.csdn.net/","id":2,"kid":1,"posOrNeg":-1,"reason":"真爽"},{"area":"广东","author":"5","content":"郑爽太有问题","createTime":1612700231000,"grade":5,"href":"www.baidu.com","id":5,"kid":1,"posOrNeg":-1}],"pageSize":10,"params":{"kid":"1"},"sortColumn":"createTime","sortMethod":"desc","totalCount":7,"totalPage":1}
+2021-02-11 19:40:13.699 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1282
+2021-02-11 19:40:13.699 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 16
+2021-02-11 19:40:13.733 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"time":"0点","total":0},{"time":"2点","total":1},{"time":"4点","total":0},{"time":"6点","total":0},{"time":"8点","total":0},{"time":"10点","total":0},{"time":"12点","total":0},{"time":"14点","total":0},{"time":"16点","total":1},{"time":"18点","total":0},{"time":"20点","total":0},{"time":"22点","total":0},{"time":"24点","total":0}]
+2021-02-11 19:40:13.734 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:321
+2021-02-11 19:40:13.734 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 48
+2021-02-11 19:41:12.958 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getByPage
+2021-02-11 19:41:12.958 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:41:12.959 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:41:12.959 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getByPage
+2021-02-11 19:41:12.959 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[Page{currentPage=1, pageSize=10, totalPage=0, totalCount=0, list=[], params={kid=1}, sortColumn='createTime', sortMethod='desc'}]
+2021-02-11 19:41:12.971 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"currentPage":1,"index":0,"list":[{"area":"黑龙江","author":"3","content":"总结以上 作为广大吃瓜中的一员 对于到底谁接孩子回家的问题纯属好奇 请张恒方正视吃瓜网友提出的问题并帮忙解答 ","createTime":1613026071000,"grade":3,"href":"https://s.weibo.com/weibo/%25E9%2583%2591%25E7%2588%25BD?topnav=1&wvr=6&b=1","id":3,"kid":1,"posOrNeg":1,"reason":""},{"area":"新疆","author":"3","content":"郑爽代孕害人精","createTime":1612973986000,"grade":5,"href":"www.baidu.com","id":7,"kid":1,"posOrNeg":1},{"area":"吉林","author":"1","content":"郑爽太可恶了","createTime":1612964195000,"grade":5,"href":"www.baidu.com","id":6,"kid":1,"posOrNeg":1},{"area":"广东","author":"1","content":"郑爽有问题","createTime":1612939262000,"grade":1,"href":"www.baidu.com","id":1,"kid":1,"posOrNeg":1,"reason":"郑爽有病"},{"area":"广西","author":"4","content":"根据张恒朋友知乎爆料张恒一个人去接的第二个孩子回家","createTime":1612853732000,"grade":4,"href":"www.baidu.com","id":4,"kid":1,"posOrNeg":1,"reason":"张恒"},{"area":"江苏","author":"2","content":"郑爽脑子有问题","createTime":1612766598000,"grade":2,"href":"https://www.csdn.net/","id":2,"kid":1,"posOrNeg":-1,"reason":"真爽"},{"area":"广东","author":"5","content":"郑爽太有问题","createTime":1612700231000,"grade":5,"href":"www.baidu.com","id":5,"kid":1,"posOrNeg":-1}],"pageSize":10,"params":{"kid":"1"},"sortColumn":"createTime","sortMethod":"desc","totalCount":7,"totalPage":1}
+2021-02-11 19:41:12.971 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1282
+2021-02-11 19:41:12.972 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 14
+2021-02-11 19:41:13.156 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/singleTendency
+2021-02-11 19:41:13.158 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:41:13.158 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:41:13.159 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSingleTendency
+2021-02-11 19:41:13.159 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:41:13.211 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"time":"0点","total":0},{"time":"2点","total":1},{"time":"4点","total":0},{"time":"6点","total":0},{"time":"8点","total":0},{"time":"10点","total":0},{"time":"12点","total":0},{"time":"14点","total":0},{"time":"16点","total":1},{"time":"18点","total":0},{"time":"20点","total":0},{"time":"22点","total":0},{"time":"24点","total":0}]
+2021-02-11 19:41:13.211 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:321
+2021-02-11 19:41:13.211 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 55
+2021-02-11 19:49:39.116 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getByPage
+2021-02-11 19:49:39.117 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:49:39.117 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:49:39.118 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getByPage
+2021-02-11 19:49:39.118 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[Page{currentPage=1, pageSize=10, totalPage=0, totalCount=0, list=[], params={kid=1}, sortColumn='createTime', sortMethod='desc'}]
+2021-02-11 19:49:39.133 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"currentPage":1,"index":0,"list":[{"area":"黑龙江","author":"3","content":"总结以上 作为广大吃瓜中的一员 对于到底谁接孩子回家的问题纯属好奇 请张恒方正视吃瓜网友提出的问题并帮忙解答 ","createTime":1613026071000,"grade":3,"href":"https://s.weibo.com/weibo/%25E9%2583%2591%25E7%2588%25BD?topnav=1&wvr=6&b=1","id":3,"kid":1,"posOrNeg":1,"reason":""},{"area":"新疆","author":"3","content":"郑爽代孕害人精","createTime":1612973986000,"grade":5,"href":"www.baidu.com","id":7,"kid":1,"posOrNeg":1},{"area":"吉林","author":"1","content":"郑爽太可恶了","createTime":1612964195000,"grade":5,"href":"www.baidu.com","id":6,"kid":1,"posOrNeg":1},{"area":"广东","author":"1","content":"郑爽有问题","createTime":1612939262000,"grade":1,"href":"www.baidu.com","id":1,"kid":1,"posOrNeg":1,"reason":"郑爽有病"},{"area":"广西","author":"4","content":"根据张恒朋友知乎爆料张恒一个人去接的第二个孩子回家","createTime":1612853732000,"grade":4,"href":"www.baidu.com","id":4,"kid":1,"posOrNeg":1,"reason":"张恒"},{"area":"江苏","author":"2","content":"郑爽脑子有问题","createTime":1612766598000,"grade":2,"href":"https://www.csdn.net/","id":2,"kid":1,"posOrNeg":-1,"reason":"真爽"},{"area":"广东","author":"5","content":"郑爽太有问题","createTime":1612700231000,"grade":5,"href":"www.baidu.com","id":5,"kid":1,"posOrNeg":-1}],"pageSize":10,"params":{"kid":"1"},"sortColumn":"createTime","sortMethod":"desc","totalCount":7,"totalPage":1}
+2021-02-11 19:49:39.133 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1282
+2021-02-11 19:49:39.134 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 18
+2021-02-11 19:49:39.276 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/singleTendency
+2021-02-11 19:49:39.276 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:49:39.277 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:49:39.277 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSingleTendency
+2021-02-11 19:49:39.277 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:49:39.305 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"time":"0点","total":0},{"time":"2点","total":1},{"time":"4点","total":0},{"time":"6点","total":0},{"time":"8点","total":0},{"time":"10点","total":0},{"time":"12点","total":0},{"time":"14点","total":0},{"time":"16点","total":1},{"time":"18点","total":0},{"time":"20点","total":0},{"time":"22点","total":0},{"time":"24点","total":0}]
+2021-02-11 19:49:39.306 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:321
+2021-02-11 19:49:39.306 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 30
+2021-02-11 19:49:46.433 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/singleTendency
+2021-02-11 19:49:46.434 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:49:46.434 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:49:46.435 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSingleTendency
+2021-02-11 19:49:46.435 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 19:49:46.444 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getByPage
+2021-02-11 19:49:46.444 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 19:49:46.444 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 19:49:46.444 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getByPage
+2021-02-11 19:49:46.445 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[Page{currentPage=1, pageSize=10, totalPage=0, totalCount=0, list=[], params={kid=1}, sortColumn='createTime', sortMethod='desc'}]
+2021-02-11 19:49:46.451 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"currentPage":1,"index":0,"list":[{"area":"黑龙江","author":"3","content":"总结以上 作为广大吃瓜中的一员 对于到底谁接孩子回家的问题纯属好奇 请张恒方正视吃瓜网友提出的问题并帮忙解答 ","createTime":1613026071000,"grade":3,"href":"https://s.weibo.com/weibo/%25E9%2583%2591%25E7%2588%25BD?topnav=1&wvr=6&b=1","id":3,"kid":1,"posOrNeg":1,"reason":""},{"area":"新疆","author":"3","content":"郑爽代孕害人精","createTime":1612973986000,"grade":5,"href":"www.baidu.com","id":7,"kid":1,"posOrNeg":1},{"area":"吉林","author":"1","content":"郑爽太可恶了","createTime":1612964195000,"grade":5,"href":"www.baidu.com","id":6,"kid":1,"posOrNeg":1},{"area":"广东","author":"1","content":"郑爽有问题","createTime":1612939262000,"grade":1,"href":"www.baidu.com","id":1,"kid":1,"posOrNeg":1,"reason":"郑爽有病"},{"area":"广西","author":"4","content":"根据张恒朋友知乎爆料张恒一个人去接的第二个孩子回家","createTime":1612853732000,"grade":4,"href":"www.baidu.com","id":4,"kid":1,"posOrNeg":1,"reason":"张恒"},{"area":"江苏","author":"2","content":"郑爽脑子有问题","createTime":1612766598000,"grade":2,"href":"https://www.csdn.net/","id":2,"kid":1,"posOrNeg":-1,"reason":"真爽"},{"area":"广东","author":"5","content":"郑爽太有问题","createTime":1612700231000,"grade":5,"href":"www.baidu.com","id":5,"kid":1,"posOrNeg":-1}],"pageSize":10,"params":{"kid":"1"},"sortColumn":"createTime","sortMethod":"desc","totalCount":7,"totalPage":1}
+2021-02-11 19:49:46.452 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1282
+2021-02-11 19:49:46.452 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 8
+2021-02-11 19:49:46.479 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"time":"0点","total":0},{"time":"2点","total":1},{"time":"4点","total":0},{"time":"6点","total":0},{"time":"8点","total":0},{"time":"10点","total":0},{"time":"12点","total":0},{"time":"14点","total":0},{"time":"16点","total":1},{"time":"18点","total":0},{"time":"20点","total":0},{"time":"22点","total":0},{"time":"24点","total":0}]
+2021-02-11 19:49:46.480 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:321
+2021-02-11 19:49:46.480 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 47
+2021-02-11 20:53:14.748 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getByPage
+2021-02-11 20:53:14.748 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/warning
+2021-02-11 20:53:14.767 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:14.767 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:14.768 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:14.768 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:14.768 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getByPage
+2021-02-11 20:53:14.768 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getWarning
+2021-02-11 20:53:14.768 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:53:14.768 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[Page{currentPage=1, pageSize=10, totalPage=0, totalCount=0, list=[], params={kid=1}, sortColumn='createTime', sortMethod='desc'}]
+2021-02-11 20:53:14.780 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"currentPage":1,"index":0,"list":[{"area":"黑龙江","author":"3","content":"总结以上 作为广大吃瓜中的一员 对于到底谁接孩子回家的问题纯属好奇 请张恒方正视吃瓜网友提出的问题并帮忙解答 ","createTime":1613026071000,"grade":3,"href":"https://s.weibo.com/weibo/%25E9%2583%2591%25E7%2588%25BD?topnav=1&wvr=6&b=1","id":3,"kid":1,"posOrNeg":1,"reason":""},{"area":"新疆","author":"3","content":"郑爽代孕害人精","createTime":1612973986000,"grade":5,"href":"www.baidu.com","id":7,"kid":1,"posOrNeg":1},{"area":"吉林","author":"1","content":"郑爽太可恶了","createTime":1612964195000,"grade":5,"href":"www.baidu.com","id":6,"kid":1,"posOrNeg":1},{"area":"广东","author":"1","content":"郑爽有问题","createTime":1612939262000,"grade":1,"href":"www.baidu.com","id":1,"kid":1,"posOrNeg":1,"reason":"郑爽有病"},{"area":"广西","author":"4","content":"根据张恒朋友知乎爆料张恒一个人去接的第二个孩子回家","createTime":1612853732000,"grade":4,"href":"www.baidu.com","id":4,"kid":1,"posOrNeg":1,"reason":"张恒"},{"area":"江苏","author":"2","content":"郑爽脑子有问题","createTime":1612766598000,"grade":2,"href":"https://www.csdn.net/","id":2,"kid":1,"posOrNeg":-1,"reason":"真爽"},{"area":"广东","author":"5","content":"郑爽太有问题","createTime":1612700231000,"grade":5,"href":"www.baidu.com","id":5,"kid":1,"posOrNeg":-1}],"pageSize":10,"params":{"kid":"1"},"sortColumn":"createTime","sortMethod":"desc","totalCount":7,"totalPage":1}
+2021-02-11 20:53:14.781 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1282
+2021-02-11 20:53:14.781 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 33
+2021-02-11 20:53:14.798 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"grade":"预警等级","height":1,"low":0,"low_mid":0,"mid":1,"mid_hei":0}]
+2021-02-11 20:53:14.798 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:69
+2021-02-11 20:53:14.799 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 51
+2021-02-11 20:53:17.828 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/warning
+2021-02-11 20:53:17.829 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:17.829 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:17.829 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getWarning
+2021-02-11 20:53:17.829 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:53:17.850 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"grade":"预警等级","height":3,"low":1,"low_mid":1,"mid":1,"mid_hei":1}]
+2021-02-11 20:53:17.850 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:69
+2021-02-11 20:53:17.850 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 22
+2021-02-11 20:53:20.251 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 20:53:20.252 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getByPage
+2021-02-11 20:53:20.252 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:20.252 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:20.252 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:20.252 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:20.252 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getByPage
+2021-02-11 20:53:20.253 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 20:53:20.253 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:53:20.253 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[Page{currentPage=1, pageSize=10, totalPage=0, totalCount=0, list=[], params={kid=1, posOrNeg=1}, sortColumn='createTime', sortMethod='desc'}]
+2021-02-11 20:53:20.260 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"正面舆情事件"},{"count":0,"data":"负面舆情事件"}]
+2021-02-11 20:53:20.261 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 20:53:20.261 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 10
+2021-02-11 20:53:20.268 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"currentPage":1,"index":0,"list":[{"area":"黑龙江","author":"3","content":"总结以上 作为广大吃瓜中的一员 对于到底谁接孩子回家的问题纯属好奇 请张恒方正视吃瓜网友提出的问题并帮忙解答 ","createTime":1613026071000,"grade":3,"href":"https://s.weibo.com/weibo/%25E9%2583%2591%25E7%2588%25BD?topnav=1&wvr=6&b=1","id":3,"kid":1,"posOrNeg":1,"reason":""},{"area":"新疆","author":"3","content":"郑爽代孕害人精","createTime":1612973986000,"grade":5,"href":"www.baidu.com","id":7,"kid":1,"posOrNeg":1},{"area":"吉林","author":"1","content":"郑爽太可恶了","createTime":1612964195000,"grade":5,"href":"www.baidu.com","id":6,"kid":1,"posOrNeg":1},{"area":"广东","author":"1","content":"郑爽有问题","createTime":1612939262000,"grade":1,"href":"www.baidu.com","id":1,"kid":1,"posOrNeg":1,"reason":"郑爽有病"},{"area":"广西","author":"4","content":"根据张恒朋友知乎爆料张恒一个人去接的第二个孩子回家","createTime":1612853732000,"grade":4,"href":"www.baidu.com","id":4,"kid":1,"posOrNeg":1,"reason":"张恒"}],"pageSize":10,"params":{"kid":"1","posOrNeg":1},"sortColumn":"createTime","sortMethod":"desc","totalCount":5,"totalPage":1}
+2021-02-11 20:53:20.269 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1002
+2021-02-11 20:53:20.269 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 17
+2021-02-11 20:53:23.466 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getEvent
+2021-02-11 20:53:23.466 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:23.467 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:23.467 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.login
+2021-02-11 20:53:23.467 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:53:23.564 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"top":1,"total":2,"avl":0.08333333333333333}
+2021-02-11 20:53:23.564 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:45
+2021-02-11 20:53:23.564 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 98
+2021-02-11 20:53:23.769 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getSensitive
+2021-02-11 20:53:23.769 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:23.770 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:23.770 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSensitive
+2021-02-11 20:53:23.770 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:53:23.774 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 20:53:23.774 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:23.774 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:23.786 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getOrigin
+2021-02-11 20:53:23.786 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 20:53:23.787 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:53:23.787 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:23.793 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:23.793 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"敏感事件"},{"count":1,"data":"非敏感事件"}]
+2021-02-11 20:53:23.793 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getOrigin
+2021-02-11 20:53:23.793 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:53:23.793 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:54
+2021-02-11 20:53:23.793 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 24
+2021-02-11 20:53:23.793 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getTendency
+2021-02-11 20:53:23.794 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:23.794 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getMap
+2021-02-11 20:53:23.794 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:23.794 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:23.794 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getTendency
+2021-02-11 20:53:23.794 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:23.797 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getMap
+2021-02-11 20:53:23.797 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:53:23.797 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:53:23.798 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"3"}]
+2021-02-11 20:53:23.799 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:24
+2021-02-11 20:53:23.799 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 13
+2021-02-11 20:53:23.801 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"正面舆情事件"},{"count":0,"data":"负面舆情事件"}]
+2021-02-11 20:53:23.801 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 20:53:23.801 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 27
+2021-02-11 20:53:23.888 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"黑龙江"},{"count":0,"data":"吉林"},{"count":0,"data":"辽宁"},{"count":0,"data":"内蒙古"},{"count":0,"data":"河北"},{"count":0,"data":"天津"},{"count":0,"data":"山东"},{"count":0,"data":"北京"},{"count":0,"data":"山西"},{"count":0,"data":"河南"},{"count":0,"data":"安徽"},{"count":0,"data":"江苏"},{"count":0,"data":"上海"},{"count":0,"data":"浙江"},{"count":0,"data":"宁夏"},{"count":0,"data":"陕西"},{"count":0,"data":"湖北"},{"count":0,"data":"江西"},{"count":0,"data":"福建"},{"count":0,"data":"台湾"},{"count":0,"data":"甘肃"},{"count":0,"data":"四川"},{"count":0,"data":"重庆"},{"count":0,"data":"湖南"},{"count":0,"data":"广东"},{"count":0,"data":"澳门"},{"count":0,"data":"香港"},{"count":0,"data":"贵州"},{"count":0,"data":"广西"},{"count":0,"data":"海南"},{"count":0,"data":"青海"},{"count":0,"data":"西藏"},{"count":1,"data":"新疆"},{"count":0,"data":"云南"}]
+2021-02-11 20:53:23.889 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:819
+2021-02-11 20:53:23.889 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 95
+2021-02-11 20:53:23.890 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"0点","total":0},{"negative":0,"nonsensitive":1,"positive":1,"sensitive":0,"time":"2点","total":1},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"4点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"6点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"8点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"10点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"12点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"14点","total":0},{"negative":0,"nonsensitive":0,"positive":1,"sensitive":1,"time":"16点","total":1},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"18点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"20点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"22点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"24点","total":0}]
+2021-02-11 20:53:23.891 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1062
+2021-02-11 20:53:23.891 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 98
+2021-02-11 20:53:42.013 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getEvent
+2021-02-11 20:53:42.013 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:42.013 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:42.013 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.login
+2021-02-11 20:53:42.013 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:53:42.014 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getSensitive
+2021-02-11 20:53:42.014 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:42.014 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:42.015 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSensitive
+2021-02-11 20:53:42.015 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:53:42.019 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":4,"data":"敏感事件"},{"count":2,"data":"非敏感事件"}]
+2021-02-11 20:53:42.020 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:54
+2021-02-11 20:53:42.020 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 6
+2021-02-11 20:53:42.049 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"top":2,"total":6,"avl":0.08333333333333333}
+2021-02-11 20:53:42.050 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:45
+2021-02-11 20:53:42.050 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 37
+2021-02-11 20:53:42.222 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 20:53:42.223 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:42.224 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:42.224 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 20:53:42.225 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getTendency
+2021-02-11 20:53:42.225 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:53:42.225 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:42.226 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:42.227 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getTendency
+2021-02-11 20:53:42.227 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:53:42.231 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getMap
+2021-02-11 20:53:42.232 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:42.232 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:42.232 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":5,"data":"正面舆情事件"},{"count":1,"data":"负面舆情事件"}]
+2021-02-11 20:53:42.232 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getMap
+2021-02-11 20:53:42.232 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 20:53:42.233 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:53:42.233 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 11
+2021-02-11 20:53:42.241 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getOrigin
+2021-02-11 20:53:42.242 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:53:42.242 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:53:42.242 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getOrigin
+2021-02-11 20:53:42.243 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:53:42.248 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"1"},{"count":1,"data":"2"},{"count":2,"data":"3"},{"count":1,"data":"4"}]
+2021-02-11 20:53:42.249 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:93
+2021-02-11 20:53:42.249 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 8
+2021-02-11 20:53:42.252 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"negative":0,"nonsensitive":0,"positive":1,"sensitive":1,"time":"2月9日","total":1},{"negative":0,"nonsensitive":1,"positive":2,"sensitive":1,"time":"2月10日","total":2},{"negative":0,"nonsensitive":1,"positive":2,"sensitive":1,"time":"2月11日","total":2}]
+2021-02-11 20:53:42.253 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:252
+2021-02-11 20:53:42.253 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 28
+2021-02-11 20:53:42.309 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"黑龙江"},{"count":1,"data":"吉林"},{"count":0,"data":"辽宁"},{"count":0,"data":"内蒙古"},{"count":0,"data":"河北"},{"count":0,"data":"天津"},{"count":0,"data":"山东"},{"count":0,"data":"北京"},{"count":0,"data":"山西"},{"count":0,"data":"河南"},{"count":0,"data":"安徽"},{"count":0,"data":"江苏"},{"count":0,"data":"上海"},{"count":0,"data":"浙江"},{"count":0,"data":"宁夏"},{"count":0,"data":"陕西"},{"count":0,"data":"湖北"},{"count":0,"data":"江西"},{"count":0,"data":"福建"},{"count":0,"data":"台湾"},{"count":0,"data":"甘肃"},{"count":0,"data":"四川"},{"count":0,"data":"重庆"},{"count":0,"data":"湖南"},{"count":1,"data":"广东"},{"count":0,"data":"澳门"},{"count":0,"data":"香港"},{"count":0,"data":"贵州"},{"count":1,"data":"广西"},{"count":0,"data":"海南"},{"count":0,"data":"青海"},{"count":0,"data":"西藏"},{"count":1,"data":"新疆"},{"count":0,"data":"云南"}]
+2021-02-11 20:53:42.309 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:819
+2021-02-11 20:53:42.310 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 79
+2021-02-11 20:54:07.529 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getEvent
+2021-02-11 20:54:07.529 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:07.529 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:07.530 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.login
+2021-02-11 20:54:07.530 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:07.530 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getSensitive
+2021-02-11 20:54:07.531 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:07.531 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:07.531 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSensitive
+2021-02-11 20:54:07.531 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:07.534 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 20:54:07.534 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:07.534 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:07.534 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 20:54:07.535 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:07.535 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getOrigin
+2021-02-11 20:54:07.536 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getMap
+2021-02-11 20:54:07.536 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:07.537 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:07.537 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getOrigin
+2021-02-11 20:54:07.537 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getTendency
+2021-02-11 20:54:07.537 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:07.537 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:07.537 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:07.537 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:07.538 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getTendency
+2021-02-11 20:54:07.538 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:07.539 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:07.539 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getMap
+2021-02-11 20:54:07.539 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:07.540 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":4,"data":"敏感事件"},{"count":3,"data":"非敏感事件"}]
+2021-02-11 20:54:07.540 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:54
+2021-02-11 20:54:07.540 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 10
+2021-02-11 20:54:07.542 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"1"},{"count":1,"data":"2"},{"count":2,"data":"3"},{"count":1,"data":"4"},{"count":1,"data":"5"}]
+2021-02-11 20:54:07.542 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:116
+2021-02-11 20:54:07.552 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 17
+2021-02-11 20:54:07.552 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":5,"data":"正面舆情事件"},{"count":2,"data":"负面舆情事件"}]
+2021-02-11 20:54:07.552 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 20:54:07.552 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 18
+2021-02-11 20:54:07.595 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"top":2,"total":7,"avl":0.041666666666666664}
+2021-02-11 20:54:07.595 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:46
+2021-02-11 20:54:07.595 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 66
+2021-02-11 20:54:07.596 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"2月5日","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"2月6日","total":0},{"negative":1,"nonsensitive":1,"positive":0,"sensitive":0,"time":"2月7日","total":1},{"negative":1,"nonsensitive":0,"positive":0,"sensitive":1,"time":"2月8日","total":1},{"negative":0,"nonsensitive":0,"positive":1,"sensitive":1,"time":"2月9日","total":1},{"negative":0,"nonsensitive":1,"positive":2,"sensitive":1,"time":"2月10日","total":2},{"negative":0,"nonsensitive":1,"positive":2,"sensitive":1,"time":"2月11日","total":2}]
+2021-02-11 20:54:07.596 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:584
+2021-02-11 20:54:07.597 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 60
+2021-02-11 20:54:07.621 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"黑龙江"},{"count":1,"data":"吉林"},{"count":0,"data":"辽宁"},{"count":0,"data":"内蒙古"},{"count":0,"data":"河北"},{"count":0,"data":"天津"},{"count":0,"data":"山东"},{"count":0,"data":"北京"},{"count":0,"data":"山西"},{"count":0,"data":"河南"},{"count":0,"data":"安徽"},{"count":1,"data":"江苏"},{"count":0,"data":"上海"},{"count":0,"data":"浙江"},{"count":0,"data":"宁夏"},{"count":0,"data":"陕西"},{"count":0,"data":"湖北"},{"count":0,"data":"江西"},{"count":0,"data":"福建"},{"count":0,"data":"台湾"},{"count":0,"data":"甘肃"},{"count":0,"data":"四川"},{"count":0,"data":"重庆"},{"count":0,"data":"湖南"},{"count":2,"data":"广东"},{"count":0,"data":"澳门"},{"count":0,"data":"香港"},{"count":0,"data":"贵州"},{"count":1,"data":"广西"},{"count":0,"data":"海南"},{"count":0,"data":"青海"},{"count":0,"data":"西藏"},{"count":1,"data":"新疆"},{"count":0,"data":"云南"}]
+2021-02-11 20:54:07.621 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:819
+2021-02-11 20:54:07.621 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 85
+2021-02-11 20:54:09.274 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 20:54:09.274 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getEvent
+2021-02-11 20:54:09.275 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getTendency
+2021-02-11 20:54:09.275 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getMap
+2021-02-11 20:54:09.275 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:09.275 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getOrigin
+2021-02-11 20:54:09.275 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:09.275 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:09.275 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:09.276 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:09.276 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:09.276 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:09.276 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:09.276 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:09.277 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:09.277 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getTendency
+2021-02-11 20:54:09.277 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 20:54:09.277 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getMap
+2021-02-11 20:54:09.277 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.login
+2021-02-11 20:54:09.278 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:54:09.278 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:54:09.278 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:54:09.278 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getOrigin
+2021-02-11 20:54:09.278 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:54:09.279 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:54:09.274 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getSensitive
+2021-02-11 20:54:09.281 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:09.282 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:09.282 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSensitive
+2021-02-11 20:54:09.283 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:54:09.285 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"1"},{"count":1,"data":"2"},{"count":2,"data":"3"},{"count":1,"data":"4"}]
+2021-02-11 20:54:09.286 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:93
+2021-02-11 20:54:09.286 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":5,"data":"正面舆情事件"},{"count":1,"data":"负面舆情事件"}]
+2021-02-11 20:54:09.287 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 12
+2021-02-11 20:54:09.287 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 20:54:09.287 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 13
+2021-02-11 20:54:09.290 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":4,"data":"敏感事件"},{"count":2,"data":"非敏感事件"}]
+2021-02-11 20:54:09.291 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:54
+2021-02-11 20:54:09.291 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 17
+2021-02-11 20:54:09.301 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"negative":0,"nonsensitive":0,"positive":1,"sensitive":1,"time":"2月9日","total":1},{"negative":0,"nonsensitive":1,"positive":2,"sensitive":1,"time":"2月10日","total":2},{"negative":0,"nonsensitive":1,"positive":2,"sensitive":1,"time":"2月11日","total":2}]
+2021-02-11 20:54:09.301 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:252
+2021-02-11 20:54:09.302 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 27
+2021-02-11 20:54:09.303 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"top":2,"total":6,"avl":0.08333333333333333}
+2021-02-11 20:54:09.303 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:45
+2021-02-11 20:54:09.303 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 29
+2021-02-11 20:54:09.347 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"黑龙江"},{"count":1,"data":"吉林"},{"count":0,"data":"辽宁"},{"count":0,"data":"内蒙古"},{"count":0,"data":"河北"},{"count":0,"data":"天津"},{"count":0,"data":"山东"},{"count":0,"data":"北京"},{"count":0,"data":"山西"},{"count":0,"data":"河南"},{"count":0,"data":"安徽"},{"count":0,"data":"江苏"},{"count":0,"data":"上海"},{"count":0,"data":"浙江"},{"count":0,"data":"宁夏"},{"count":0,"data":"陕西"},{"count":0,"data":"湖北"},{"count":0,"data":"江西"},{"count":0,"data":"福建"},{"count":0,"data":"台湾"},{"count":0,"data":"甘肃"},{"count":0,"data":"四川"},{"count":0,"data":"重庆"},{"count":0,"data":"湖南"},{"count":1,"data":"广东"},{"count":0,"data":"澳门"},{"count":0,"data":"香港"},{"count":0,"data":"贵州"},{"count":1,"data":"广西"},{"count":0,"data":"海南"},{"count":0,"data":"青海"},{"count":0,"data":"西藏"},{"count":1,"data":"新疆"},{"count":0,"data":"云南"}]
+2021-02-11 20:54:09.348 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:819
+2021-02-11 20:54:09.348 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 73
+2021-02-11 20:54:09.784 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getEvent
+2021-02-11 20:54:09.784 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:09.785 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:09.785 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.login
+2021-02-11 20:54:09.785 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:09.825 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"top":2,"total":7,"avl":0.041666666666666664}
+2021-02-11 20:54:09.826 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:46
+2021-02-11 20:54:09.826 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 42
+2021-02-11 20:54:10.100 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getSensitive
+2021-02-11 20:54:10.100 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:10.100 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:10.101 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSensitive
+2021-02-11 20:54:10.102 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:10.104 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 20:54:10.108 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getOrigin
+2021-02-11 20:54:10.108 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getTendency
+2021-02-11 20:54:10.104 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:10.109 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:10.109 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:10.109 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:10.105 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getMap
+2021-02-11 20:54:10.114 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:10.114 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 20:54:10.114 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:10.114 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:10.115 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:10.115 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getTendency
+2021-02-11 20:54:10.115 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getOrigin
+2021-02-11 20:54:10.115 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:10.115 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getMap
+2021-02-11 20:54:10.115 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:10.116 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:10.116 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":4,"data":"敏感事件"},{"count":3,"data":"非敏感事件"}]
+2021-02-11 20:54:10.116 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:10.117 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:54
+2021-02-11 20:54:10.118 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 19
+2021-02-11 20:54:10.123 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"1"},{"count":1,"data":"2"},{"count":2,"data":"3"},{"count":1,"data":"4"},{"count":1,"data":"5"}]
+2021-02-11 20:54:10.123 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:116
+2021-02-11 20:54:10.123 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 15
+2021-02-11 20:54:10.124 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":5,"data":"正面舆情事件"},{"count":2,"data":"负面舆情事件"}]
+2021-02-11 20:54:10.125 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 20:54:10.125 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 21
+2021-02-11 20:54:10.165 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"2月5日","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"2月6日","total":0},{"negative":1,"nonsensitive":1,"positive":0,"sensitive":0,"time":"2月7日","total":1},{"negative":1,"nonsensitive":0,"positive":0,"sensitive":1,"time":"2月8日","total":1},{"negative":0,"nonsensitive":0,"positive":1,"sensitive":1,"time":"2月9日","total":1},{"negative":0,"nonsensitive":1,"positive":2,"sensitive":1,"time":"2月10日","total":2},{"negative":0,"nonsensitive":1,"positive":2,"sensitive":1,"time":"2月11日","total":2}]
+2021-02-11 20:54:10.165 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:584
+2021-02-11 20:54:10.165 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 57
+2021-02-11 20:54:10.184 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"黑龙江"},{"count":1,"data":"吉林"},{"count":0,"data":"辽宁"},{"count":0,"data":"内蒙古"},{"count":0,"data":"河北"},{"count":0,"data":"天津"},{"count":0,"data":"山东"},{"count":0,"data":"北京"},{"count":0,"data":"山西"},{"count":0,"data":"河南"},{"count":0,"data":"安徽"},{"count":1,"data":"江苏"},{"count":0,"data":"上海"},{"count":0,"data":"浙江"},{"count":0,"data":"宁夏"},{"count":0,"data":"陕西"},{"count":0,"data":"湖北"},{"count":0,"data":"江西"},{"count":0,"data":"福建"},{"count":0,"data":"台湾"},{"count":0,"data":"甘肃"},{"count":0,"data":"四川"},{"count":0,"data":"重庆"},{"count":0,"data":"湖南"},{"count":2,"data":"广东"},{"count":0,"data":"澳门"},{"count":0,"data":"香港"},{"count":0,"data":"贵州"},{"count":1,"data":"广西"},{"count":0,"data":"海南"},{"count":0,"data":"青海"},{"count":0,"data":"西藏"},{"count":1,"data":"新疆"},{"count":0,"data":"云南"}]
+2021-02-11 20:54:10.184 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:819
+2021-02-11 20:54:10.184 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 79
+2021-02-11 20:54:11.039 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 20:54:11.039 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getOrigin
+2021-02-11 20:54:11.039 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getEvent
+2021-02-11 20:54:11.039 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getTendency
+2021-02-11 20:54:11.039 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getSensitive
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getMap
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getOrigin
+2021-02-11 20:54:11.042 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSensitive
+2021-02-11 20:54:11.042 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:11.042 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:54:11.042 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:54:11.042 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:54:11.042 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:11.043 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getMap
+2021-02-11 20:54:11.043 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:54:11.045 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"1"},{"count":1,"data":"2"},{"count":2,"data":"3"},{"count":1,"data":"4"}]
+2021-02-11 20:54:11.046 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:93
+2021-02-11 20:54:11.046 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 7
+2021-02-11 20:54:11.047 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":4,"data":"敏感事件"},{"count":2,"data":"非敏感事件"}]
+2021-02-11 20:54:11.047 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:54
+2021-02-11 20:54:11.047 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 8
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.login
+2021-02-11 20:54:11.041 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getTendency
+2021-02-11 20:54:11.050 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:54:11.050 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=three, kid=1)]
+2021-02-11 20:54:11.056 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":5,"data":"正面舆情事件"},{"count":1,"data":"负面舆情事件"}]
+2021-02-11 20:54:11.057 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 20:54:11.057 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 18
+2021-02-11 20:54:11.071 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"negative":0,"nonsensitive":0,"positive":1,"sensitive":1,"time":"2月9日","total":1},{"negative":0,"nonsensitive":1,"positive":2,"sensitive":1,"time":"2月10日","total":2},{"negative":0,"nonsensitive":1,"positive":2,"sensitive":1,"time":"2月11日","total":2}]
+2021-02-11 20:54:11.072 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:252
+2021-02-11 20:54:11.073 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 34
+2021-02-11 20:54:11.074 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"top":2,"total":6,"avl":0.08333333333333333}
+2021-02-11 20:54:11.074 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:45
+2021-02-11 20:54:11.075 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 36
+2021-02-11 20:54:11.108 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"黑龙江"},{"count":1,"data":"吉林"},{"count":0,"data":"辽宁"},{"count":0,"data":"内蒙古"},{"count":0,"data":"河北"},{"count":0,"data":"天津"},{"count":0,"data":"山东"},{"count":0,"data":"北京"},{"count":0,"data":"山西"},{"count":0,"data":"河南"},{"count":0,"data":"安徽"},{"count":0,"data":"江苏"},{"count":0,"data":"上海"},{"count":0,"data":"浙江"},{"count":0,"data":"宁夏"},{"count":0,"data":"陕西"},{"count":0,"data":"湖北"},{"count":0,"data":"江西"},{"count":0,"data":"福建"},{"count":0,"data":"台湾"},{"count":0,"data":"甘肃"},{"count":0,"data":"四川"},{"count":0,"data":"重庆"},{"count":0,"data":"湖南"},{"count":1,"data":"广东"},{"count":0,"data":"澳门"},{"count":0,"data":"香港"},{"count":0,"data":"贵州"},{"count":1,"data":"广西"},{"count":0,"data":"海南"},{"count":0,"data":"青海"},{"count":0,"data":"西藏"},{"count":1,"data":"新疆"},{"count":0,"data":"云南"}]
+2021-02-11 20:54:11.108 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:819
+2021-02-11 20:54:11.108 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 67
+2021-02-11 20:54:11.306 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getEvent
+2021-02-11 20:54:11.306 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:11.307 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:11.307 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.login
+2021-02-11 20:54:11.307 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:11.407 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"top":1,"total":2,"avl":0.08333333333333333}
+2021-02-11 20:54:11.408 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:45
+2021-02-11 20:54:11.408 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 102
+2021-02-11 20:54:11.616 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getSensitive
+2021-02-11 20:54:11.616 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 20:54:11.617 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:11.617 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:11.617 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getOrigin
+2021-02-11 20:54:11.618 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSensitive
+2021-02-11 20:54:11.618 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:11.620 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:11.620 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:11.620 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getOrigin
+2021-02-11 20:54:11.617 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:11.621 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:11.621 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:11.621 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 20:54:11.622 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:11.622 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getTendency
+2021-02-11 20:54:11.623 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:11.623 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:11.625 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getTendency
+2021-02-11 20:54:11.625 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getMap
+2021-02-11 20:54:11.625 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:11.626 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:11.627 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"3"}]
+2021-02-11 20:54:11.628 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:24
+2021-02-11 20:54:11.628 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:11.628 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 11
+2021-02-11 20:54:11.628 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getMap
+2021-02-11 20:54:11.628 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"敏感事件"},{"count":1,"data":"非敏感事件"}]
+2021-02-11 20:54:11.629 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:11.629 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:54
+2021-02-11 20:54:11.629 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 13
+2021-02-11 20:54:11.635 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"正面舆情事件"},{"count":0,"data":"负面舆情事件"}]
+2021-02-11 20:54:11.635 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 20:54:11.636 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 20
+2021-02-11 20:54:11.691 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"0点","total":0},{"negative":0,"nonsensitive":1,"positive":1,"sensitive":0,"time":"2点","total":1},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"4点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"6点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"8点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"10点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"12点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"14点","total":0},{"negative":0,"nonsensitive":0,"positive":1,"sensitive":1,"time":"16点","total":1},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"18点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"20点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"22点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"24点","total":0}]
+2021-02-11 20:54:11.691 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1062
+2021-02-11 20:54:11.691 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 69
+2021-02-11 20:54:11.697 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"黑龙江"},{"count":0,"data":"吉林"},{"count":0,"data":"辽宁"},{"count":0,"data":"内蒙古"},{"count":0,"data":"河北"},{"count":0,"data":"天津"},{"count":0,"data":"山东"},{"count":0,"data":"北京"},{"count":0,"data":"山西"},{"count":0,"data":"河南"},{"count":0,"data":"安徽"},{"count":0,"data":"江苏"},{"count":0,"data":"上海"},{"count":0,"data":"浙江"},{"count":0,"data":"宁夏"},{"count":0,"data":"陕西"},{"count":0,"data":"湖北"},{"count":0,"data":"江西"},{"count":0,"data":"福建"},{"count":0,"data":"台湾"},{"count":0,"data":"甘肃"},{"count":0,"data":"四川"},{"count":0,"data":"重庆"},{"count":0,"data":"湖南"},{"count":0,"data":"广东"},{"count":0,"data":"澳门"},{"count":0,"data":"香港"},{"count":0,"data":"贵州"},{"count":0,"data":"广西"},{"count":0,"data":"海南"},{"count":0,"data":"青海"},{"count":0,"data":"西藏"},{"count":1,"data":"新疆"},{"count":0,"data":"云南"}]
+2021-02-11 20:54:11.697 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:819
+2021-02-11 20:54:11.697 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 72
+2021-02-11 20:54:12.191 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getByPage
+2021-02-11 20:54:12.192 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/singleTendency
+2021-02-11 20:54:12.192 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:12.192 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:12.192 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:12.192 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:12.192 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getByPage
+2021-02-11 20:54:12.192 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSingleTendency
+2021-02-11 20:54:12.192 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[Page{currentPage=1, pageSize=10, totalPage=0, totalCount=0, list=[], params={kid=1}, sortColumn='createTime', sortMethod='desc'}]
+2021-02-11 20:54:12.192 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:12.208 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"time":"0点","total":0},{"time":"2点","total":1},{"time":"4点","total":0},{"time":"6点","total":0},{"time":"8点","total":0},{"time":"10点","total":0},{"time":"12点","total":0},{"time":"14点","total":0},{"time":"16点","total":1},{"time":"18点","total":0},{"time":"20点","total":0},{"time":"22点","total":0},{"time":"24点","total":0}]
+2021-02-11 20:54:12.208 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:321
+2021-02-11 20:54:12.208 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 16
+2021-02-11 20:54:12.210 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"currentPage":1,"index":0,"list":[{"area":"黑龙江","author":"3","content":"总结以上 作为广大吃瓜中的一员 对于到底谁接孩子回家的问题纯属好奇 请张恒方正视吃瓜网友提出的问题并帮忙解答 ","createTime":1613026071000,"grade":3,"href":"https://s.weibo.com/weibo/%25E9%2583%2591%25E7%2588%25BD?topnav=1&wvr=6&b=1","id":3,"kid":1,"posOrNeg":1,"reason":""},{"area":"新疆","author":"3","content":"郑爽代孕害人精","createTime":1612973986000,"grade":5,"href":"www.baidu.com","id":7,"kid":1,"posOrNeg":1},{"area":"吉林","author":"1","content":"郑爽太可恶了","createTime":1612964195000,"grade":5,"href":"www.baidu.com","id":6,"kid":1,"posOrNeg":1},{"area":"广东","author":"1","content":"郑爽有问题","createTime":1612939262000,"grade":1,"href":"www.baidu.com","id":1,"kid":1,"posOrNeg":1,"reason":"郑爽有病"},{"area":"广西","author":"4","content":"根据张恒朋友知乎爆料张恒一个人去接的第二个孩子回家","createTime":1612853732000,"grade":4,"href":"www.baidu.com","id":4,"kid":1,"posOrNeg":1,"reason":"张恒"},{"area":"江苏","author":"2","content":"郑爽脑子有问题","createTime":1612766598000,"grade":2,"href":"https://www.csdn.net/","id":2,"kid":1,"posOrNeg":-1,"reason":"真爽"},{"area":"广东","author":"5","content":"郑爽太有问题","createTime":1612700231000,"grade":5,"href":"www.baidu.com","id":5,"kid":1,"posOrNeg":-1}],"pageSize":10,"params":{"kid":"1"},"sortColumn":"createTime","sortMethod":"desc","totalCount":7,"totalPage":1}
+2021-02-11 20:54:12.211 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1282
+2021-02-11 20:54:12.211 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 20
+2021-02-11 20:54:13.047 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/frequency
+2021-02-11 20:54:13.048 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:13.048 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:13.048 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getFrequency
+2021-02-11 20:54:13.049 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:13.059 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 问题 (1/17)
+2021-02-11 20:54:13.059 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 纯属 (2/17)
+2021-02-11 20:54:13.059 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 帮忙 (3/17)
+2021-02-11 20:54:13.060 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 解答 (4/17)
+2021-02-11 20:54:13.061 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 好奇 (5/17)
+2021-02-11 20:54:13.061 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 广大 (6/17)
+2021-02-11 20:54:13.062 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 提出 (7/17)
+2021-02-11 20:54:13.062 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 以上 (8/17)
+2021-02-11 20:54:13.063 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"问题"},{"count":1,"data":"纯属"},{"count":1,"data":"帮忙"},{"count":1,"data":"解答"},{"count":1,"data":"好奇"},{"count":1,"data":"广大"}]
+2021-02-11 20:54:13.063 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:145
+2021-02-11 20:54:13.063 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 16
+2021-02-11 20:54:13.065 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 孩子 (9/17)
+2021-02-11 20:54:13.065 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 害人 (10/17)
+2021-02-11 20:54:13.065 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 正视 (11/17)
+2021-02-11 20:54:13.066 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 到底 (12/17)
+2021-02-11 20:54:13.067 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 回家 (13/17)
+2021-02-11 20:54:13.071 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 总结 (14/17)
+2021-02-11 20:54:13.075 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 网友 (15/17)
+2021-02-11 20:54:13.075 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 作为 (16/17)
+2021-02-11 20:54:13.075 INFO  [http-nio-8081-exec-2]com.kennycason.kumo.WordCloud.build:85 -placed: 对于 (17/17)
+2021-02-11 20:54:21.410 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/singleTendency
+2021-02-11 20:54:21.410 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:21.410 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getByPage
+2021-02-11 20:54:21.410 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:21.410 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:21.411 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSingleTendency
+2021-02-11 20:54:21.411 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:21.411 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getByPage
+2021-02-11 20:54:21.411 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:21.411 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[Page{currentPage=1, pageSize=10, totalPage=0, totalCount=0, list=[], params={kid=1}, sortColumn='createTime', sortMethod='desc'}]
+2021-02-11 20:54:21.422 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"currentPage":1,"index":0,"list":[{"area":"黑龙江","author":"3","content":"总结以上 作为广大吃瓜中的一员 对于到底谁接孩子回家的问题纯属好奇 请张恒方正视吃瓜网友提出的问题并帮忙解答 ","createTime":1613026071000,"grade":3,"href":"https://s.weibo.com/weibo/%25E9%2583%2591%25E7%2588%25BD?topnav=1&wvr=6&b=1","id":3,"kid":1,"posOrNeg":1,"reason":""},{"area":"新疆","author":"3","content":"郑爽代孕害人精","createTime":1612973986000,"grade":5,"href":"www.baidu.com","id":7,"kid":1,"posOrNeg":1},{"area":"吉林","author":"1","content":"郑爽太可恶了","createTime":1612964195000,"grade":5,"href":"www.baidu.com","id":6,"kid":1,"posOrNeg":1},{"area":"广东","author":"1","content":"郑爽有问题","createTime":1612939262000,"grade":1,"href":"www.baidu.com","id":1,"kid":1,"posOrNeg":1,"reason":"郑爽有病"},{"area":"广西","author":"4","content":"根据张恒朋友知乎爆料张恒一个人去接的第二个孩子回家","createTime":1612853732000,"grade":4,"href":"www.baidu.com","id":4,"kid":1,"posOrNeg":1,"reason":"张恒"},{"area":"江苏","author":"2","content":"郑爽脑子有问题","createTime":1612766598000,"grade":2,"href":"https://www.csdn.net/","id":2,"kid":1,"posOrNeg":-1,"reason":"真爽"},{"area":"广东","author":"5","content":"郑爽太有问题","createTime":1612700231000,"grade":5,"href":"www.baidu.com","id":5,"kid":1,"posOrNeg":-1}],"pageSize":10,"params":{"kid":"1"},"sortColumn":"createTime","sortMethod":"desc","totalCount":7,"totalPage":1}
+2021-02-11 20:54:21.422 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1282
+2021-02-11 20:54:21.423 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 12
+2021-02-11 20:54:21.440 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"time":"0点","total":0},{"time":"2点","total":1},{"time":"4点","total":0},{"time":"6点","total":0},{"time":"8点","total":0},{"time":"10点","total":0},{"time":"12点","total":0},{"time":"14点","total":0},{"time":"16点","total":1},{"time":"18点","total":0},{"time":"20点","total":0},{"time":"22点","total":0},{"time":"24点","total":0}]
+2021-02-11 20:54:21.440 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:321
+2021-02-11 20:54:21.440 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 30
+2021-02-11 20:54:21.656 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getEvent
+2021-02-11 20:54:21.656 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:21.656 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:21.656 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.login
+2021-02-11 20:54:21.657 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:21.720 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"top":1,"total":2,"avl":0.08333333333333333}
+2021-02-11 20:54:21.721 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:45
+2021-02-11 20:54:21.721 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 65
+2021-02-11 20:54:21.842 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 20:54:21.843 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getOrigin
+2021-02-11 20:54:21.843 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getSensitive
+2021-02-11 20:54:21.848 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:21.848 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:21.848 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:21.849 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:21.849 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:21.849 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:21.849 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getMap
+2021-02-11 20:54:21.849 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getTendency
+2021-02-11 20:54:21.849 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 20:54:21.849 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSensitive
+2021-02-11 20:54:21.849 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getOrigin
+2021-02-11 20:54:21.850 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:21.850 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:21.850 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:21.850 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:21.850 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:21.850 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:21.851 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getMap
+2021-02-11 20:54:21.853 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:21.857 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"3"}]
+2021-02-11 20:54:21.858 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:24
+2021-02-11 20:54:21.858 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 15
+2021-02-11 20:54:21.860 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"敏感事件"},{"count":1,"data":"非敏感事件"}]
+2021-02-11 20:54:21.860 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:54
+2021-02-11 20:54:21.861 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 18
+2021-02-11 20:54:21.862 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"正面舆情事件"},{"count":0,"data":"负面舆情事件"}]
+2021-02-11 20:54:21.862 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 20:54:21.863 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 21
+2021-02-11 20:54:21.850 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:21.864 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getTendency
+2021-02-11 20:54:21.864 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:21.921 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"黑龙江"},{"count":0,"data":"吉林"},{"count":0,"data":"辽宁"},{"count":0,"data":"内蒙古"},{"count":0,"data":"河北"},{"count":0,"data":"天津"},{"count":0,"data":"山东"},{"count":0,"data":"北京"},{"count":0,"data":"山西"},{"count":0,"data":"河南"},{"count":0,"data":"安徽"},{"count":0,"data":"江苏"},{"count":0,"data":"上海"},{"count":0,"data":"浙江"},{"count":0,"data":"宁夏"},{"count":0,"data":"陕西"},{"count":0,"data":"湖北"},{"count":0,"data":"江西"},{"count":0,"data":"福建"},{"count":0,"data":"台湾"},{"count":0,"data":"甘肃"},{"count":0,"data":"四川"},{"count":0,"data":"重庆"},{"count":0,"data":"湖南"},{"count":0,"data":"广东"},{"count":0,"data":"澳门"},{"count":0,"data":"香港"},{"count":0,"data":"贵州"},{"count":0,"data":"广西"},{"count":0,"data":"海南"},{"count":0,"data":"青海"},{"count":0,"data":"西藏"},{"count":1,"data":"新疆"},{"count":0,"data":"云南"}]
+2021-02-11 20:54:21.922 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:819
+2021-02-11 20:54:21.922 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 73
+2021-02-11 20:54:21.935 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"0点","total":0},{"negative":0,"nonsensitive":1,"positive":1,"sensitive":0,"time":"2点","total":1},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"4点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"6点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"8点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"10点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"12点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"14点","total":0},{"negative":0,"nonsensitive":0,"positive":1,"sensitive":1,"time":"16点","total":1},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"18点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"20点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"22点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"24点","total":0}]
+2021-02-11 20:54:21.935 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1062
+2021-02-11 20:54:21.936 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 87
+2021-02-11 20:54:22.075 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getByPage
+2021-02-11 20:54:22.075 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:22.075 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:22.076 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getByPage
+2021-02-11 20:54:22.076 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[Page{currentPage=1, pageSize=10, totalPage=0, totalCount=0, list=[], params={kid=1, posOrNeg=1}, sortColumn='createTime', sortMethod='desc'}]
+2021-02-11 20:54:22.085 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"currentPage":1,"index":0,"list":[{"area":"黑龙江","author":"3","content":"总结以上 作为广大吃瓜中的一员 对于到底谁接孩子回家的问题纯属好奇 请张恒方正视吃瓜网友提出的问题并帮忙解答 ","createTime":1613026071000,"grade":3,"href":"https://s.weibo.com/weibo/%25E9%2583%2591%25E7%2588%25BD?topnav=1&wvr=6&b=1","id":3,"kid":1,"posOrNeg":1,"reason":""},{"area":"新疆","author":"3","content":"郑爽代孕害人精","createTime":1612973986000,"grade":5,"href":"www.baidu.com","id":7,"kid":1,"posOrNeg":1},{"area":"吉林","author":"1","content":"郑爽太可恶了","createTime":1612964195000,"grade":5,"href":"www.baidu.com","id":6,"kid":1,"posOrNeg":1},{"area":"广东","author":"1","content":"郑爽有问题","createTime":1612939262000,"grade":1,"href":"www.baidu.com","id":1,"kid":1,"posOrNeg":1,"reason":"郑爽有病"},{"area":"广西","author":"4","content":"根据张恒朋友知乎爆料张恒一个人去接的第二个孩子回家","createTime":1612853732000,"grade":4,"href":"www.baidu.com","id":4,"kid":1,"posOrNeg":1,"reason":"张恒"}],"pageSize":10,"params":{"kid":"1","posOrNeg":1},"sortColumn":"createTime","sortMethod":"desc","totalCount":5,"totalPage":1}
+2021-02-11 20:54:22.086 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1002
+2021-02-11 20:54:22.086 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 11
+2021-02-11 20:54:22.384 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 20:54:22.385 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:22.386 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:22.386 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 20:54:22.387 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:22.396 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"正面舆情事件"},{"count":0,"data":"负面舆情事件"}]
+2021-02-11 20:54:22.396 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 20:54:22.397 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 13
+2021-02-11 20:54:23.528 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getTendency
+2021-02-11 20:54:23.528 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getOrigin
+2021-02-11 20:54:23.528 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getEvent
+2021-02-11 20:54:23.528 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 20:54:23.528 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getTendency
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getSensitive
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getMap
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getOrigin
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 20:54:23.531 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.login
+2021-02-11 20:54:23.532 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:23.532 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:23.532 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:23.532 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:23.532 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:23.532 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSensitive
+2021-02-11 20:54:23.533 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:23.534 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"3"}]
+2021-02-11 20:54:23.534 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:24
+2021-02-11 20:54:23.535 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 7
+2021-02-11 20:54:23.532 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:23.536 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:23.536 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getMap
+2021-02-11 20:54:23.537 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=today, kid=1)]
+2021-02-11 20:54:23.538 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"正面舆情事件"},{"count":0,"data":"负面舆情事件"}]
+2021-02-11 20:54:23.538 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 20:54:23.539 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 11
+2021-02-11 20:54:23.538 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"敏感事件"},{"count":1,"data":"非敏感事件"}]
+2021-02-11 20:54:23.540 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:54
+2021-02-11 20:54:23.541 INFO  [http-nio-8081-exec-10]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 10
+2021-02-11 20:54:23.599 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"黑龙江"},{"count":0,"data":"吉林"},{"count":0,"data":"辽宁"},{"count":0,"data":"内蒙古"},{"count":0,"data":"河北"},{"count":0,"data":"天津"},{"count":0,"data":"山东"},{"count":0,"data":"北京"},{"count":0,"data":"山西"},{"count":0,"data":"河南"},{"count":0,"data":"安徽"},{"count":0,"data":"江苏"},{"count":0,"data":"上海"},{"count":0,"data":"浙江"},{"count":0,"data":"宁夏"},{"count":0,"data":"陕西"},{"count":0,"data":"湖北"},{"count":0,"data":"江西"},{"count":0,"data":"福建"},{"count":0,"data":"台湾"},{"count":0,"data":"甘肃"},{"count":0,"data":"四川"},{"count":0,"data":"重庆"},{"count":0,"data":"湖南"},{"count":0,"data":"广东"},{"count":0,"data":"澳门"},{"count":0,"data":"香港"},{"count":0,"data":"贵州"},{"count":0,"data":"广西"},{"count":0,"data":"海南"},{"count":0,"data":"青海"},{"count":0,"data":"西藏"},{"count":1,"data":"新疆"},{"count":0,"data":"云南"}]
+2021-02-11 20:54:23.599 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"0点","total":0},{"negative":0,"nonsensitive":1,"positive":1,"sensitive":0,"time":"2点","total":1},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"4点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"6点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"8点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"10点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"12点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"14点","total":0},{"negative":0,"nonsensitive":0,"positive":1,"sensitive":1,"time":"16点","total":1},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"18点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"20点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"22点","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"24点","total":0}]
+2021-02-11 20:54:23.599 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:819
+2021-02-11 20:54:23.599 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:1062
+2021-02-11 20:54:23.599 INFO  [http-nio-8081-exec-6]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 71
+2021-02-11 20:54:23.599 INFO  [http-nio-8081-exec-3]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 68
+2021-02-11 20:54:23.613 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"top":1,"total":2,"avl":0.08333333333333333}
+2021-02-11 20:54:23.614 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:45
+2021-02-11 20:54:23.614 INFO  [http-nio-8081-exec-5]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 86
+2021-02-11 20:54:27.924 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getEvent
+2021-02-11 20:54:27.925 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:27.925 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:27.925 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.login
+2021-02-11 20:54:27.925 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:27.956 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：{"top":2,"total":7,"avl":0.041666666666666664}
+2021-02-11 20:54:27.956 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:46
+2021-02-11 20:54:27.956 INFO  [http-nio-8081-exec-1]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 32
+2021-02-11 20:54:28.255 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getSensitive
+2021-02-11 20:54:28.255 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getOrigin
+2021-02-11 20:54:28.255 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getPositive
+2021-02-11 20:54:28.256 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:28.256 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:28.256 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:28.257 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getTendency
+2021-02-11 20:54:28.257 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:28.257 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:129 -请求地址 : /api/blog/getMap
+2021-02-11 20:54:28.257 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:28.257 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:28.258 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getSensitive
+2021-02-11 20:54:28.257 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:28.258 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:130 -请求方式 : POST
+2021-02-11 20:54:28.258 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getOrigin
+2021-02-11 20:54:28.259 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:28.259 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:133 -IP : 127.0.0.1
+2021-02-11 20:54:28.259 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:28.258 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:28.259 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getTendency
+2021-02-11 20:54:28.260 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getMap
+2021-02-11 20:54:28.258 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:135 -方法 : com.fxys.opinion_plus.controller.BlogController.getPositive
+2021-02-11 20:54:28.260 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:28.260 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:28.261 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.printRequestLog:138 -请求参数：[BlogBaseReq(day=seven, kid=1)]
+2021-02-11 20:54:28.267 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":2,"data":"1"},{"count":1,"data":"2"},{"count":2,"data":"3"},{"count":1,"data":"4"},{"count":1,"data":"5"}]
+2021-02-11 20:54:28.268 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:116
+2021-02-11 20:54:28.269 INFO  [http-nio-8081-exec-2]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 14
+2021-02-11 20:54:28.273 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":4,"data":"敏感事件"},{"count":3,"data":"非敏感事件"}]
+2021-02-11 20:54:28.273 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:54
+2021-02-11 20:54:28.274 INFO  [http-nio-8081-exec-9]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 19
+2021-02-11 20:54:28.274 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":5,"data":"正面舆情事件"},{"count":2,"data":"负面舆情事件"}]
+2021-02-11 20:54:28.274 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:57
+2021-02-11 20:54:28.275 INFO  [http-nio-8081-exec-8]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 20
+2021-02-11 20:54:28.309 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"2月5日","total":0},{"negative":0,"nonsensitive":0,"positive":0,"sensitive":0,"time":"2月6日","total":0},{"negative":1,"nonsensitive":1,"positive":0,"sensitive":0,"time":"2月7日","total":1},{"negative":1,"nonsensitive":0,"positive":0,"sensitive":1,"time":"2月8日","total":1},{"negative":0,"nonsensitive":0,"positive":1,"sensitive":1,"time":"2月9日","total":1},{"negative":0,"nonsensitive":1,"positive":2,"sensitive":1,"time":"2月10日","total":2},{"negative":0,"nonsensitive":1,"positive":2,"sensitive":1,"time":"2月11日","total":2}]
+2021-02-11 20:54:28.310 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:584
+2021-02-11 20:54:28.310 INFO  [http-nio-8081-exec-7]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 53
+2021-02-11 20:54:28.332 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:84 -返回值：[{"count":1,"data":"黑龙江"},{"count":1,"data":"吉林"},{"count":0,"data":"辽宁"},{"count":0,"data":"内蒙古"},{"count":0,"data":"河北"},{"count":0,"data":"天津"},{"count":0,"data":"山东"},{"count":0,"data":"北京"},{"count":0,"data":"山西"},{"count":0,"data":"河南"},{"count":0,"data":"安徽"},{"count":1,"data":"江苏"},{"count":0,"data":"上海"},{"count":0,"data":"浙江"},{"count":0,"data":"宁夏"},{"count":0,"data":"陕西"},{"count":0,"data":"湖北"},{"count":0,"data":"江西"},{"count":0,"data":"福建"},{"count":0,"data":"台湾"},{"count":0,"data":"甘肃"},{"count":0,"data":"四川"},{"count":0,"data":"重庆"},{"count":0,"data":"湖南"},{"count":2,"data":"广东"},{"count":0,"data":"澳门"},{"count":0,"data":"香港"},{"count":0,"data":"贵州"},{"count":1,"data":"广西"},{"count":0,"data":"海南"},{"count":0,"data":"青海"},{"count":0,"data":"西藏"},{"count":1,"data":"新疆"},{"count":0,"data":"云南"}]
+2021-02-11 20:54:28.332 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAfterReturning:86 -length:819
+2021-02-11 20:54:28.332 INFO  [http-nio-8081-exec-4]com.fxys.opinion_plus.aspect.RequestAspect.doAround:68 -耗时 : 76
