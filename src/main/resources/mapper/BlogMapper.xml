@@ -224,6 +224,9 @@
       <if test="params.content!=null and params.content!=''">
         and content like CONCAT('%', #{params.content}, '%')
       </if>
+      <if test="params.posOrNeg !=null and params.posOrNeg !=''">
+        and posOrNeg=#{params.posOrNeg}
+      </if>
       <if test="params.startTime!=null and params.startTime!=''">
         and  #{params.startTime}&lt;=createTime
       </if>
@@ -243,6 +246,9 @@
     <where>
       <if test="params.kid!=null and params.kid!=''">
         and kid =#{params.kid}
+      </if>
+      <if test="params.posOrNeg !=null and params.posOrNeg !=''">
+        and posOrNeg=#{params.posOrNeg}
       </if>
       <if test="params.content!=null and params.content!=''">
         and content like CONCAT('%', #{params.content}, '%')

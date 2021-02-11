@@ -228,6 +228,43 @@ public class BlogServiceImpl implements IBlogService {
         ImageIO.write(wordCloud.getBufferedImage(), "png", resp.getOutputStream());
     }
 
+    @Override
+    public List<Ring> getFrequency(BlogBaseReq req) {
+        String day=req.getDay();
+        Long kid=req.getKid();
+        List<String>list;
+
+        if(day.equals("today")){
+            list=blogMapper.selectContent(kid, TimeStampUtil.get(24),TimeStampUtil.get(0));
+        }else if(day.equals("three")){
+            list=blogMapper.selectContent(kid, TimeStampUtil.get(27),TimeStampUtil.get(0));
+        }else {
+            list=blogMapper.selectContent(kid, TimeStampUtil.get(30),TimeStampUtil.get(0));
+        }
+        //建立词频分析器，设置词频，以及词语最短长度，此处的参数配置视情况而定即可
+        FrequencyAnalyzer frequencyAnalyzer = new FrequencyAnalyzer();
+        frequencyAnalyzer.setWordFrequenciesToReturn(600);
+        frequencyAnalyzer.setMinWordLength(2);
+
+        //引入中文解析器
+        frequencyAnalyzer.setWordTokenizer(new ChineseWordTokenizer());
+
+
+        List<WordFrequency> wordFrequencyList = frequencyAnalyzer.load(list);
+
+        List<Ring>lists=new ArrayList<>();
+        if(wordFrequencyList.size()>=6){
+            for(int i=0;i<6;i++){
+                lists.add(new Ring(wordFrequencyList.get(i).getWord(),wordFrequencyList.get(i).getFrequency()));
+            }
+        }else if(wordFrequencyList.size()>0){
+            for(int i=0;i<wordFrequencyList.size();i++){
+                lists.add(new Ring(wordFrequencyList.get(i).getWord(),wordFrequencyList.get(i).getFrequency()));
+            }
+        }
+        return lists;
+    }
+
 
     @Override
     public List<Ring> getMap(BlogBaseReq req) {

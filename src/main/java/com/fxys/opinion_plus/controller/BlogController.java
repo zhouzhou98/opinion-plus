@@ -77,5 +77,8 @@ public class BlogController {
         return blogService.getSingleTendency(req);
     }
 
-
+    @PostMapping(value = PathConstants.BLOG_FREQUENCY)
+    public List<Ring>getFrequency(@RequestBody BlogBaseReq req){
+        return blogService.getFrequency(req);
+    }
 }

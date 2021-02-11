@@ -45,4 +45,5 @@ public class PathConstants {
     public static final String BLOG_SINGEL="/api/blog/singleTendency";
     public static final String BLOG_CLOUD="/api/blog/wordCloud";
     public static final String BLOG_FREQUENCY="/api/blog/frequency";
+
 }

@@ -32,4 +32,6 @@ public interface IBlogService {
     List<SingleTendency> getSingleTendency(BlogBaseReq req);
 
     void wordCloud(HttpServletRequest req, HttpServletResponse resp) throws Exception;
+
+    List<Ring> getFrequency(BlogBaseReq req);
 }
