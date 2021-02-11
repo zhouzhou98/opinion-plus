@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-@EnableWebMvc
+
 @SpringBootApplication
 @EnableTransactionManagement
 @MapperScan("com.fxys.opinion_plus.mapper")

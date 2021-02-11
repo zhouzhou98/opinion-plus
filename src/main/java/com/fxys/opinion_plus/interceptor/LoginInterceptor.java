@@ -11,6 +11,7 @@ import com.fxys.opinion_plus.service.IUserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.resource.ResourceHttpRequestHandler;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -29,7 +30,7 @@ public class LoginInterceptor implements HandlerInterceptor {
      * 放行的白名单
      */
     private static String[] whiteList = {
-            PathConstants.USER_SING_IN,PathConstants.USER_REGISTER,PathConstants.KEYWORD_EXPORT,PathConstants.BLOG_CLOUD,PathConstants.BLOG_EXPORT
+            PathConstants.USER_SING_IN,PathConstants.USER_REGISTER,PathConstants.KEYWORD_EXPORT,PathConstants.BLOG_CLOUD,PathConstants.BLOG_EXPORT, "/index"
     };
 
     @Override
@@ -37,7 +38,10 @@ public class LoginInterceptor implements HandlerInterceptor {
         if (containsWhiteList(request.getRequestURI())) {
             return true;
         }
-        
+        //静态资源不拦截
+        if (handler instanceof ResourceHttpRequestHandler) {
+            return true;
+        }
         // 获取token
         String token = request.getHeader("Authentication");
 
