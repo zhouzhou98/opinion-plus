@@ -1,9 +1,6 @@
 package com.fxys.opinion_plus.service.impl;
 
-import com.fxys.opinion_plus.domain.Blog;
-import com.fxys.opinion_plus.domain.Ring;
-import com.fxys.opinion_plus.domain.SingleTendency;
-import com.fxys.opinion_plus.domain.Tendency;
+import com.fxys.opinion_plus.domain.*;
 import com.fxys.opinion_plus.mapper.BlogMapper;
 import com.fxys.opinion_plus.resp.Page;
 import com.fxys.opinion_plus.service.IBlogService;
@@ -263,6 +260,50 @@ public class BlogServiceImpl implements IBlogService {
             }
         }
         return lists;
+    }
+
+    @Override
+    public List<Warning> getWarning(BlogBaseReq req) {
+        Warning w=new Warning();
+        String day=req.getDay();
+        Long kid=req.getKid();
+        if(day.equals("today")){
+            getTodayWarning(kid,w);
+        }else if(day.equals("three")){
+            getThreeWarning(kid,w);
+        }else {
+            getSevenWarning(kid,w);
+        }
+        List<Warning>list=new ArrayList<>();
+        list.add(w);
+        return list;
+    }
+
+    private void getSevenWarning(Long kid, Warning w) {
+        dealWithWarn(kid,w,TimeStampUtil.get(30),TimeStampUtil.get(0));
+    }
+
+    private void dealWithWarn(Long kid, Warning w, Date start, Date end) {
+        int low=blogMapper.selectByGrade(kid,start,end,1);
+        int low_mid=blogMapper.selectByGrade(kid,start,end,2);
+        int mid=blogMapper.selectByGrade(kid,start,end,3);
+        int mid_hei=blogMapper.selectByGrade(kid,start,end,4);
+        int hei=blogMapper.selectByGrade(kid,start,end,5);
+        w.setGrade("预警等级");
+        w.setLow(low);
+        w.setLow_mid(low_mid);
+        w.setMid(mid);
+        w.setMid_hei(mid_hei);
+        w.setHeight(hei);
+    }
+
+
+    private void getThreeWarning(Long kid, Warning w) {
+        dealWithWarn(kid,w,TimeStampUtil.get(26),TimeStampUtil.get(0));
+    }
+
+    private void getTodayWarning(Long kid, Warning w) {
+        dealWithWarn(kid,w,TimeStampUtil.get(24),TimeStampUtil.get(0));
     }
 
 

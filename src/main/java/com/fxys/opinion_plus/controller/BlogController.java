@@ -1,10 +1,7 @@
 package com.fxys.opinion_plus.controller;
 
 import com.fxys.opinion_plus.constants.PathConstants;
-import com.fxys.opinion_plus.domain.Blog;
-import com.fxys.opinion_plus.domain.Ring;
-import com.fxys.opinion_plus.domain.SingleTendency;
-import com.fxys.opinion_plus.domain.Tendency;
+import com.fxys.opinion_plus.domain.*;
 import com.fxys.opinion_plus.enums.ResultCodeEnums;
 import com.fxys.opinion_plus.exception.OpinionException;
 import com.fxys.opinion_plus.resp.Page;
@@ -80,5 +77,10 @@ public class BlogController {
     @PostMapping(value = PathConstants.BLOG_FREQUENCY)
     public List<Ring>getFrequency(@RequestBody BlogBaseReq req){
         return blogService.getFrequency(req);
+    }
+
+    @PostMapping(value = PathConstants.BLOG_WARNING)
+    public List<Warning> getWarning(@RequestBody BlogBaseReq req){
+        return blogService.getWarning(req);
     }
 }

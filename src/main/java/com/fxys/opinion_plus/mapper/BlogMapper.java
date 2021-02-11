@@ -46,4 +46,6 @@ public interface BlogMapper {
     int getCountByPage(Page<Blog> page);
 
     List<String> selectContent(@Param("kid")Long kid,@Param("start") Date start,@Param("end") Date end);
+
+    int selectByGrade(@Param("kid")Long kid,@Param("start") Date start,@Param("end") Date end,@Param("grade") int grade);
 }

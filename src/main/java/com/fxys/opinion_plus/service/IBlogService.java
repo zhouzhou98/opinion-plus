@@ -1,9 +1,6 @@
 package com.fxys.opinion_plus.service;
 
-import com.fxys.opinion_plus.domain.Blog;
-import com.fxys.opinion_plus.domain.Ring;
-import com.fxys.opinion_plus.domain.SingleTendency;
-import com.fxys.opinion_plus.domain.Tendency;
+import com.fxys.opinion_plus.domain.*;
 import com.fxys.opinion_plus.resp.Page;
 import com.fxys.opinion_plus.vo.blog.BlogBaseReq;
 
@@ -34,4 +31,6 @@ public interface IBlogService {
     void wordCloud(HttpServletRequest req, HttpServletResponse resp) throws Exception;
 
     List<Ring> getFrequency(BlogBaseReq req);
+
+    List<Warning> getWarning(BlogBaseReq req);
 }

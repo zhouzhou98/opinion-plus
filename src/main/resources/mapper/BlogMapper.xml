@@ -269,4 +269,12 @@
     and createTime &gt;#{param2}
     and createTime &lt;#{param3}
   </select>
+  <select id="selectByGrade" resultType="int">
+    select
+    count(*)
+    from blog where kid=#{param1}
+    and createTime &gt;#{param2}
+    and createTime &lt;#{param3}
+    and grade=#{param4}
+  </select>
 </mapper>
