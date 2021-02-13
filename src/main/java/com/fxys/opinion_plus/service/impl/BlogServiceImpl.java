@@ -205,7 +205,7 @@ public class BlogServiceImpl implements IBlogService {
         WordCloud wordCloud = new WordCloud(dimension, CollisionMode.PIXEL_PERFECT);
         //设置边界及字体
         wordCloud.setPadding(2);
-        Font font = new java.awt.Font("STSong-Light", 2, 20);
+        Font font = new java.awt.Font("微软雅黑", 2, 20);
         //设置词云显示的三种颜色，越靠前设置表示词频越高的词语的颜色
         wordCloud.setColorPalette(new LinearGradientColorPalette(Color.RED, Color.BLUE, Color.GREEN, 30, 30));
         wordCloud.setKumoFont(new KumoFont(font));

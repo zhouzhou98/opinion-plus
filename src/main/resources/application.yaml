@@ -5,7 +5,6 @@ mybatis:
 logging:
   level:
     com.fxys.opinion_plus.mapper: debug
-
 spring:
   thymeleaf:
     cache: false
